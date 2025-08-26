@@ -1,0 +1,88 @@
+# Hugo data for sidebar menu (converted from app.js menuData)
+- id: home
+  type: menu
+  label: ホーム
+  icon: "🏠"
+  path: "/"
+- id: lp
+  type: menu
+  label: LP
+  icon: "📄"
+  path: "/lp"
+- id: welcome
+  type: menu
+  label: はじめまして
+  icon: "👋"
+  path: "/welcome"
+- id: mcp-diff
+  type: menu
+  label: プレイリストとカタログの違い
+  icon: "🧭"
+  path: "/mcp/diff"
+- id: mcp-playlist
+  type: group
+  label: MCPプレイリスト
+  icon: "📚"
+  path: "/playlist"
+  children:
+    - id: playlist-all
+      type: menu
+      label: プレイリスト一覧
+      path: "/playlist/all"
+    - id: playlist-creative
+      type: menu
+      label: クリエイティブ
+      path: "/playlist/creative"
+    - id: playlist-development
+      type: menu
+      label: 開発
+      path: "/playlist/development"
+    - id: playlist-business
+      type: menu
+      label: ビジネス
+      path: "/playlist/business"
+- id: mcp-catalog
+  type: group
+  label: MCPカタログ
+  icon: "📦"
+  path: "/catalog"
+  children:
+    - id: catalog-all
+      type: menu
+      label: カタログ一覧
+      path: "/catalog/all"
+    - id: catalog-creative
+      type: menu
+      label: クリエイティブ
+      path: "/catalog/creative"
+      children:
+        - id: t2i-imagen4
+          type: catalog-id
+          label: "Imagen4 Ultra (T2I)"
+          path: "/catalog/id/t2i/fal/imagen4/ultra"
+        - id: i2i-flux
+          type: catalog-id
+          label: "Flux Kontext (I2I)"
+          path: "/catalog/id/i2i/fal/flux/kontext/max"
+    - id: catalog-development
+      type: menu
+      label: 開発
+      path: "/catalog/development"
+      children:
+        - id: t2v-wan
+          type: catalog-id
+          label: "WAN 2.2-5b (T2V)"
+          path: "/catalog/id/t2v/fal/wan/v2.2-5b/text-to-video"
+        - id: uploader
+          type: catalog-id
+          label: "Uploader (Service)"
+          path: "/catalog/id/uploader/fal"
+    - id: catalog-business
+      type: menu
+      label: ビジネス
+      path: "/catalog/business"
+      children:
+        - id: req-docs
+          type: catalog-id
+          label: Requirements Docs
+          path: "/catalog/id/requirement"

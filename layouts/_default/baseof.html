@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "/styles.css" | relURL }}" />
+  {{- /* Inject YAML data as JSON for app.js to consume */ -}}
+  <script>
+    window.MENU_DATA = {{ site.Data.menu | jsonify }};
+    window.PAGE_CONTENTS = {{ site.Data.pages | default (dict) | jsonify }};
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon"></span>
+          <span class="logo-text">{{ .Site.Params.siteName }}</span>
+        </div>
+        <h1 class="site-title">{{ .Site.Params.siteSubtitle }}</h1>
+      </div>
+      <div class="folder-tree" id="menu"></div>
+    </nav>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <main class="main-content">
+      <div class="header-bar">
+        <button class="menu-btn" id="toggleSidebar" aria-label="メニュー" title="メニュー">☰</button>
+        <input type="text" class="search-bar" id="searchInput" placeholder="コンテンツを検索..." />
+        <div class="view-options">
+          <button class="view-btn" id="themeDark" aria-label="黒テーマ">黒</button>
+          <button class="view-btn" id="themeLight" aria-label="白テーマ">白</button>
+          <button class="view-btn" id="reloadBtn" aria-label="リロード">↻</button>
+          <button class="view-btn" id="toTop" aria-label="先頭へ">↑</button>
+        </div>
+      </div>
+      <div id="content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ "/app.js" | relURL }}"></script>
+</body>
+</html>
+

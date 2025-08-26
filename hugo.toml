@@ -1,0 +1,14 @@
+baseURL = "https://dai-motoki.github.io/kamui-code-docs/"
+languageCode = "ja"
+title = "KAMUI CODE MCP Docs"
+enableRobotsTXT = true
+relativeURLs = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  siteName = "KAMUI CODE"
+  siteSubtitle = "MCP Docs"

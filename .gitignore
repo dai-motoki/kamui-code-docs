@@ -1,0 +1,32 @@
+# Hugo generated files
+/public/
+/resources/
+.hugo_build.lock
+
+# Node modules
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Legacy files (not needed for new site)
+/legacy/
+
+# Cache files
+../.serena/
