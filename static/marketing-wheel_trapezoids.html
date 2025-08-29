@@ -65,6 +65,7 @@
           </filter>
         </defs>
         <g id="traps" transform="translate(525,-40)"></g>
+        <g id="trapLabels" transform="translate(525,-40)"></g>
       </svg>
     </div>
   </div>
@@ -129,6 +130,7 @@
 
     // Frustum-like stack (台形の回転体: 立体的な短い円台を下方向に積層)
     const traps = document.getElementById('traps');
+    const trapLabels = document.getElementById('trapLabels');
     function frustum(g, rxTop, rxBottom, h, fill){
       const rz = Math.max(6, Math.min(rxTop, rxBottom) * 0.28); // 楕円の縦半径（遠近感）
       const group = document.createElementNS('http://www.w3.org/2000/svg','g');
@@ -158,7 +160,7 @@
     }
     const N=10, startRxTop=240, startRxBot=315, step=8, FR_H=28, GAP=12; // restore larger width (x1.5 of 160/210)
     const cols=['url(#purpleGrad)','url(#tealGrad)','url(#orangeGrad)'];
-    const labelsBottomUp = ['LLM','画像生成AI','動画生成AI','ワールド生成AI'];
+    const labelsBottomUp = ['LLM','音声生成AI','画像生成AI','動画生成AI','ワールド生成AI'];
     for(let i=0;i<N;i++){
       const rxT = Math.max(80, startRxTop - i*step);
       const rxB = Math.max(110, startRxBot - i*step);
@@ -166,19 +168,20 @@
       const g = frustum(traps, rxT, rxB, FR_H, cols[i%cols.length]);
       g.setAttribute('transform', `translate(0,${y})`);
       // Label the bottom 4 layers from bottom → top as requested
-      if(i >= N-4){
-        const idx = (N-1) - i; // 0..3 from bottom
+      if(i >= N-5){
+        const idx = (N-1) - i; // 0..4 from bottom
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
-        text.setAttribute('y', String(FR_H/2 + 4));
+        text.setAttribute('y', String(y + FR_H/2 + 2));
         text.setAttribute('text-anchor','middle');
         text.setAttribute('dominant-baseline','middle');
         text.setAttribute('font-family','HuiFont, var(--hand)');
-        text.setAttribute('font-size','20');
-        text.setAttribute('font-weight','800');
+        text.setAttribute('font-size','28');
+        text.setAttribute('font-weight','900');
         text.setAttribute('fill','#2c3e50');
+        text.setAttribute('opacity','1');
         text.textContent = labelsBottomUp[idx] || '';
-        g.appendChild(text);
+        trapLabels.appendChild(text);
       }
     }
   </script>
