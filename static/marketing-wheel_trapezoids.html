@@ -138,10 +138,11 @@
       const top = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
       top.setAttribute('cx','0'); top.setAttribute('cy','0'); top.setAttribute('rx', rxTop); top.setAttribute('ry', rz);
       top.setAttribute('fill','white'); top.setAttribute('fill-opacity','0.85'); top.setAttribute('stroke','#e8e8e8'); top.setAttribute('stroke-width','1');
-      // 側面（グラデーション）
+      // 側面（グラデーション）: くびれた ")(" になるように内側へ湾曲
       const side = document.createElementNS('http://www.w3.org/2000/svg','path');
       const t = rxTop, b = rxBottom; const y0 = 0, y1 = h;
-      const d = `M ${-t},${y0} L ${t},${y0} C ${t*0.85},${y0+h*0.15} ${b*0.85},${y1-h*0.15} ${b},${y1} L ${-b},${y1} C ${-b*0.85},${y1-h*0.15} ${-t*0.85},${y0+h*0.15} ${-t},${y0} Z`;
+      const cx1 = t * 0.55, cx2 = b * 0.55; // 内側に寄せる
+      const d = `M ${-t},${y0} L ${t},${y0} C ${cx1},${y0+h*0.25} ${cx2},${y1-h*0.25} ${b},${y1} L ${-b},${y1} C ${-cx2},${y1-h*0.25} ${-cx1},${y0+h*0.25} ${-t},${y0} Z`;
       side.setAttribute('d', d);
       side.setAttribute('fill', fill);
       side.setAttribute('opacity','0.22');
@@ -158,12 +159,15 @@
       g.appendChild(group);
       return group;
     }
-    const N=10, startRxTop=240, startRxBot=315, step=8, FR_H=28, GAP=12; // restore larger width (x1.5 of 160/210)
+    const N=10, edgeMax=315, centerMin=220, step=8, FR_H=28, GAP=12; // 側面プロファイルを ")(" に
     const cols=['url(#purpleGrad)','url(#tealGrad)','url(#orangeGrad)'];
     const labelsBottomUp = ['LLM','音声生成AI','画像生成AI','動画生成AI','ワールド生成AI'];
     for(let i=0;i<N;i++){
-      const rxT = Math.max(80, startRxTop - i*step);
-      const rxB = Math.max(110, startRxBot - i*step);
+      // 幅を上下で広く、中央で狭く（" )(" プロファイル）
+      const s = (i/(N-1) - 0.5);
+      const base = centerMin + (edgeMax - centerMin) * (4*s*s); // 最小:中央, 最大:上下端
+      const rxT = Math.max(80, base - 20);
+      const rxB = Math.max(110, base + 20);
       const y = i*(FR_H+GAP) + 10;
       const g = frustum(traps, rxT, rxB, FR_H, cols[i%cols.length]);
       g.setAttribute('transform', `translate(0,${y})`);
