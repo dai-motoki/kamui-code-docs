@@ -17,6 +17,15 @@
     .stack-svg { width: 700px; height: 780px; display: block; }
     /* wheel center */
     .center-text { font-family: var(--hand); font-size: 1.6em; color: #2c3e50; font-weight: 900; letter-spacing: 0.6px; text-align: center; }
+
+    /* Force ring/trap labels to match "クリエイティブ" style */
+    .ring-label, .trap-label {
+      font-family: var(--hand) !important;
+      font-size: 28px !important;
+      font-weight: 900 !important;
+      fill: #2c3e50 !important;
+      letter-spacing: 0.02em;
+    }
   </style>
 </head>
 <body>
@@ -114,17 +123,16 @@
     inner.setAttribute('cx',CX); inner.setAttribute('cy',CY); inner.setAttribute('rx', IN_RX); inner.setAttribute('ry', IN_RY);
     inner.setAttribute('fill','white'); inner.setAttribute('stroke','white'); inner.setAttribute('stroke-width','2');
     ring.appendChild(inner);
-    // labels at sector mid-angles
+    // labels at sector mid-angles (all same style as "クリエイティブ")
     segDefs.forEach(s=>{
       const mid = (s.a0 + s.a1)/2;
       const p = ellipsePoint( (IN_RX+OUT_RX)/2, (IN_RY+OUT_RY)/2, mid);
       const t=document.createElementNS('http://www.w3.org/2000/svg','text');
       t.setAttribute('x', p.x);
       t.setAttribute('y', p.y+4);
-      t.setAttribute('text-anchor','middle'); t.setAttribute('dominant-baseline','middle');
-      t.setAttribute('font-family','HuiFont, var(--hand)'); t.setAttribute('fill','#2c3e50');
-      t.setAttribute('font-weight', s.id==='cre' ? '900' : '800');
-      t.setAttribute('font-size', s.id==='cre' ? '28' : '22');
+      t.setAttribute('class','ring-label');
+      t.setAttribute('text-anchor','middle');
+      t.setAttribute('dominant-baseline','middle');
       t.textContent = s.label; ring.appendChild(t);
     });
 
@@ -192,12 +200,9 @@
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
         text.setAttribute('y', String(y + FR_H/2 + 2));
+        text.setAttribute('class','trap-label');
         text.setAttribute('text-anchor','middle');
         text.setAttribute('dominant-baseline','middle');
-        text.setAttribute('font-family','HuiFont, var(--hand)');
-        text.setAttribute('font-size','28');
-        text.setAttribute('font-weight','900');
-        text.setAttribute('fill','#2c3e50');
         text.textContent = labelsTopDown[i] || '';
         trapLabels.appendChild(text);
       }
@@ -207,12 +212,9 @@
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
         text.setAttribute('y', String(y + FR_H/2 + 2));
+        text.setAttribute('class','trap-label');
         text.setAttribute('text-anchor','middle');
         text.setAttribute('dominant-baseline','middle');
-        text.setAttribute('font-family','HuiFont, var(--hand)');
-        text.setAttribute('font-size','28');
-        text.setAttribute('font-weight','900');
-        text.setAttribute('fill','#2c3e50');
         text.textContent = labelsBottomUpRecog[idx] || '';
         trapLabels.appendChild(text);
       }

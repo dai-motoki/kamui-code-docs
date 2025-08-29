@@ -1,7 +1,7 @@
 home:
   html: |
-    <div class="hero">
-        <img src="./kamui-docs-ui-pattern2-gradient.png" alt="KAMUI CODE トップ" />
+    <div class="hero" style="display:flex; justify-content:center;">
+      <video src="/kamui-code-docs/videos/pixverse_subtitles.mp4" controls autoplay muted playsinline loop style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);"></video>
     </div>
 
     <div class="cards-grid">
@@ -43,6 +43,15 @@ home:
             </p>
             <span class="card-icon">💼</span>
         </div>
+    </div>
+
+lp:
+  html: |
+    <h1 class="page-title">KAMUI CODE</h1>
+    <p class="page-subtitle">AIを活用した次世代開発プラットフォーム</p>
+
+    <div style="display:flex; justify-content:center; margin: 12px auto 28px;">
+      <img src="/kamui-code-docs/images/kamui-gradient-soft-2.png" alt="KAMUI CODE" style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
     </div>
 
 mcp-playlist:
@@ -201,6 +210,10 @@ welcome:
           KAMUI CODEは、画像生成、動画生成、音声合成、開発支援など、
           様々なAIサービスをMCPサーバーとして提供する統合プラットフォームです。
         </p>
+      </div>
+      
+      <div style="display:flex; justify-content:center; margin: 16px auto 24px;">
+        <video src="/kamui-code-docs/videos/mymovie-101.mp4" controls autoplay muted playsinline loop style="width:100%; max-width:1040px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);"></video>
       </div>
       
       <div style="display:flex; justify-content:center; margin: 0 auto 48px;">
