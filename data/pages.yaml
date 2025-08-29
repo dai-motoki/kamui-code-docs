@@ -722,6 +722,18 @@ playlist-creative:
                 <span class="stat">⭐ プロ仕様</span>
             </div>
         </div>
+        
+        <div class="playlist-card" onclick="navigateTo('playlist-remotion-video')">
+            <div class="playlist-card-header">
+                <h3 class="playlist-card-title">Remotion動画生成プレイリスト</h3>
+                <div class="playlist-card-badge">React動画</div>
+            </div>
+            <p class="playlist-card-description">Reactコンポーネントで動画制作。画像生成（Imagen4）、音声合成（MiniMax）、BGM生成（Lyria）を統合</p>
+            <div class="playlist-card-stats">
+                <span class="stat">⚛️ 6サーバー</span>
+                <span class="stat">🎬 プログラマブル</span>
+            </div>
+        </div>
     </div>
 
 playlist-development:
@@ -899,6 +911,24 @@ playlist-all:
                 <div class="stat-item">
                     <span class="stat-label">サイズ:</span>
                     <span class="stat-value">8.2 KB</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Remotion Video Playlist -->
+        <div class="package-card remotion-video-package" onclick="navigateTo('playlist-remotion-video')">
+            <div class="package-header">
+                <h3 class="package-title">Remotion動画生成プレイリスト</h3>
+                <div class="package-path">/mcp/mcp-remotion-video.json</div>
+            </div>
+            <div class="package-stats">
+                <div class="stat-item">
+                    <span class="stat-label">サーバー数:</span>
+                    <span class="stat-value">6</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">サイズ:</span>
+                    <span class="stat-value">1.4 KB</span>
                 </div>
             </div>
         </div>
@@ -1832,6 +1862,199 @@ playlist-image-ai:
             <h2 class="section-title">GitHub</h2>
             <div class="github-link">
                 <a href="https://github.com/kamuicode/mcp-image-ai" target="_blank" class="github-button">
+                    <span>💙 GitHubリポジトリを見る</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+playlist-remotion-video:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">Remotion動画生成プレイリスト</h1>
+        <p class="page-subtitle">React開発者向けプログラマブル動画生成MCPサーバー</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="playlist-detail-container">
+        <div class="detail-section">
+            <h2 class="section-title">デモ動画</h2>
+            <div style="margin: 24px 0;">
+                <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <source src="/kamui-code-docs/videos/remotion-demo.mp4" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+                <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">Reactコンポーネントで動画を生成する革新的なワークフロー</p>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">JSON設定</h2>
+            <pre class="code"><code>{
+            "mcpServers": {
+            "remotion-video": {
+            "type": "http",
+            "url": "https://{baseurl}/remotion/video"
+            },
+            "remotion-lambda": {
+            "type": "http",
+            "url": "https://{baseurl}/remotion/lambda"
+            },
+            "remotion-templates": {
+            "type": "http",
+            "url": "https://{baseurl}/remotion/templates"
+            },
+            "t2i-kamui-imagen4-ultra": {
+            "type": "http",
+            "url": "https://{baseurl}/t2i/fal/imagen4/ultra"
+            },
+            "t2s-kamui-minimax-speech-25-turbo-preview": {
+            "type": "http",
+            "url": "https://{baseurl}/t2s/minimax/speech-2-5-turbo-preview"
+            },
+            "t2m-kamui-lyria": {
+            "type": "http",
+            "url": "https://{baseurl}/t2m/fal/google/lyria"
+            }
+            }
+            }</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">TOML設定</h2>
+            <pre class="code"><code>[mcpServers.remotion-video]
+            type = "http"
+            url = "https://{baseurl}/remotion/video"
+
+            [mcpServers.remotion-lambda]
+            type = "http"
+            url = "https://{baseurl}/remotion/lambda"
+
+            [mcpServers.remotion-templates]
+            type = "http"
+            url = "https://{baseurl}/remotion/templates"
+
+            [mcpServers.t2i-kamui-imagen4-ultra]
+            type = "http"
+            url = "https://{baseurl}/t2i/fal/imagen4/ultra"
+
+            [mcpServers.t2s-kamui-minimax-speech-25-turbo-preview]
+            type = "http"
+            url = "https://{baseurl}/t2s/minimax/speech-2-5-turbo-preview"
+
+            [mcpServers.t2m-kamui-lyria]
+            type = "http"
+            url = "https://{baseurl}/t2m/fal/google/lyria"</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">利用方法</h2>
+            <div class="usage-content">
+                <h3>1. Claude Codeへの設定</h3>
+                <p>Claude Codeの設定ファイルに上記のJSONまたはTOMLを追加</p>
+                
+                <h3>2. Remotionの特徴</h3>
+                <p>Reactコンポーネントを使用してプログラマブルに動画を生成する革新的なアプローチ</p>
+                
+                <h3>3. サーバー一覧</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+                    <div>
+                        <h4 style="color: #6366f1; margin-bottom: 12px;">⚛️ Remotionコア</h4>
+                        <ul>
+                            <li><strong>remotion-video</strong> - メイン動画生成エンジン</li>
+                            <li><strong>remotion-lambda</strong> - クラウドレンダリング対応</li>
+                            <li><strong>remotion-templates</strong> - 豊富なテンプレート集</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #8b5cf6; margin-bottom: 12px;">🎨 クリエイティブ補助</h4>
+                        <ul>
+                            <li><strong>t2i-kamui-imagen4-ultra</strong> - 動画素材用画像生成</li>
+                            <li><strong>t2s-kamui-minimax-speech</strong> - ナレーション音声生成</li>
+                            <li><strong>t2m-kamui-lyria</strong> - BGM音楽生成</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 24px;">
+                    <h4 style="color: #10b981; margin-bottom: 12px;">💡 使用例</h4>
+                    <ul>
+                        <li>プロダクト紹介動画の自動生成</li>
+                        <li>データビジュアライゼーション動画</li>
+                        <li>ソーシャルメディア用コンテンツ作成</li>
+                        <li>教育コンテンツ・チュートリアル動画</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">コードサンプル</h2>
+            <pre class="code"><code>// Remotionで動画を生成する例
+            const VideoComponent = () => {
+              const frame = useCurrentFrame();
+              const { fps } = useVideoConfig();
+              
+              return (
+                &lt;div style={{
+                  flex: 1,
+                  textAlign: 'center',
+                  fontSize: 60,
+                  opacity: frame / 30
+                }}&gt;
+                  &lt;h1&gt;Hello Remotion!&lt;/h1&gt;
+                  &lt;p&gt;Frame: {frame}&lt;/p&gt;
+                &lt;/div&gt;
+              );
+            };
+            
+            // AI生成素材を組み込む
+            const AIEnhancedVideo = () => {
+              const [bgImage] = useState(() =&gt; 
+                generateImage("futuristic background")
+              );
+              const [narration] = useState(() =&gt; 
+                generateSpeech("Welcome to our product")
+              );
+              
+              return (
+                &lt;Composition
+                  id="ai-video"
+                  component={VideoComponent}
+                  durationInFrames={300}
+                  fps={30}
+                  width={1920}
+                  height={1080}
+                /&gt;
+              );
+            };</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">特徴</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">⚛️</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">Reactベース</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">慣れ親しんだReactで動画制作</p>
+                </div>
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">🚀</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">高速レンダリング</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">Lambda連携でクラウド処理</p>
+                </div>
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">🎯</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">プログラマブル</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">コードで完全制御可能</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">GitHub</h2>
+            <div class="github-link">
+                <a href="https://github.com/kamuicode/mcp-remotion-video" target="_blank" class="github-button">
                     <span>💙 GitHubリポジトリを見る</span>
                 </a>
             </div>
