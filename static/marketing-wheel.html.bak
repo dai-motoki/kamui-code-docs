@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheelの14のデジタルマーケティング戦略</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            margin: 0 auto;
+        }
+
+        .wheel-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .center-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 180px;
+            background: white;
+            border-radius: 50%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .center-text {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.1em;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .strategy-item {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: auto;
+        }
+
+        .icon-circle {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            font-size: 1.6em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .strategy-text {
+            font-size: 0.95em;
+            color: #2c3e50;
+            font-weight: 500;
+            line-height: 1.3;
+            max-width: 140px;
+        }
+
+        .orange { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .navy { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+        /* Circular positioning for items */
+        .strategy-1 { top: 2%; left: 50%; transform: translateX(-50%); }
+        .strategy-2 { top: 8%; right: 22%; }
+        .strategy-3 { top: 22%; right: 8%; }
+        .strategy-4 { top: 42%; right: 2%; }
+        .strategy-5 { top: 62%; right: 8%; }
+        .strategy-6 { top: 76%; right: 22%; }
+        .strategy-7 { bottom: 5%; right: 38%; }
+        .strategy-8 { bottom: 5%; left: 38%; }
+        .strategy-9 { top: 76%; left: 22%; }
+        .strategy-10 { top: 62%; left: 8%; }
+        .strategy-11 { top: 42%; left: 2%; }
+        .strategy-12 { top: 22%; left: 8%; }
+        .strategy-13 { top: 8%; left: 22%; }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .wheel-container {
+                width: 500px;
+                height: 500px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .strategy-text {
+                font-size: 0.85em;
+                max-width: 120px;
+            }
+
+            .icon-circle {
+                width: 48px;
+                height: 48px;
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Wheelの14のデジタルマーケティング戦略</h1>
+            <p class="subtitle">統合的なマーケティングアプローチ</p>
+        </div>
+
+        <div class="wheel-container">
+            <!-- SVG Wheel -->
+            <svg class="wheel-svg" viewBox="0 0 700 700">
+                <!-- Define gradients -->
+                <defs>
+                    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#34495e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Outer ring segments -->
+                <g transform="translate(350,350)">
+                    <!-- Ring 1 -->
+                    <path d="M 0,-240 A 240,240 0 0,1 64.7,-231.1 L 45.5,-162.5 A 170,170 0 0,0 0,-170 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="32" y="-197" fill="white" font-size="16" font-weight="bold">01</text>
+                    
+                    <!-- Ring 2 -->
+                    <path d="M 64.7,-231.1 A 240,240 0 0,1 123.7,-205.7 L 87.1,-145 A 170,170 0 0,0 45.5,-162.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="85" y="-175" fill="white" font-size="16" font-weight="bold">02</text>
+                    
+                    <!-- Ring 3 -->
+                    <path d="M 123.7,-205.7 A 240,240 0 0,1 169.7,-169.7 L 120.2,-120.2 A 170,170 0 0,0 87.1,-145 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="130" y="-145" fill="white" font-size="16" font-weight="bold">03</text>
+                    
+                    <!-- Ring 4 -->
+                    <path d="M 169.7,-169.7 A 240,240 0 0,1 205.7,-123.7 L 145,-87.1 A 170,170 0 0,0 120.2,-120.2 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="160" y="-105" fill="white" font-size="16" font-weight="bold">04</text>
+                    
+                    <!-- Ring 5 -->
+                    <path d="M 205.7,-123.7 A 240,240 0 0,1 231.1,-64.7 L 162.5,-45.5 A 170,170 0 0,0 145,-87.1 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="180" y="-55" fill="white" font-size="16" font-weight="bold">05</text>
+                    
+                    <!-- Ring 6 -->
+                    <path d="M 231.1,-64.7 A 240,240 0 0,1 240,0 L 170,0 A 170,170 0 0,0 162.5,-45.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="190" y="-5" fill="white" font-size="16" font-weight="bold">06</text>
+                    
+                    <!-- Ring 7 -->
+                    <path d="M 240,0 A 240,240 0 0,1 231.1,64.7 L 162.5,45.5 A 170,170 0 0,0 170,0 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="190" y="35" fill="white" font-size="16" font-weight="bold">07</text>
+                    
+                    <!-- Ring 8 -->
+                    <path d="M 231.1,64.7 A 240,240 0 0,1 205.7,123.7 L 145,87.1 A 170,170 0 0,0 162.5,45.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="180" y="85" fill="white" font-size="16" font-weight="bold">08</text>
+                    
+                    <!-- Ring 9 -->
+                    <path d="M 205.7,123.7 A 240,240 0 0,1 169.7,169.7 L 120.2,120.2 A 170,170 0 0,0 145,87.1 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="160" y="125" fill="white" font-size="16" font-weight="bold">09</text>
+                    
+                    <!-- Ring 10 -->
+                    <path d="M 169.7,169.7 A 240,240 0 0,1 123.7,205.7 L 87.1,145 A 170,170 0 0,0 120.2,120.2 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="130" y="165" fill="white" font-size="16" font-weight="bold">10</text>
+                    
+                    <!-- Ring 11 -->
+                    <path d="M 123.7,205.7 A 240,240 0 0,1 64.7,231.1 L 45.5,162.5 A 170,170 0 0,0 87.1,145 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="85" y="195" fill="white" font-size="16" font-weight="bold">11</text>
+                    
+                    <!-- Ring 12 -->
+                    <path d="M 64.7,231.1 A 240,240 0 0,1 0,240 L 0,170 A 170,170 0 0,0 45.5,162.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="32" y="205" fill="white" font-size="16" font-weight="bold">12</text>
+                    
+                    <!-- Ring 13 -->
+                    <path d="M 0,240 A 240,240 0 0,1 -64.7,231.1 L -45.5,162.5 A 170,170 0 0,0 0,170 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <text x="-40" y="205" fill="white" font-size="16" font-weight="bold">13</text>
+                    
+                    <!-- Ring 14 -->
+                    <path d="M -64.7,231.1 A 240,240 0 0,1 -123.7,205.7 L -87.1,145 A 170,170 0 0,0 -45.5,162.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <text x="-95" y="195" fill="white" font-size="16" font-weight="bold">14</text>
+                    
+                    <!-- Continue pattern for remaining segments -->
+                    <path d="M -123.7,205.7 A 240,240 0 0,1 -169.7,169.7 L -120.2,120.2 A 170,170 0 0,0 -87.1,145 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -169.7,169.7 A 240,240 0 0,1 -205.7,123.7 L -145,87.1 A 170,170 0 0,0 -120.2,120.2 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -205.7,123.7 A 240,240 0 0,1 -231.1,64.7 L -162.5,45.5 A 170,170 0 0,0 -145,87.1 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -231.1,64.7 A 240,240 0 0,1 -240,0 L -170,0 A 170,170 0 0,0 -162.5,45.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -240,0 A 240,240 0 0,1 -231.1,-64.7 L -162.5,-45.5 A 170,170 0 0,0 -170,0 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -231.1,-64.7 A 240,240 0 0,1 -205.7,-123.7 L -145,-87.1 A 170,170 0 0,0 -162.5,-45.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -205.7,-123.7 A 240,240 0 0,1 -169.7,-169.7 L -120.2,-120.2 A 170,170 0 0,0 -145,-87.1 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -169.7,-169.7 A 240,240 0 0,1 -123.7,-205.7 L -87.1,-145 A 170,170 0 0,0 -120.2,-120.2 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -123.7,-205.7 A 240,240 0 0,1 -64.7,-231.1 L -45.5,-162.5 A 170,170 0 0,0 -87.1,-145 Z" fill="url(#orangeGrad)" stroke="white" stroke-width="2"/>
+                    <path d="M -64.7,-231.1 A 240,240 0 0,1 0,-240 L 0,-170 A 170,170 0 0,0 -45.5,-162.5 Z" fill="url(#navyGrad)" stroke="white" stroke-width="2"/>
+                </g>
+            </svg>
+
+            <!-- Center Circle -->
+            <div class="center-circle">
+                <div class="center-text">
+                    Digital<br>Marketing<br>Strategy
+                </div>
+            </div>
+
+            <!-- Strategy Items -->
+            <div class="strategy-item strategy-1">
+                <div class="icon-circle orange">⚙️</div>
+                <span class="strategy-text">Establishing Goal</span>
+            </div>
+            
+            <div class="strategy-item strategy-2">
+                <div class="icon-circle navy">📊</div>
+                <span class="strategy-text">Creating Marketing Funnel</span>
+            </div>
+            
+            <div class="strategy-item strategy-3">
+                <div class="icon-circle orange">🎯</div>
+                <span class="strategy-text">Developing Call to Action</span>
+            </div>
+            
+            <div class="strategy-item strategy-4">
+                <div class="icon-circle navy">👥</div>
+                <span class="strategy-text">Creating Effective<br>Lead Magnet</span>
+            </div>
+            
+            <div class="strategy-item strategy-5">
+                <div class="icon-circle orange">📈</div>
+                <span class="strategy-text">Driving Website Traffic</span>
+            </div>
+            
+            <div class="strategy-item strategy-6">
+                <div class="icon-circle navy">💻</div>
+                <span class="strategy-text">Content Marketing</span>
+            </div>
+            
+            <div class="strategy-item strategy-7">
+                <div class="icon-circle orange">🔍</div>
+                <span class="strategy-text">SEO Optimization</span>
+            </div>
+            
+            <div class="strategy-item strategy-8">
+                <div class="icon-circle navy">📱</div>
+                <span class="strategy-text">Social Media Strategy</span>
+            </div>
+            
+            <div class="strategy-item strategy-9">
+                <div class="icon-circle orange">📧</div>
+                <span class="strategy-text">Email Marketing</span>
+            </div>
+            
+            <div class="strategy-item strategy-10">
+                <div class="icon-circle navy">🎨</div>
+                <span class="strategy-text">Brand Development</span>
+            </div>
+            
+            <div class="strategy-item strategy-11">
+                <div class="icon-circle orange">🚀</div>
+                <span class="strategy-text">Performance Analytics</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>This slide is 100% editable. Adapt it to your needs and capture your audience's attention.</p>
+        </div>
+    </div>
+</body>
+</html>

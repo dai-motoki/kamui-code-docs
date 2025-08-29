@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheelの14のデジタルマーケティング戦略</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Embed HuiFont (ふい字) when font files are placed under /static/fonts/hui/ */
+        @font-face {
+            font-family: 'HuiFont';
+            /* Use relative URLs so it works for both file:// and http:// serving */
+            src: url('fonts/hui/HuiFont.woff2') format('woff2'),
+                 url('fonts/hui/HuiFont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        :root {
+            /* Prefer local-install of ふい字 (HuiFont). Fallbacks are hand‑written style JP fonts. */
+            --handwriting-font: 'HuiFont', 'HuiFontP', 'HuiFontP29', 'HuiFont POP',
+                                'Yuji Syuku', 'Yuji Boku', 'Hachi Maru Pop', 'Kosugi Maru',
+                                'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', 'Hiragino Maru Gothic Pro',
+                                'Yu Gothic', 'Noto Sans JP', cursive, sans-serif;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px;
+        }
+        .container { background: #fff; border-radius: 20px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); max-width: 1440px; width: 100%; }
+        .header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 3.4em; color: #2c3e50; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { color: #7f8c8d; font-size: 1.1em; }
+
+        .wheel-container { position: relative; width: 1000px; height: 1000px; margin: 0 auto; }
+        .wheel-svg { width: 100%; height: 100%; display: block; }
+
+        .center-circle {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 280px; height: 280px; background: #fff; border-radius: 50%; z-index: 10; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .center-text { text-align: center; color: #2c3e50; font-size: 2.6em; font-weight: 900; line-height: 1.2; letter-spacing: 0.8px; font-family: var(--handwriting-font); }
+
+        /* Anchor at the exact polar point so the icon center sits on the circle */
+        .strategy-anchor { position: absolute; width: 0; height: 0; }
+        .strategy-icon { position: absolute; left: 0; top: 50%; transform: translate(-50%, -50%); }
+        .strategy-label { position: absolute; top: 50%; color: #2c3e50; white-space: nowrap; writing-mode: horizontal-tb; display: inline-block; line-height: 1; }
+        .strategy-label.right { left: 0; transform: translate(calc(28px + 22px), -50%); text-align: left; }
+        /* place the label so its RIGHT edge clears the icon by 22px */
+        .strategy-label.left  { left: 0; transform: translate(calc(-28px - 22px), -50%) translateX(-100%); text-align: right; }
+
+        .icon-circle { width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.9em; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .strategy-text { font-size: 1.6em; color: #2c3e50; font-weight: 900; line-height: 1.15; max-width: 320px; font-family: var(--handwriting-font); }
+
+        /* SVG category label style */
+        .cat-label { font-family: var(--handwriting-font); }
+
+        .orange { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); } /* Business */
+        .purple { background: linear-gradient(135deg, #7e3af2 0%, #6d28d9 100%); } /* Creative */
+        .teal   { background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); } /* Development */
+
+        .seg-number { fill: #fff; font-weight: 700; font-size: 16px; text-anchor: middle; dominant-baseline: middle; }
+
+        .footer { text-align: center; margin-top: 40px; color: #7f8c8d; font-size: 0.9em; }
+
+        @media (max-width: 768px) {
+            .wheel-container { width: 500px; height: 500px; }
+            h1 { font-size: 1.8em; }
+            .strategy-text { font-size: 0.85em; max-width: 120px; }
+            .icon-circle { width: 48px; height: 48px; font-size: 1.4em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>KAMUI CODEの全体像</h1>
+        </div>
+
+        <div class="wheel-container">
+            <svg class="wheel-svg" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#34495e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#7e3af2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1abc9c;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <g id="outer-arcs" transform="translate(350,350)"></g>
+                <g id="categories" transform="translate(350,350)"></g>
+            </svg>
+
+            <div class="center-circle">
+                <div class="center-text">KAMUI<br/>CODE</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const OUTER_R = 290;
+        const INNER_R = 205;
+        const CAT_SPAN = 120; // degrees per category
+
+        function deg2rad(d){ return (d * Math.PI) / 180; }
+        function polar(radius, angleDeg){
+            const a = deg2rad(angleDeg);
+            return { x: Math.cos(a) * radius, y: Math.sin(a) * radius };
+        }
+        function donutSection(r1, r2, a0, a1){
+            const large = (a1 - a0) > 180 ? 1 : 0;
+            const p0 = polar(r2, a0), p1 = polar(r2, a1);
+            const q1 = polar(r1, a1), q0 = polar(r1, a0);
+            return `M ${p0.x},${p0.y} A ${r2},${r2} 0 ${large} 1 ${p1.x},${p1.y} L ${q1.x},${q1.y} A ${r1},${r1} 0 ${large} 0 ${q0.x},${q0.y} Z`;
+        }
+
+        // Categories (3 sectors)
+        const categories = [
+            { key:'biz', name: 'ビジネス',     sub: '資料制作 / 営業支援',   center: -90, color: 'url(#orangeGrad)' },
+            { key:'cre', name: 'クリエイティブ', sub: '動画・ビジュアル制作', center:  30, color: 'url(#purpleGrad)'   },
+            { key:'dev', name: '開発',         sub: '要件定義 / 設計・実装', center: 150, color: 'url(#tealGrad)'    },
+        ];
+
+        // Draw outer arcs (restore)
+        const gOuter = document.getElementById('outer-arcs');
+        const gCat = document.getElementById('categories');
+        categories.forEach((c) => {
+            const a0 = c.center - CAT_SPAN/2;
+            const a1 = c.center + CAT_SPAN/2;
+            const arc = document.createElementNS('http://www.w3.org/2000/svg','path');
+            arc.setAttribute('d', donutSection(INNER_R, OUTER_R, a0, a1));
+            arc.setAttribute('fill', c.color);
+            arc.setAttribute('opacity', '0.25');
+            arc.setAttribute('stroke', 'white');
+            arc.setAttribute('stroke-width', '2');
+            gOuter.appendChild(arc);
+        });
+
+        // Inner category ring labels
+        const CAT_INNER = 165; // larger center
+        const CAT_OUTER = 200;
+        categories.forEach((c) => {
+            const a0 = c.center - CAT_SPAN/2;
+            const a1 = c.center + CAT_SPAN/2;
+            const mid = (a0 + a1) / 2;
+
+            // Restore subtle inner pastel ring for each category
+            const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+            p.setAttribute('d', donutSection(CAT_INNER, CAT_OUTER, a0, a1));
+            p.setAttribute('fill', c.color);
+            p.setAttribute('opacity', '0.10');
+            gCat.appendChild(p);
+
+            const labelPos = polar(CAT_OUTER - 4, mid);
+            const t1 = document.createElementNS('http://www.w3.org/2000/svg','text');
+            t1.setAttribute('class','cat-label');
+            t1.setAttribute('x', labelPos.x);
+            t1.setAttribute('y', labelPos.y - 12);
+            t1.setAttribute('text-anchor', 'middle');
+            t1.setAttribute('dominant-baseline', 'middle');
+            t1.setAttribute('fill', '#2c3e50');
+            t1.setAttribute('font-weight', '900');
+            t1.setAttribute('font-size', '26');
+            t1.textContent = c.name;
+            gCat.appendChild(t1);
+
+            // sub label removed by request (no secondary text)
+        });
+
+        // Examples: 4 per category (total 12), globally equal angles
+        const examples = [
+            // ビジネス
+            { cat:'biz', icon:'🖥️', color:'orange', label:'スライド' },
+            { cat:'biz', icon:'🧩', color:'orange', label:'提案書' },
+            { cat:'biz', icon:'📈', color:'orange', label:'KPIダッシュボード' },
+            { cat:'biz', icon:'📄', color:'orange', label:'営業資料' },
+            // クリエイティブ（紫）
+            { cat:'cre', icon:'🎬', color:'purple',   label:'Remotion動画' },
+            { cat:'cre', icon:'🖼️', color:'purple',   label:'サムネイル' },
+            { cat:'cre', icon:'🎨', color:'purple',   label:'ロゴ / VI' },
+            { cat:'cre', icon:'🧭', color:'purple',   label:'図解 / ビジュアル' },
+            // 開発
+            { cat:'dev', icon:'📝', color:'teal',   label:'要件定義' },
+            { cat:'dev', icon:'📐', color:'teal',   label:'設計' },
+            { cat:'dev', icon:'🔌', color:'teal',   label:'API仕様' },
+            { cat:'dev', icon:'🧪', color:'teal',   label:'テスト計画' },
+        ];
+
+        const wheel = document.querySelector('.wheel-container');
+        let baseRadius = OUTER_R + 150; // more room for much larger labels
+        const wheelCenter = { x: wheel.clientWidth/2, y: wheel.clientHeight/2 };
+        const scale = wheel.clientWidth / 700; // SVG viewBox scaling factor
+
+        // cleanup anchors
+        document.querySelectorAll('.strategy-anchor').forEach(n=>n.remove());
+
+        // Equal spacing across 12 items
+        const N = examples.length; // 12
+        const STEP_ALL = 360 / N;
+        const firstBoundary = categories[0].center - CAT_SPAN/2; // -150°
+        const baseAngle = firstBoundary + STEP_ALL/2; // center of first slot
+
+        examples.forEach((s, i) => {
+            let angle = baseAngle + i * STEP_ALL;
+            const r = baseRadius * scale;
+            const p = polar(r, angle);
+            const left = wheelCenter.x + p.x;
+            const top = wheelCenter.y + p.y;
+
+            const anchor = document.createElement('div');
+            anchor.className = 'strategy-anchor';
+            anchor.style.left = `${left}px`;
+            anchor.style.top = `${top}px`;
+
+            const icon = document.createElement('div');
+            icon.className = `icon-circle strategy-icon ${s.color}`;
+            icon.textContent = s.icon;
+
+            const label = document.createElement('span');
+            label.className = 'strategy-text strategy-label';
+            const rightSide = Math.cos(deg2rad(angle)) >= 0;
+            label.classList.add(rightSide ? 'right' : 'left');
+            label.innerHTML = (s.label || '').replace(/\n/g,'<br>');
+
+            anchor.appendChild(icon);
+            anchor.appendChild(label);
+            wheel.appendChild(anchor);
+        });
+    </script>
+</body>
+</html>
