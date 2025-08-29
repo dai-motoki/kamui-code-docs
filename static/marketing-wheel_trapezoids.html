@@ -13,7 +13,7 @@
     h1 { text-align: center; font-size: 2.2em; margin-bottom: 8px; color: #2c3e50; font-weight: 800; font-family: var(--hand); }
     .top-wheel { display: flex; justify-content: center; margin-top: 8px; }
     .wheel { width: 1050px; height: 160px; position: relative; overflow: visible; }
-    .stack { display: flex; justify-content: center; margin-top: -140px; }
+    .stack { display: flex; justify-content: center; margin-top: -220px; }
     .stack-svg { width: 700px; height: 780px; display: block; }
     /* wheel center */
     .center-text { font-family: var(--hand); font-size: 1.6em; color: #2c3e50; font-weight: 900; letter-spacing: 0.6px; text-align: center; }
@@ -64,8 +64,8 @@
             <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
           </filter>
         </defs>
-        <g id="traps" transform="translate(525,-40)"></g>
-        <g id="trapLabels" transform="translate(525,-40)"></g>
+        <g id="traps" transform="translate(525,-80)"></g>
+        <g id="trapLabels" transform="translate(525,-80)"></g>
       </svg>
     </div>
   </div>
@@ -134,10 +134,16 @@
     function frustum(g, rxTop, rxBottom, h, fill){
       const rz = Math.max(6, Math.min(rxTop, rxBottom) * 0.28); // 楕円の縦半径（遠近感）
       const group = document.createElementNS('http://www.w3.org/2000/svg','g');
-      // 上面（ハイライト）
+      // 上面（カラー本体）
+      const plate = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+      plate.setAttribute('cx','0'); plate.setAttribute('cy','0'); plate.setAttribute('rx', rxTop); plate.setAttribute('ry', rz);
+      plate.setAttribute('fill', fill); plate.setAttribute('fill-opacity','0.35');
+      plate.setAttribute('stroke','#dfe3ea'); plate.setAttribute('stroke-width','1');
+      // ハイライト（小さめの白）
       const top = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
-      top.setAttribute('cx','0'); top.setAttribute('cy','0'); top.setAttribute('rx', rxTop); top.setAttribute('ry', rz);
-      top.setAttribute('fill','white'); top.setAttribute('fill-opacity','0.85'); top.setAttribute('stroke','#e8e8e8'); top.setAttribute('stroke-width','1');
+      top.setAttribute('cx','0'); top.setAttribute('cy', String(-rz*0.08));
+      top.setAttribute('rx', String(rxTop*0.82)); top.setAttribute('ry', String(rz*0.72));
+      top.setAttribute('fill','white'); top.setAttribute('fill-opacity','0.25');
       // 側面（グラデーション）: くびれた ")(" になるように内側へ湾曲
       const side = document.createElementNS('http://www.w3.org/2000/svg','path');
       const t = rxTop, b = rxBottom; const y0 = 0, y1 = h;
@@ -145,38 +151,44 @@
       const d = `M ${-t},${y0} L ${t},${y0} C ${cx1},${y0+h*0.25} ${cx2},${y1-h*0.25} ${b},${y1} L ${-b},${y1} C ${-cx2},${y1-h*0.25} ${-cx1},${y0+h*0.25} ${-t},${y0} Z`;
       side.setAttribute('d', d);
       side.setAttribute('fill', fill);
-      side.setAttribute('opacity','0.22');
+      side.setAttribute('opacity','0.25');
       side.setAttribute('filter','url(#softShadow)');
       // 下面（影）
       const bot = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
       bot.setAttribute('cx','0'); bot.setAttribute('cy', h);
       bot.setAttribute('rx', rxBottom); bot.setAttribute('ry', rz*1.05);
-      bot.setAttribute('fill','#000'); bot.setAttribute('fill-opacity','0.06');
+      bot.setAttribute('fill','#000'); bot.setAttribute('fill-opacity','0.04');
       // 組み立て
       group.appendChild(bot); // 影を奥に
       group.appendChild(side);
+      group.appendChild(plate);
       group.appendChild(top);
       g.appendChild(group);
       return group;
     }
-    const N=10, edgeMax=315, centerMin=220, step=8, FR_H=28, GAP=12; // 側面プロファイルを ")(" に
-    const cols=['url(#purpleGrad)','url(#tealGrad)','url(#orangeGrad)'];
-    // 上半分（上→下）: ワールド生成AI → LLM
+    // 円盤数はラベル数に合わせる
     const labelsTopDown = ['ワールド生成AI','動画生成AI','画像生成AI','音声生成AI','LLM'];
-    // 下半分（下→上）: 認識系AI（情報量が少ない順に主要3種のみ）
     const labelsBottomUpRecog = ['動画認識AI','画像認識AI','音声認識AI'];
-    for(let i=0;i<N;i++){
+    const N = labelsTopDown.length + labelsBottomUpRecog.length; // 8
+    const edgeMax=315, centerMin=220, step=8, FR_H=28, GAP=12; // 側面プロファイルを ")(" に
+    function layerColor(i){
+      const hue = Math.round(300 * (i/(N-1))); // 0..300 (赤→紫)
+      return `hsl(${hue}, 70%, 60%)`;
+    }
+    // ラベル定義（上半分・下半分） — 重複定義を削除
+    // 描画順を逆転（上が手前に来るように、下から先に描画して最後に最上段を描画）
+    for(let i=N-1;i>=0;i--){
       // 幅を上下で広く、中央で狭く（" )(" プロファイル）
       const s = (i/(N-1) - 0.5);
       const base = centerMin + (edgeMax - centerMin) * (4*s*s); // 最小:中央, 最大:上下端
       const rxT = Math.max(80, base - 20);
       const rxB = Math.max(110, base + 20);
       const y = i*(FR_H+GAP) + 10;
-      const g = frustum(traps, rxT, rxB, FR_H, cols[i%cols.length]);
+      const g = frustum(traps, rxT, rxB, FR_H, layerColor(i));
       g.setAttribute('transform', `translate(0,${y})`);
       // Label the bottom 4 layers from bottom → top as requested
-      // 上半分（i: 0..4）
-      if(i < 5){
+      // 上半分（i: 0..labelsTopDown.length-1）
+      if(i < labelsTopDown.length){
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
         text.setAttribute('y', String(y + FR_H/2 + 2));
@@ -189,9 +201,9 @@
         text.textContent = labelsTopDown[i] || '';
         trapLabels.appendChild(text);
       }
-      // 下半分（i: 7..9） — 3段のみ表示
-      if(i >= N-3){
-        const idx = (N-1) - i; // 0..2 bottom→上
+      // 下半分（残りの層） — 認識系（下→上）
+      if(i >= N - labelsBottomUpRecog.length){
+        const idx = (N-1) - i; // 0..(len-1) bottom→上
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
         text.setAttribute('y', String(y + FR_H/2 + 2));
