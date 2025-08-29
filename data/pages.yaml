@@ -128,72 +128,72 @@ mcp-playlist:
         </div>
     </div>
 
-lp:
-  html: |
-    <div class="page-header">
-      <h1 class="page-title">KAMUI CODE</h1>
-      <p class="page-subtitle">AIを活用した次世代開発プラットフォーム</p>
-      <div class="page-divider"></div>
-    </div>
+# lp:
+#   html: |
+#     <div class="page-header">
+#       <h1 class="page-title">KAMUI CODE</h1>
+#       <p class="page-subtitle">AIを活用した次世代開発プラットフォーム</p>
+#       <div class="page-divider"></div>
+#     </div>
     
-    <div class="cards-grid">
-      <div class="card-modern creative">
-        <div class="card-content">
-          <div class="card-header">
-            <h2 class="card-title">Creative tools</h2>
-            <p class="card-subtitle">画像・動画・音声の生成</p>
-          </div>
-          <span class="card-tag"> クリエイティブ</span>
-          <div class="card-code-section">
-            <div class="code-snippet">
-              <span class="code-comment"># Image Generation</span>
-              <span class="code-line">generate_image(<span class="code-string">"beautiful landscape"</span>)</span>
-              <span class="code-comment"># Video Creation</span>
-              <span class="code-line">create_video(<span class="code-string">prompt</span>=<span class="code-string">"sunset timelapse"</span>)</span>
-            </div>
-          </div>
-        </div>
-        <div class="card-orb creative-orb"></div>
-      </div>
+#     <div class="cards-grid">
+#       <div class="card-modern creative">
+#         <div class="card-content">
+#           <div class="card-header">
+#             <h2 class="card-title">Creative tools</h2>
+#             <p class="card-subtitle">画像・動画・音声の生成</p>
+#           </div>
+#           <span class="card-tag"> クリエイティブ</span>
+#           <div class="card-code-section">
+#             <div class="code-snippet">
+#               <span class="code-comment"># Image Generation</span>
+#               <span class="code-line">generate_image(<span class="code-string">"beautiful landscape"</span>)</span>
+#               <span class="code-comment"># Video Creation</span>
+#               <span class="code-line">create_video(<span class="code-string">prompt</span>=<span class="code-string">"sunset timelapse"</span>)</span>
+#             </div>
+#           </div>
+#         </div>
+#         <div class="card-orb creative-orb"></div>
+#       </div>
       
-      <div class="card-modern development">
-        <div class="card-content">
-          <div class="card-header">
-            <h2 class="card-title">Development</h2>
-            <p class="card-subtitle">開発ワークフロー自動化</p>
-          </div>
-          <span class="card-tag"> クリエイティブ</span>
-          <div class="card-code-section">
-            <div class="code-snippet">
-              <span class="code-comment"># Upload Assets</span>
-              <span class="code-line">upload_file(<span class="code-string">path</span>=<span class="code-string">"/assets/video.mp4"</span>)</span>
-              <span class="code-comment"># Process Media</span>
-              <span class="code-line">process_video(<span class="code-var">input_url</span>, <span class="code-var">options</span>)</span>
-            </div>
-          </div>
-        </div>
-        <div class="card-orb development-orb"></div>
-      </div>
+#       <div class="card-modern development">
+#         <div class="card-content">
+#           <div class="card-header">
+#             <h2 class="card-title">Development</h2>
+#             <p class="card-subtitle">開発ワークフロー自動化</p>
+#           </div>
+#           <span class="card-tag"> クリエイティブ</span>
+#           <div class="card-code-section">
+#             <div class="code-snippet">
+#               <span class="code-comment"># Upload Assets</span>
+#               <span class="code-line">upload_file(<span class="code-string">path</span>=<span class="code-string">"/assets/video.mp4"</span>)</span>
+#               <span class="code-comment"># Process Media</span>
+#               <span class="code-line">process_video(<span class="code-var">input_url</span>, <span class="code-var">options</span>)</span>
+#             </div>
+#           </div>
+#         </div>
+#         <div class="card-orb development-orb"></div>
+#       </div>
       
-      <div class="card-modern business">
-        <div class="card-content">
-          <div class="card-header">
-            <h2 class="card-title">Business</h2>
-            <p class="card-subtitle">ビジネス文書自動生成</p>
-          </div>
-          <span class="card-tag"> クリエイティブ</span>
-          <div class="card-code-section">
-            <div class="code-snippet">
-              <span class="code-comment"># Requirements Generation</span>
-              <span class="code-line">generate_requirements(<span class="code-var">project</span>)</span>
-              <span class="code-comment"># Storyboard Creation</span>
-              <span class="code-line">create_storyboard(<span class="code-var">script</span>)</span>
-            </div>
-          </div>
-        </div>
-        <div class="card-orb business-orb"></div>
-      </div>
-    </div>
+#       <div class="card-modern business">
+#         <div class="card-content">
+#           <div class="card-header">
+#             <h2 class="card-title">Business</h2>
+#             <p class="card-subtitle">ビジネス文書自動生成</p>
+#           </div>
+#           <span class="card-tag"> クリエイティブ</span>
+#           <div class="card-code-section">
+#             <div class="code-snippet">
+#               <span class="code-comment"># Requirements Generation</span>
+#               <span class="code-line">generate_requirements(<span class="code-var">project</span>)</span>
+#               <span class="code-comment"># Storyboard Creation</span>
+#               <span class="code-line">create_storyboard(<span class="code-var">script</span>)</span>
+#             </div>
+#           </div>
+#         </div>
+#         <div class="card-orb business-orb"></div>
+#       </div>
+#     </div>
     
 welcome:
   html: |
@@ -212,40 +212,61 @@ welcome:
         </p>
       </div>
       
-      <div style="display:flex; justify-content:center; margin: 16px auto 24px;">
-        <video src="/kamui-code-docs/videos/mymovie-101.mp4" controls autoplay muted playsinline loop style="width:100%; max-width:1040px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);"></video>
-      </div>
       
       <div style="display:flex; justify-content:center; margin: 0 auto 48px;">
         <img src="/kamui-code-docs/marketing-wheel_rev2@2x.png" alt="KAMUI CODE マップ" style="width:100%; max-width:1400px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
       </div>
       
+
+
       <h2 style="margin-bottom: 32px;">はじめ方</h2>
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 48px;">
-        <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: -12px; left: 20px; width: 28px; height: 28px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px;">1</div>
-          <h3 style="font-size: 16px; margin-top: 12px; margin-bottom: 8px;">プレイリストを選択</h3>
-          <p style="font-size: 13px; color: var(--text-weak); line-height: 1.5;">用途別に用意されたプレイリストから、必要なサービスセットを選びます</p>
-        </div>
-        
-        <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: -12px; left: 20px; width: 28px; height: 28px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px;">2</div>
-          <h3 style="font-size: 16px; margin-top: 12px; margin-bottom: 8px;">MCP設定をコピー</h3>
-          <p style="font-size: 13px; color: var(--text-weak); line-height: 1.5;">JSONまたはTOML形式の設定をコピーします</p>
-        </div>
-        
-        <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: -12px; left: 20px; width: 28px; height: 28px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px;">3</div>
-          <h3 style="font-size: 16px; margin-top: 12px; margin-bottom: 8px;">Claude Codeに追加</h3>
-          <p style="font-size: 13px; color: var(--text-weak); line-height: 1.5;">Claude Codeの設定ファイルにコピーした設定を貼り付けます</p>
-        </div>
-        
-        <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
-          <div style="position: absolute; top: -12px; left: 20px; width: 28px; height: 28px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px;">4</div>
-          <h3 style="font-size: 16px; margin-top: 12px; margin-bottom: 8px;">AIパワーで開発加速</h3>
-          <p style="font-size: 13px; color: var(--text-weak); line-height: 1.5;">すぐに各種MCPサーバーの機能が利用可能になります</p>
-        </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">1</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">プレイリストを選択</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          KAMUI CODEでは、開発用途に応じて最適化されたプレイリストを複数用意しています。Web開発、モバイルアプリ、データサイエンス、AI/ML開発など、あなたのプロジェクトに最適なサービスセットを選択してください。
+        </p>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          各プレイリストには、画像生成、動画生成、音声合成、データベース操作など、必要なMCPサーバーが事前に組み込まれています。カスタムプレイリストの作成も可能で、必要なサービスのみを選択して独自の開発環境を構築できます。
+        </p>
       </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">2</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCP設定をコピー</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          選択したプレイリストの設定コードが自動的に生成されます。JSON形式またはTOML形式から、Claude Codeの設定ファイル形式に合わせて選択できます。ワンクリックで全設定をクリップボードにコピーできます。
+        </p>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          各MCPサーバーの認証情報（APIキーなど）は環境変数として安全に管理されます。設定には必要最小限の情報のみが含まれ、セキュリティを保ちながら簡単にセットアップできるよう設計されています。
+        </p>
+      </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">3</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">Claude Codeに追加</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          Claude Codeの設定ファイル（claude_code_config.json または mcp_config.toml）を開き、コピーした設定を貼り付けます。macOSの場合は ~/Library/Application Support/Claude/、Windowsの場合は %APPDATA%\Claude\ にあります。
+        </p>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          既存の設定がある場合は、新しい設定が追加される形になります。設定ファイルのバックアップを取ることをお勧めします。設定の反映にはClaude Codeの再起動が必要な場合があります。
+        </p>
+      </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 48px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">4</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">AIパワーで開発加速</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          設定が完了すると、Claude Code内からすべてのMCPサーバー機能にアクセスできるようになります。自然言語でAIに指示を出すだけで、画像生成、動画作成、データベース操作などが実行されます。
+        </p>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          例えば「プロダクトのロゴを生成して」「デモ動画を作成」「データベースから売上データを取得」など、複雑なタスクも簡単な指示で実行できます。MCPサーバーはバックグラウンドで連携し、シームレスな開発体験を提供します。
+        </p>
+      </div>
+
+
+
       
       <h2 style="margin-bottom: 32px;">主要サービス</h2>
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
