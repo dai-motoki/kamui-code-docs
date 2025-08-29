@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAMUI CODE トップ円＋台形スタック</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @font-face { font-family: 'HuiFont'; src: url('fonts/hui/HuiFont.woff2') format('woff2'), url('fonts/hui/HuiFont.ttf') format('truetype'); font-display: swap; }
+    :root { --hand: 'HuiFont', 'Yuji Syuku', 'Hachi Maru Pop', 'Noto Sans JP', cursive, sans-serif; }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; background: linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 24px; }
+    .container { background: #fff; border-radius: 20px; padding: 28px 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); width: 100%; max-width: 1600px; }
+    h1 { text-align: center; font-size: 2.2em; margin-bottom: 8px; color: #2c3e50; font-weight: 800; font-family: var(--hand); }
+    .top-wheel { display: flex; justify-content: center; margin-top: 8px; }
+    .wheel { width: 1050px; height: 160px; position: relative; overflow: visible; }
+    .stack { display: flex; justify-content: center; margin-top: 2px; }
+    .stack-svg { width: 700px; height: 780px; display: block; }
+    /* wheel center */
+    .center-text { font-family: var(--hand); font-size: 1.6em; color: #2c3e50; font-weight: 900; letter-spacing: 0.6px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>KAMUI CODE</h1>
+
+    <div class="top-wheel">
+      <div class="wheel">
+        <svg viewBox="0 0 1050 160" class="wheel-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#f39c12" />
+              <stop offset="100%" style="stop-color:#e67e22" />
+            </linearGradient>
+            <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#7e3af2" />
+              <stop offset="100%" style="stop-color:#6d28d9" />
+            </linearGradient>
+            <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#16a085" />
+              <stop offset="100%" style="stop-color:#1abc9c" />
+            </linearGradient>
+            <!-- Ring/annulus mask: show area between outer and inner ellipses -->
+            <mask id="ringMask">
+              <rect x="0" y="0" width="1050" height="160" fill="black" />
+              <!-- Visible area (white) -->
+              <ellipse cx="525" cy="80" rx="510" ry="60" fill="white" />
+              <!-- Cut inner hole (black) -->
+              <ellipse cx="525" cy="80" rx="300" ry="36" fill="black" />
+            </mask>
+            <filter id="ringShadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.18"/>
+            </filter>
+          </defs>
+          <g id="ringSide"></g>
+        </svg>
+        <!-- side view has text labels inside each segment instead of center circle -->
+      </div>
+    </div>
+
+    <div class="stack">
+      <svg class="stack-svg" viewBox="0 0 1050 700" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+          </filter>
+        </defs>
+        <g id="traps" transform="translate(525,8)"></g>
+      </svg>
+    </div>
+  </div>
+
+  <script>
+    // Side-view capsule with 3 segments
+    // Side-view of a ring (annulus) with 3 colored segments clipped into the band
+    const ring = document.getElementById('ringSide');
+    const OUT_RX = 340, OUT_RY = 60, IN_RX = 200, IN_RY = 36; // width wider, height same (fits 1050 viewBox)
+    const CX = 525, CY = 80; // center of 1050-wide viewBox
+    const segDefs = [
+      { id:'biz', label:'ビジネス',     color:'url(#orangeGrad)', a0: -150, a1: -30 },   // 上
+      { id:'cre', label:'クリエイティブ', color:'url(#purpleGrad)', a0:  -30, a1:  90 },  // 右下
+      { id:'dev', label:'開発',         color:'url(#tealGrad)',   a0:   90, a1: 210 },  // 左下
+    ];
+    const toRad = d => d*Math.PI/180;
+    function ellipsePoint(rx,ry,ang){
+      return { x: CX + rx*Math.cos(toRad(ang)), y: CY + ry*Math.sin(toRad(ang)) };
+    }
+    function sectorPath(a0,a1){
+      const step = 6; // degrees
+      const ptsOuter = [];
+      for(let a=a0;a<=a1;a+=step){ ptsOuter.push(ellipsePoint(OUT_RX,OUT_RY,a)); }
+      ptsOuter.push(ellipsePoint(OUT_RX,OUT_RY,a1));
+      const ptsInner = [];
+      for(let a=a1;a>=a0;a-=step){ ptsInner.push(ellipsePoint(IN_RX,IN_RY,a)); }
+      ptsInner.push(ellipsePoint(IN_RX,IN_RY,a0));
+      const all = ptsOuter.concat(ptsInner);
+      return 'M '+all.map(p=>`${p.x},${p.y}`).join(' L ')+' Z';
+    }
+    // draw colored ring sectors
+    segDefs.forEach(s=>{
+      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d', sectorPath(s.a0, s.a1));
+      path.setAttribute('fill', s.color);
+      path.setAttribute('opacity','0.35');
+      path.setAttribute('stroke','white'); path.setAttribute('stroke-width','2');
+      ring.appendChild(path);
+    });
+    // edges for definition and shine
+    const outer = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+    outer.setAttribute('cx',CX); outer.setAttribute('cy',CY); outer.setAttribute('rx', OUT_RX); outer.setAttribute('ry', OUT_RY);
+    outer.setAttribute('fill','transparent'); outer.setAttribute('stroke','#dfe3ea'); outer.setAttribute('stroke-width','1.5'); outer.setAttribute('filter','url(#ringShadow)');
+    ring.appendChild(outer);
+    const inner = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+    inner.setAttribute('cx',CX); inner.setAttribute('cy',CY); inner.setAttribute('rx', IN_RX); inner.setAttribute('ry', IN_RY);
+    inner.setAttribute('fill','white'); inner.setAttribute('stroke','white'); inner.setAttribute('stroke-width','2');
+    ring.appendChild(inner);
+    // labels at sector mid-angles
+    segDefs.forEach(s=>{
+      const mid = (s.a0 + s.a1)/2;
+      const p = ellipsePoint( (IN_RX+OUT_RX)/2, (IN_RY+OUT_RY)/2, mid);
+      const t=document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', p.x);
+      t.setAttribute('y', p.y+4);
+      t.setAttribute('text-anchor','middle'); t.setAttribute('dominant-baseline','middle');
+      t.setAttribute('font-family','HuiFont, var(--hand)'); t.setAttribute('fill','#2c3e50');
+      t.setAttribute('font-weight', s.id==='cre' ? '900' : '800');
+      t.setAttribute('font-size', s.id==='cre' ? '28' : '22');
+      t.textContent = s.label; ring.appendChild(t);
+    });
+
+    // Frustum-like stack (台形の回転体: 立体的な短い円台を下方向に積層)
+    const traps = document.getElementById('traps');
+    function frustum(g, rxTop, rxBottom, h, fill){
+      const rz = Math.max(6, Math.min(rxTop, rxBottom) * 0.28); // 楕円の縦半径（遠近感）
+      const group = document.createElementNS('http://www.w3.org/2000/svg','g');
+      // 上面（ハイライト）
+      const top = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+      top.setAttribute('cx','0'); top.setAttribute('cy','0'); top.setAttribute('rx', rxTop); top.setAttribute('ry', rz);
+      top.setAttribute('fill','white'); top.setAttribute('fill-opacity','0.85'); top.setAttribute('stroke','#e8e8e8'); top.setAttribute('stroke-width','1');
+      // 側面（グラデーション）
+      const side = document.createElementNS('http://www.w3.org/2000/svg','path');
+      const t = rxTop, b = rxBottom; const y0 = 0, y1 = h;
+      const d = `M ${-t},${y0} L ${t},${y0} C ${t*0.85},${y0+h*0.15} ${b*0.85},${y1-h*0.15} ${b},${y1} L ${-b},${y1} C ${-b*0.85},${y1-h*0.15} ${-t*0.85},${y0+h*0.15} ${-t},${y0} Z`;
+      side.setAttribute('d', d);
+      side.setAttribute('fill', fill);
+      side.setAttribute('opacity','0.22');
+      side.setAttribute('filter','url(#softShadow)');
+      // 下面（影）
+      const bot = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+      bot.setAttribute('cx','0'); bot.setAttribute('cy', h);
+      bot.setAttribute('rx', rxBottom); bot.setAttribute('ry', rz*1.05);
+      bot.setAttribute('fill','#000'); bot.setAttribute('fill-opacity','0.06');
+      // 組み立て
+      group.appendChild(bot); // 影を奥に
+      group.appendChild(side);
+      group.appendChild(top);
+      g.appendChild(group);
+      return group;
+    }
+    const N=10, startRxTop=240, startRxBot=315, step=8, FR_H=28, GAP=12; // restore larger width (x1.5 of 160/210)
+    const cols=['url(#purpleGrad)','url(#tealGrad)','url(#orangeGrad)'];
+    for(let i=0;i<N;i++){
+      const rxT = Math.max(80, startRxTop - i*step);
+      const rxB = Math.max(110, startRxBot - i*step);
+      const y = i*(FR_H+GAP) + 10;
+      const g = frustum(traps, rxT, rxB, FR_H, cols[i%cols.length]);
+      g.setAttribute('transform', `translate(0,${y})`);
+    }
+  </script>
+</body>
+</html>

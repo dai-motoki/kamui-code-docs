@@ -28,31 +28,32 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px;
         }
-        .container { background: #fff; border-radius: 20px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); max-width: 1440px; width: 100%; }
+        .container { background: #fff; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); max-width: 1280px; width: 100%; }
         .header { text-align: center; margin-bottom: 50px; }
-        h1 { font-size: 3.4em; color: #2c3e50; margin-bottom: 10px; font-weight: 800; }
+        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; font-weight: 700; }
         .subtitle { color: #7f8c8d; font-size: 1.1em; }
 
-        .wheel-container { position: relative; width: 1000px; height: 1000px; margin: 0 auto; }
+        .wheel-container { position: relative; width: 700px; height: 700px; margin: 0 auto; }
         .wheel-svg { width: 100%; height: 100%; display: block; }
 
         .center-circle {
             position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            width: 280px; height: 280px; background: #fff; border-radius: 50%; z-index: 10; display: flex; align-items: center; justify-content: center;
+            width: 180px; height: 180px; background: #fff; border-radius: 50%; z-index: 10; display: flex; align-items: center; justify-content: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        .center-text { text-align: center; color: #2c3e50; font-size: 2.6em; font-weight: 900; line-height: 1.2; letter-spacing: 0.8px; font-family: var(--handwriting-font); }
+        .center-text { text-align: center; color: #2c3e50; font-size: 2.2em; font-weight: 900; line-height: 1.2; letter-spacing: 0.8px; font-family: var(--handwriting-font); }
 
         /* Anchor at the exact polar point so the icon center sits on the circle */
         .strategy-anchor { position: absolute; width: 0; height: 0; }
         .strategy-icon { position: absolute; left: 0; top: 50%; transform: translate(-50%, -50%); }
         .strategy-label { position: absolute; top: 50%; color: #2c3e50; white-space: nowrap; writing-mode: horizontal-tb; display: inline-block; line-height: 1; }
-        .strategy-label.right { left: 0; transform: translate(calc(28px + 22px), -50%); text-align: left; }
-        /* place the label so its RIGHT edge clears the icon by 22px */
-        .strategy-label.left  { left: 0; transform: translate(calc(-28px - 22px), -50%) translateX(-100%); text-align: right; }
+        .strategy-label.right { left: 0; transform: translate(calc(28px + 12px), -50%); text-align: left; }
+        /* place the label so its RIGHT edge clears the icon by 12px */
+        .strategy-label.left  { left: 0; transform: translate(calc(-28px - 12px), -50%) translateX(-100%); text-align: right; }
 
-        .icon-circle { width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.9em; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .strategy-text { font-size: 1.6em; color: #2c3e50; font-weight: 900; line-height: 1.15; max-width: 320px; font-family: var(--handwriting-font); }
+        .icon-circle { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.6em; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        /* 2倍へ（元0.9em→1.8em） */
+        .strategy-text { font-size: 1.8em; color: #2c3e50; font-weight: 500; line-height: 1.25; max-width: 160px; font-family: var(--handwriting-font); }
 
         /* SVG category label style */
         .cat-label { font-family: var(--handwriting-font); }
@@ -76,7 +77,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>KAMUI CODEの全体像</h1>
+            <h1>KAMUI CODE</h1>
         </div>
 
         <div class="wheel-container">
@@ -111,8 +112,8 @@
     </div>
 
     <script>
-        const OUTER_R = 290;
-        const INNER_R = 205;
+        const OUTER_R = 240;
+        const INNER_R = 170;
         const CAT_SPAN = 120; // degrees per category
 
         function deg2rad(d){ return (d * Math.PI) / 180; }
@@ -150,8 +151,8 @@
         });
 
         // Inner category ring labels
-        const CAT_INNER = 165; // larger center
-        const CAT_OUTER = 200;
+        const CAT_INNER = 110;
+        const CAT_OUTER = 165;
         categories.forEach((c) => {
             const a0 = c.center - CAT_SPAN/2;
             const a1 = c.center + CAT_SPAN/2;
@@ -164,21 +165,26 @@
             p.setAttribute('opacity', '0.10');
             gCat.appendChild(p);
 
-            const labelPos = polar(CAT_OUTER - 4, mid);
+            const labelPos = polar((c.key === 'cre') ? (CAT_OUTER + 18) : (CAT_OUTER + 10), mid);
             const t1 = document.createElementNS('http://www.w3.org/2000/svg','text');
             t1.setAttribute('class','cat-label');
+            t1.setAttribute('data-cat', c.key);
             t1.setAttribute('x', labelPos.x);
             t1.setAttribute('y', labelPos.y - 12);
             t1.setAttribute('text-anchor', 'middle');
             t1.setAttribute('dominant-baseline', 'middle');
             t1.setAttribute('fill', '#2c3e50');
-            t1.setAttribute('font-weight', '900');
-            t1.setAttribute('font-size', '26');
+            t1.setAttribute('font-weight', '700');
+            t1.setAttribute('font-size', '32');
             t1.textContent = c.name;
             gCat.appendChild(t1);
 
             // sub label removed by request (no secondary text)
         });
+
+        // Bring クリエイティブ label to the very front
+        const creative = gCat.querySelector('text.cat-label[data-cat="cre"]');
+        if (creative) gCat.appendChild(creative);
 
         // Examples: 4 per category (total 12), globally equal angles
         const examples = [
@@ -189,20 +195,19 @@
             { cat:'biz', icon:'📄', color:'orange', label:'営業資料' },
             // クリエイティブ（紫）
             { cat:'cre', icon:'🎬', color:'purple',   label:'Remotion動画' },
-            { cat:'cre', icon:'🖼️', color:'purple',   label:'サムネイル' },
-            { cat:'cre', icon:'🎨', color:'purple',   label:'ロゴ / VI' },
+            { cat:'cre', icon:'🖼️', color:'purple',   label:'研修用動画' },
+            { cat:'cre', icon:'🎨', color:'purple',   label:'絵コンテ' },
             { cat:'cre', icon:'🧭', color:'purple',   label:'図解 / ビジュアル' },
             // 開発
             { cat:'dev', icon:'📝', color:'teal',   label:'要件定義' },
-            { cat:'dev', icon:'📐', color:'teal',   label:'設計' },
-            { cat:'dev', icon:'🔌', color:'teal',   label:'API仕様' },
-            { cat:'dev', icon:'🧪', color:'teal',   label:'テスト計画' },
+            { cat:'dev', icon:'📐', color:'teal',   label:'アプリ画面' },
+            { cat:'dev', icon:'🔌', color:'teal',   label:'クラウド設計' },
+            { cat:'dev', icon:'🧪', color:'teal',   label:'UI・UX設計' },
         ];
 
         const wheel = document.querySelector('.wheel-container');
-        let baseRadius = OUTER_R + 150; // more room for much larger labels
+        let baseRadius = OUTER_R + 80; // original geometry
         const wheelCenter = { x: wheel.clientWidth/2, y: wheel.clientHeight/2 };
-        const scale = wheel.clientWidth / 700; // SVG viewBox scaling factor
 
         // cleanup anchors
         document.querySelectorAll('.strategy-anchor').forEach(n=>n.remove());
@@ -215,7 +220,7 @@
 
         examples.forEach((s, i) => {
             let angle = baseAngle + i * STEP_ALL;
-            const r = baseRadius * scale;
+            const r = baseRadius;
             const p = polar(r, angle);
             const left = wheelCenter.x + p.x;
             const top = wheelCenter.y + p.y;
