@@ -675,6 +675,18 @@ playlist-creative:
     </div>
     
     <div class="playlist-category-grid">
+        <div class="playlist-card" onclick="navigateTo('playlist-image-ai')">
+            <div class="playlist-card-header">
+                <h3 class="playlist-card-title">画像生成AI特化プレイリスト</h3>
+                <div class="playlist-card-badge">画像生成特化</div>
+            </div>
+            <p class="playlist-card-description">最新の画像生成AI（Imagen4、Flux、Qwen）と画像編集AI（Kontext、Krea LoRA）を集約。プロ向け画像制作環境</p>
+            <div class="playlist-card-stats">
+                <span class="stat">🎨 10サーバー</span>
+                <span class="stat">🖼️ 画像特化</span>
+            </div>
+        </div>
+        
         <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
             <div class="playlist-card-header">
                 <h3 class="playlist-card-title">Storyboard プレイリスト</h3>
@@ -789,6 +801,24 @@ playlist-all:
     </div>
     
     <div class="playlist-packages-grid">
+        <!-- Image AI Playlist -->
+        <div class="package-card image-ai-package" onclick="navigateTo('playlist-image-ai')">
+            <div class="package-header">
+                <h3 class="package-title">画像生成AI特化プレイリスト</h3>
+                <div class="package-path">/mcp/mcp-image-ai.json</div>
+            </div>
+            <div class="package-stats">
+                <div class="stat-item">
+                    <span class="stat-label">サーバー数:</span>
+                    <span class="stat-value">10</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">サイズ:</span>
+                    <span class="stat-value">2.1 KB</span>
+                </div>
+            </div>
+        </div>
+        
         <!-- Storyboard Playlist -->
         <div class="package-card storyboard-package" onclick="navigateTo('playlist-storyboard')">
             <div class="package-header">
@@ -1407,6 +1437,177 @@ playlist-kamui-code:
             <h2 class="section-title">GitHub</h2>
             <div class="github-link">
                 <a href="https://github.com/kamuicode/mcp-kamui-code" target="_blank" class="github-button">
+                    <span>💙 GitHubリポジトリを見る</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+playlist-image-ai:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">画像生成AI特化プレイリスト</h1>
+        <p class="page-subtitle">最新の画像生成・編集AIを集約したプロフェッショナル向けMCPサーバー</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="playlist-detail-container">
+        <div class="detail-section">
+            <h2 class="section-title">JSON設定</h2>
+            <pre class="code"><code>{
+            "mcpServers": {
+            "file-upload-kamui-fal": {
+            "type": "http",
+            "url": "https://{baseurl}/uploader/fal"
+            },
+            "t2i-kamui-imagen4-ultra": {
+            "type": "http",
+            "url": "https://{baseurl}/t2i/fal/imagen4/ultra"
+            },
+            "t2i-kamui-flux-lora": {
+            "type": "http",
+            "url": "https://{baseurl}/t2i/fal/flux-lora"
+            },
+            "t2i-kamui-qwen-vl-plus": {
+            "type": "http",  
+            "url": "https://{baseurl}/t2i/fal/qwen/vl-plus"
+            },
+            "i2i-kamui-flux-kontext-max": {
+            "type": "http",
+            "url": "https://{baseurl}/i2i/fal/flux/kontext/max"
+            },
+            "i2i-kamui-flux-krea-lora": {
+            "type": "http",
+            "url": "https://{baseurl}/i2i/fal/flux-krea-lora/image-to-image"
+            },
+            "i2i-kamui-aurafsr": {
+            "type": "http",
+            "url": "https://{baseurl}/i2i/fal/AuraSR"
+            },
+            "i2i-kamui-clarity-upscaler": {
+            "type": "http",
+            "url": "https://{baseurl}/i2i/fal/clarity-upscaler"
+            },
+            "utility-image-caption": {
+            "type": "http",
+            "url": "https://{baseurl}/util/fal/blip-image-captioning"
+            },
+            "utility-background-removal": {
+            "type": "http",
+            "url": "https://{baseurl}/util/fal/rembg-background-removal"
+            }
+            }
+            }</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">TOML設定</h2>
+            <pre class="code"><code>[mcpServers.file-upload-kamui-fal]
+            type = "http"
+            url = "https://{baseurl}/uploader/fal"
+
+            [mcpServers.t2i-kamui-imagen4-ultra]
+            type = "http"
+            url = "https://{baseurl}/t2i/fal/imagen4/ultra"
+
+            [mcpServers.t2i-kamui-flux-lora]
+            type = "http"
+            url = "https://{baseurl}/t2i/fal/flux-lora"
+
+            [mcpServers.t2i-kamui-qwen-vl-plus]
+            type = "http"
+            url = "https://{baseurl}/t2i/fal/qwen/vl-plus"
+
+            [mcpServers.i2i-kamui-flux-kontext-max]
+            type = "http"
+            url = "https://{baseurl}/i2i/fal/flux/kontext/max"
+
+            [mcpServers.i2i-kamui-flux-krea-lora]
+            type = "http"
+            url = "https://{baseurl}/i2i/fal/flux-krea-lora/image-to-image"
+
+            [mcpServers.i2i-kamui-aurafsr]
+            type = "http"
+            url = "https://{baseurl}/i2i/fal/AuraSR"
+
+            [mcpServers.i2i-kamui-clarity-upscaler]
+            type = "http"
+            url = "https://{baseurl}/i2i/fal/clarity-upscaler"
+
+            [mcpServers.utility-image-caption]
+            type = "http"
+            url = "https://{baseurl}/util/fal/blip-image-captioning"
+
+            [mcpServers.utility-background-removal]
+            type = "http"
+            url = "https://{baseurl}/util/fal/rembg-background-removal"</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">利用方法</h2>
+            <div class="usage-content">
+                <h3>1. Claude Codeへの設定</h3>
+                <p>Claude Codeの設定ファイルに上記のJSONまたはTOMLを追加</p>
+                
+                <h3>2. 画像生成AI特化の機能</h3>
+                <p>最新の画像生成・編集AIを統合し、プロフェッショナルな画像制作環境を提供</p>
+                
+                <h3>3. サーバー一覧</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+                    <div>
+                        <h4 style="color: #6366f1; margin-bottom: 12px;">🎨 画像生成 (T2I)</h4>
+                        <ul>
+                            <li><strong>t2i-kamui-imagen4-ultra</strong> - Google DeepMindの最新モデル</li>
+                            <li><strong>t2i-kamui-flux-lora</strong> - LoRA対応の高品質生成</li>
+                            <li><strong>t2i-kamui-qwen-vl-plus</strong> - Qwen VLの高性能モデル</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #8b5cf6; margin-bottom: 12px;">✏️ 画像編集 (I2I)</h4>
+                        <ul>
+                            <li><strong>i2i-kamui-flux-kontext-max</strong> - 高精度な画像編集</li>
+                            <li><strong>i2i-kamui-flux-krea-lora</strong> - LoRAスタイル編集</li>
+                            <li><strong>i2i-kamui-aurafsr</strong> - 超解像度化</li>
+                            <li><strong>i2i-kamui-clarity-upscaler</strong> - 高品質アップスケール</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 24px;">
+                    <h4 style="color: #10b981; margin-bottom: 12px;">🛠️ ユーティリティ</h4>
+                    <ul>
+                        <li><strong>file-upload-kamui-fal</strong> - 画像ファイルアップロード</li>
+                        <li><strong>utility-image-caption</strong> - 画像の自動キャプション生成</li>
+                        <li><strong>utility-background-removal</strong> - 背景除去ツール</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">特徴</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">🎨</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">最新モデル搭載</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">Imagen4、Flux、Qwenなど最先端AI</p>
+                </div>
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">🖼️</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">完全な画像ワークフロー</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">生成から編集、後処理まで一貫対応</p>
+                </div>
+                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 12px;">⚡</div>
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">プロ仕様の性能</h4>
+                    <p style="font-size: 14px; color: var(--text-weak);">高解像度・高品質な出力に対応</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">GitHub</h2>
+            <div class="github-link">
+                <a href="https://github.com/kamuicode/mcp-image-ai" target="_blank" class="github-button">
                     <span>💙 GitHubリポジトリを見る</span>
                 </a>
             </div>
