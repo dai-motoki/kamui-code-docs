@@ -161,7 +161,10 @@
     }
     const N=10, edgeMax=315, centerMin=220, step=8, FR_H=28, GAP=12; // 側面プロファイルを ")(" に
     const cols=['url(#purpleGrad)','url(#tealGrad)','url(#orangeGrad)'];
-    const labelsBottomUp = ['LLM','音声生成AI','画像生成AI','動画生成AI','ワールド生成AI'];
+    // 上半分（上→下）: ワールド生成AI → LLM
+    const labelsTopDown = ['ワールド生成AI','動画生成AI','画像生成AI','音声生成AI','LLM'];
+    // 下半分（下→上）: 認識系AI（情報量が少ない順に主要3種のみ）
+    const labelsBottomUpRecog = ['動画認識AI','画像認識AI','音声認識AI'];
     for(let i=0;i<N;i++){
       // 幅を上下で広く、中央で狭く（" )(" プロファイル）
       const s = (i/(N-1) - 0.5);
@@ -172,8 +175,8 @@
       const g = frustum(traps, rxT, rxB, FR_H, cols[i%cols.length]);
       g.setAttribute('transform', `translate(0,${y})`);
       // Label the bottom 4 layers from bottom → top as requested
-      if(i >= N-5){
-        const idx = (N-1) - i; // 0..4 from bottom
+      // 上半分（i: 0..4）
+      if(i < 5){
         const text = document.createElementNS('http://www.w3.org/2000/svg','text');
         text.setAttribute('x','0');
         text.setAttribute('y', String(y + FR_H/2 + 2));
@@ -183,8 +186,22 @@
         text.setAttribute('font-size','28');
         text.setAttribute('font-weight','900');
         text.setAttribute('fill','#2c3e50');
-        text.setAttribute('opacity','1');
-        text.textContent = labelsBottomUp[idx] || '';
+        text.textContent = labelsTopDown[i] || '';
+        trapLabels.appendChild(text);
+      }
+      // 下半分（i: 7..9） — 3段のみ表示
+      if(i >= N-3){
+        const idx = (N-1) - i; // 0..2 bottom→上
+        const text = document.createElementNS('http://www.w3.org/2000/svg','text');
+        text.setAttribute('x','0');
+        text.setAttribute('y', String(y + FR_H/2 + 2));
+        text.setAttribute('text-anchor','middle');
+        text.setAttribute('dominant-baseline','middle');
+        text.setAttribute('font-family','HuiFont, var(--hand)');
+        text.setAttribute('font-size','28');
+        text.setAttribute('font-weight','900');
+        text.setAttribute('fill','#2c3e50');
+        text.textContent = labelsBottomUpRecog[idx] || '';
         trapLabels.appendChild(text);
       }
     }
