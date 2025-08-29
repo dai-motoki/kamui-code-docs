@@ -188,7 +188,7 @@ const pageContents = (function() {
                             <div class="code-snippet">
                                 <span class="code-comment"># Requirements Generation</span>
                                 <span class="code-line">generate_requirements(<span class="code-var">project</span>)</span>
-                                <span class="code-comment"># Storyboard Creation</span>
+                                <span class="code-comment"># 絵コンテ・ビデオコンテ Creation</span>
                                 <span class="code-line">create_storyboard(<span class="code-var">script</span>)</span>
                                 <span class="code-comment"># Voice Over</span>
                                 <span class="code-line">narrate_content(<span class="code-var">text</span>, <span class="code-string">lang</span>=<span class="code-string">"ja"</span>)</span>
@@ -256,7 +256,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">Storyboard プレイリスト</h3>
+                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
                     <div class="playlist-card-badge">ストーリーボード</div>
                 </div>
                 <p class="playlist-card-description">ストーリーボード作成用。画像生成（Imagen4）、画像編集（Flux Kontext）、動画生成（Seedance）を統合</p>
@@ -336,7 +336,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">Storyboard プレイリスト</h3>
+                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
                     <div class="playlist-card-badge">企画制作</div>
                 </div>
                 <p class="playlist-card-description">ストーリーボード作成支援。画像生成、動画作成、ナレーション追加まで完全サポート</p>
@@ -360,69 +360,11 @@ const pageContents = (function() {
         </div>
     `,
 
-    'playlist-all': `
-        <div class="page-header">
-            <h1 class="page-title">プレイリスト一覧</h1>
-            <p class="page-subtitle">用途別に選べるMCP プレイリスト</p>
-            <div class="page-divider"></div>
-        </div>
-        
-        <div class="playlist-packages-grid">
-            <!-- Storyboard Playlist -->
-            <div class="package-card storyboard-package" onclick="navigateTo('playlist-storyboard')">
-                <div class="package-header">
-                    <h3 class="package-title">Storyboard プレイリスト</h3>
-                    <div class="package-path">/mcp/mcp-storyboard.json</div>
-                </div>
-                <div class="package-stats">
-                    <div class="stat-item">
-                        <span class="stat-label">サーバー数:</span>
-                        <span class="stat-value">5</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">サイズ:</span>
-                        <span class="stat-value">1.2 KB</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Requirement Playlist -->
-            <div class="package-card requirement-package" onclick="navigateTo('playlist-requirement')">
-                <div class="package-header">
-                    <h3 class="package-title">Requirement プレイリスト</h3>
-                    <div class="package-path">/mcp/mcp-requirement.json</div>
-                </div>
-                <div class="package-stats">
-                    <div class="stat-item">
-                        <span class="stat-label">サーバー数:</span>
-                        <span class="stat-value">5</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">サイズ:</span>
-                        <span class="stat-value">1028 bytes</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- KAMUI CODE Playlist -->
-            <div class="package-card kamui-code-package" onclick="navigateTo('playlist-kamui-code')">
-                <div class="package-header">
-                    <h3 class="package-title">KAMUI CODE プレイリスト</h3>
-                    <div class="package-path">/mcp/mcp-kamui-code.json</div>
-                </div>
-                <div class="package-stats">
-                    <div class="stat-item">
-                        <span class="stat-label">サーバー数:</span>
-                        <span class="stat-value">55</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">サイズ:</span>
-                        <span class="stat-value">8.2 KB</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
+
+
+
+
+
     
     'catalog-all': `
         <h1 class="page-title">MCPカタログ一覧</h1>
@@ -516,7 +458,7 @@ const pageContents = (function() {
                             <div class="code-snippet">
                                 <span class="code-comment"># Requirements Generation</span>
                                 <span class="code-line">generate_requirements(<span class="code-var">project</span>)</span>
-                                <span class="code-comment"># Storyboard Creation</span>
+                                <span class="code-comment"># 絵コンテ・ビデオコンテ Creation</span>
                                 <span class="code-line">create_storyboard(<span class="code-var">script</span>)</span>
                                 <span class="code-comment"># Voice Over</span>
                                 <span class="code-line">narrate_content(<span class="code-var">text</span>, <span class="code-string">lang</span>=<span class="code-string">"ja"</span>)</span>
@@ -692,7 +634,7 @@ const pageContents = (function() {
     // プレイリスト詳細ページ
     'playlist-storyboard': `
         <div class="page-header">
-            <h1 class="page-title">Storyboard プレイリスト</h1>
+            <h1 class="page-title">絵コンテ・ビデオコンテ プレイリスト</h1>
             <p class="page-subtitle">ストーリーボード作成用MCPサーバー</p>
             <div class="page-divider"></div>
         </div>
