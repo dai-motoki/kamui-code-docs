@@ -325,7 +325,11 @@ mcp-diff:
     
     <div class="content mcp-diff mcp-diff-page">
       <div class="diff-hero-grid">
-        <div class="diff-hero-media" style="background: url('/kamui-code-docs/images/llm_mystical_coal.png') center/cover no-repeat;"></div>
+        <div class="diff-hero-media">
+          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="/kamui-code-docs/images/llm_mystical_coal_video.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="diff-hero-body">
           <h2>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -361,6 +365,12 @@ mcp-diff:
               <p style="margin: 10px 0;">• 自然言語の理解と生成</p>
               <p style="margin: 10px 0;">• 推論と問題解決能力</p>
               <p style="margin: 10px 0;">• 創造性と柔軟性</p>
+              <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(251, 191, 36, 0.3);">
+                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;"><strong>代表的なLLM：</strong></p>
+                <p style="font-size: 13px; margin: 4px 0;">• GPT (OpenAI)</p>
+                <p style="font-size: 13px; margin: 4px 0;">• Gemini (Google)</p>
+                <p style="font-size: 13px; margin: 4px 0;">• Claude (Anthropic)</p>
+              </div>
             </div>
           </div>
           <div class="diff-tip" style="margin-top: 24px;">💡 LLMは現代のAIシステムにおける「石炭」として、あらゆる知的作業に必要なエネルギーを供給します</div>
@@ -406,11 +416,21 @@ mcp-diff:
               <p style="margin: 10px 0;">• 複雑なタスクの簡略化</p>
               <p style="margin: 10px 0;">• 高速な実行と自動化</p>
               <p style="margin: 10px 0;">• 開発効率の大幅向上</p>
+              <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(236, 72, 153, 0.3);">
+                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;"><strong>代表的なAI-CLI：</strong></p>
+                <p style="font-size: 13px; margin: 4px 0;">• Claude Code (Anthropic)</p>
+                <p style="font-size: 13px; margin: 4px 0;">• Gemini CLI (Google)</p>
+                <p style="font-size: 13px; margin: 4px 0;">• Codex CLI (OpenAI)</p>
+              </div>
             </div>
           </div>
           <div class="diff-tip" style="margin-top: 24px;">💡 AI-CLIは、LLMという「石炭」を実際の作業に活用するための「エンジン」として機能します</div>
         </div>
-        <div class="diff-hero-media" style="background: url('/kamui-code-docs/images/ai_cli_car_engine.png') center/cover no-repeat; min-height: 400px;"></div>
+        <div class="diff-hero-media" style="min-height: 400px;">
+          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="/kamui-code-docs/images/ai_cli_car_engine_video.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
 
       <div class="diff-hero-grid" style="margin-top: 32px;">
@@ -1093,45 +1113,61 @@ mcp-diff:
         </div>
       </div>
       
-      <h2 style="margin-bottom: 24px;">3つの仕組みの違い</h2>
+      <h2 style="margin-bottom: 24px;">5つの要素の違い</h2>
       <table style="width: 100%; border-collapse: collapse; margin-bottom: 48px;">
         <thead>
           <tr style="background: var(--hover);">
-            <th style="padding: 16px; text-align: left; border: 1px solid var(--border); font-weight: 600;">項目</th>
-            <th style="padding: 16px; text-align: left; border: 1px solid var(--border); color: #6366f1;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
-                <rect x="2" y="3" width="16" height="12" rx="1" stroke="#6366f1" stroke-width="1.5" fill="rgba(99, 102, 241, 0.1)"/>
-                <path d="M5 7H15M5 9H15M5 11H12" stroke="#6366f1" stroke-width="1" stroke-linecap="round"/>
-                <circle cx="14" cy="11" r="2" fill="#6366f1"/>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); font-weight: 600;">項目</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #fbbf24;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <path d="M8 1L6 3H3C2.4 3 2 3.4 2 4V12C2 12.6 2.4 13 3 13H13C13.6 13 14 12.6 14 12V4C14 3.4 13.6 3 13 3H10L8 1Z" fill="rgba(251,191,36,0.2)" stroke="#fbbf24" stroke-width="1"/>
+                <circle cx="8" cy="8" r="2" fill="#fbbf24"/>
               </svg>
-              プレイリスト
+              LLM
             </th>
-            <th style="padding: 16px; text-align: left; border: 1px solid var(--border); color: #8b5cf6;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
-                <rect x="2" y="2" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="12" y="2" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="2" y="12" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="12" y="12" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #ef4444;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <circle cx="8" cy="8" r="2" stroke="#ef4444" stroke-width="1.5"/>
+                <path d="M8 2V6M8 10V14" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M2 8H6M10 8H14" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
-              カタログ
+              AI-CLI
             </th>
-            <th style="padding: 16px; text-align: left; border: 1px solid var(--border); color: #10b981;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
-                <path d="M4 6L8 10L12 6" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 10V14" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M12 10L16 6" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 6V10" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #6366f1;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <rect x="2" y="3" width="12" height="9" rx="1" stroke="#6366f1" stroke-width="1" fill="rgba(99, 102, 241, 0.1)"/>
+                <path d="M4 5H12M4 7H12M4 9H10" stroke="#6366f1" stroke-width="0.8" stroke-linecap="round"/>
               </svg>
-              ワークフロー
+              MCP SaaS
+            </th>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #8b5cf6;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <rect x="2" y="2" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
+                <rect x="9" y="2" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
+                <rect x="2" y="9" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
+                <rect x="9" y="9" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
+              </svg>
+              MCP リスト
+            </th>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #10b981;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <path d="M3 5L6 8L9 5" stroke="#10b981" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 8V11" stroke="#10b981" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M9 8L13 5" stroke="#10b981" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 5V8" stroke="#10b981" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              MCP ワークフロー
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="padding: 16px; border: 1px solid var(--border); font-weight: 600;">何？</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">MCPサーバーのセット</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">個別MCPサーバーのリスト</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">連携処理の自動化フロー</td>
+            <td style="padding: 12px; border: 1px solid var(--border); font-weight: 600;">何？</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">大規模言語モデル</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">コマンドライン統合ツール</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">MCPサーバーのセット</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">個別MCPサーバーのリスト</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">連携処理の自動化フロー</td>
           </tr>
           <tr style="background: var(--hover);">
             <td style="padding: 16px; border: 1px solid var(--border); font-weight: 600;">目的</td>
