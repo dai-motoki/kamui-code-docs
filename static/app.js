@@ -595,7 +595,7 @@ url = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"</code></pre>
     
     'playlist-requirement': `
         <div class="page-header">
-            <h1 class="page-title">Requirement MCP SaaS</h1>
+            <h1 class="page-title">要件定義 MCP SaaS</h1>
             <p class="page-subtitle">要件定義ドキュメント作成用MCPサーバー</p>
             <div class="page-divider"></div>
         </div>
