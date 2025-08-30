@@ -325,11 +325,7 @@ mcp-diff:
     
     <div class="content mcp-diff mcp-diff-page">
       <div class="diff-hero-grid">
-        <div class="diff-hero-media">
-          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/industrial_blacksmith_forge_video.mp4" type="video/mp4">
-          </video>
-        </div>
+        <div class="diff-hero-media" style="background: url('/kamui-code-docs/images/llm_mystical_coal.png') center/cover no-repeat;"></div>
         <div class="diff-hero-body">
           <h2>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -371,7 +367,7 @@ mcp-diff:
         </div>
       </div>
 
-      <div class="diff-hero-grid" style="margin-top: 32px; display: flex;">
+      <div class="diff-hero-grid" style="margin-top: 32px; display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
         <div class="diff-hero-body">
           <h2>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -414,11 +410,7 @@ mcp-diff:
           </div>
           <div class="diff-tip" style="margin-top: 24px;">💡 AI-CLIは、LLMという「石炭」を実際の作業に活用するための「エンジン」として機能します</div>
         </div>
-        <div class="diff-hero-media">
-          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/industrial_engine_video.mp4" type="video/mp4">
-          </video>
-        </div>
+        <div class="diff-hero-media" style="background: url('/kamui-code-docs/images/ai_cli_car_engine.png') center/cover no-repeat; min-height: 400px;"></div>
       </div>
 
       <div class="diff-hero-grid" style="margin-top: 32px;">
