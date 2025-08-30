@@ -3165,7 +3165,7 @@ workflow-all:
         
         <div class="workflow-packages-grid">
             <!-- 0. AIニュース記事生成 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-ai-news-article')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">AIニュース記事生成</h3>
                     <div class="package-path">ウェブ検索から記事・音声まで完全自動化</div>
@@ -3176,14 +3176,15 @@ workflow-all:
                         <span class="stat-value">v0.4.0</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">処理時間:</span>
-                        <span class="stat-value">15-20分</span>
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-ai-news-article-generation" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
                     </div>
                 </div>
             </div>
             
             <!-- 1. プロフェッショナルニュース番組生成 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-news-video')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">プロフェッショナルニュース番組生成</h3>
                     <div class="package-path">完全統合ワークフロー</div>
@@ -3194,14 +3195,15 @@ workflow-all:
                         <span class="stat-value">v0.3.0</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">処理時間:</span>
-                        <span class="stat-value">20-30分</span>
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-news-video-generation" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
                     </div>
                 </div>
             </div>
             
             <!-- 2. 基本1動画版 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-single')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">基本1動画版</h3>
                     <div class="package-path">線形ワークフロー</div>
@@ -3211,11 +3213,16 @@ workflow-all:
                         <span class="stat-label">特徴:</span>
                         <span class="stat-value">シンプル構成</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-video-generation" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <!-- 3. 2動画版 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-dual')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">2動画版</h3>
                     <div class="package-path">並列処理ワークフロー</div>
@@ -3225,11 +3232,16 @@ workflow-all:
                         <span class="stat-label">特徴:</span>
                         <span class="stat-value">効率化</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-video-generation-dual" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <!-- 4. 2動画＋分析版 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-dual-analysis')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">2動画＋分析版</h3>
                     <div class="package-path">品質評価付きワークフロー</div>
@@ -3239,11 +3251,16 @@ workflow-all:
                         <span class="stat-label">特徴:</span>
                         <span class="stat-value">Gemini Vision API</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-video-generation-dual-with-analysis" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <!-- 5. 4動画版 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-quad')">
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">4動画版</h3>
                     <div class="package-path">大規模並列ワークフロー</div>
@@ -3253,11 +3270,16 @@ workflow-all:
                         <span class="stat-label">特徴:</span>
                         <span class="stat-value">最大4動画</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-video-generation-quad" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 6. バナー広告作成版 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-banner-advertisement')">
+            <!-- 7. バナー広告作成版 -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">バナー広告作成版</h3>
                     <div class="package-path">AI自動バナー生成ワークフロー</div>
@@ -3267,11 +3289,16 @@ workflow-all:
                         <span class="stat-label">特徴:</span>
                         <span class="stat-value">最大4バナー</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-banner-advertisement-creation" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 7. マルチモデル動画テスト -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-multi-model-video')">
+            <!-- 8. マルチモデル動画テスト -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">マルチモデル動画テスト</h3>
                     <div class="package-path">任意のAIモデル選択動画ワークフロー</div>
@@ -3281,11 +3308,16 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">t2v/i2v/r2v対応</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-multi-model-video-test" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 8. マルチモデル画像テスト -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-multi-model-image')">
+            <!-- 9. マルチモデル画像テスト -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">マルチモデル画像テスト</h3>
                     <div class="package-path">任意のAIモデル選択画像ワークフロー</div>
@@ -3295,11 +3327,16 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">5モデル対応</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-multi-model-image-test" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 9. I2V FALアップロードテスト -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-i2v-fal-upload')">
+            <!-- 10. I2V FALアップロードテスト -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">I2V FALアップロードテスト</h3>
                     <div class="package-path">画像→動画生成とFALアップロード統合</div>
@@ -3309,11 +3346,16 @@ workflow-all:
                         <span class="stat-label">バージョン:</span>
                         <span class="stat-value">v0.5.0</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-i2v-fal-upload-test" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 10. I2V生成・解析統合 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-i2v-generation-analysis')">
+            <!-- 11. I2V生成・解析統合 -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">I2V生成・解析統合</h3>
                     <div class="package-path">Claude Code SDK版動画生成・解析</div>
@@ -3323,11 +3365,16 @@ workflow-all:
                         <span class="stat-label">バージョン:</span>
                         <span class="stat-value">v0.5.0</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-i2v-generation-analysis-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 11. Pixverseリップシンク単体 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-pixverse-lipsync')">
+            <!-- 12. Pixverseリップシンク単体 -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">Pixverseリップシンク単体</h3>
                     <div class="package-path">制限対応高品質リップシンク</div>
@@ -3337,11 +3384,16 @@ workflow-all:
                         <span class="stat-label">バージョン:</span>
                         <span class="stat-value">v0.5.0</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-v2v-pixverse-lipsync-single" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- 12. 自律的バナー生成 -->
-            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-banner-autonomous')">
+            <!-- 13. 自律的バナー生成 -->
+            <div class="package-card workflow-orchestrator">
                 <div class="package-header">
                     <h3 class="package-title">自律的バナー生成</h3>
                     <div class="package-path">AI評価による品質保証機能付きバナー生成</div>
@@ -3350,6 +3402,11 @@ workflow-all:
                     <div class="stat-item">
                         <span class="stat-label">🆕 v0.6.0</span>
                         <span class="stat-value">70点合格基準</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/.github/workflows#orchestrator-banner-autonomous-improvement" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
                     </div>
                 </div>
             </div>
@@ -3362,7 +3419,7 @@ workflow-all:
         
         <h3 class="subsection-title">🆕 自律的バナー生成専門モジュール（v0.6.0）</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-banner-autonomous-generation')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">自律的バナー生成</h3>
                     <div class="package-path">AI評価基準を満たすまで自動改善</div>
@@ -3372,10 +3429,15 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">518行</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-banner-autonomous-generation-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-banner-concept-to-prompt')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">バナーコンセプト企画</h3>
                     <div class="package-path">コンセプト→最適化プロンプト変換</div>
@@ -3385,13 +3447,18 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">247行</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-banner-concept-to-prompt-planning" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">🆕 AIニュース記事生成専門モジュール（v0.4.0）</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-web-search')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">ウェブ検索</h3>
                     <div class="package-path">包括的検索実行</div>
@@ -3401,10 +3468,15 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">207行</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/blob/main/module-workflow/orchestrator-ai-news-article-generation.yml" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-article-creation')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">AI記事作成</h3>
                     <div class="package-path">検索結果ベースの高品質記事作成</div>
@@ -3414,13 +3486,18 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">282行</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-article-creation-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">🆕 ニュース動画生成専門モジュール（v0.3.0）</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-news-planning')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">ニュース企画立案</h3>
                     <div class="package-path">プロフェッショナルニュース番組の制作企画</div>
@@ -3430,10 +3507,15 @@ workflow-all:
                         <span class="stat-label">AI:</span>
                         <span class="stat-value">Claude Code SDK</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-news-planning-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-audio-generation-multi-model')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">マルチモデル音声生成</h3>
                     <div class="package-path">複数の音声生成エンジン対応</div>
@@ -3443,13 +3525,36 @@ workflow-all:
                         <span class="stat-label">技術:</span>
                         <span class="stat-value">kamuicode MCP</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-audio-generation-kc-multi-model-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">MiniMax Voice Design音声生成</h3>
+                    <div class="package-path">高品質日本語音声生成</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕 v0.5.0</span>
+                        <span class="stat-value">日本語特化</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-audio-generation-kc-minimax-voice-design-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">📋 セットアップ・管理モジュール</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-setup-branch')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">ブランチ・フォルダ作成</h3>
                     <div class="package-path">タイムスタンプベースの作業環境構築</div>
@@ -3459,10 +3564,15 @@ workflow-all:
                         <span class="stat-label">機能:</span>
                         <span class="stat-value">自動環境構築</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/blob/main/module-workflow/orchestrator-news-video-generation.yml" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-create-pr')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">プルリクエスト作成</h3>
                     <div class="package-path">生成コンテンツの整理・公開</div>
@@ -3472,13 +3582,36 @@ workflow-all:
                         <span class="stat-label">機能:</span>
                         <span class="stat-value">美しいPR生成</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/blob/main/module-workflow/orchestrator-video-generation.yml" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">サマリー作成</h3>
+                    <div class="package-path">プロジェクト全体のREADME.md生成</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">機能:</span>
+                        <span class="stat-value">詳細レポート</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/blob/main/module-workflow/orchestrator-video-generation-dual.yml" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">🎯 AI企画モジュール</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-planning-ccsdk')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">Claude Code SDK版 AI企画</h3>
                     <div class="package-path">モデル適応型企画立案</div>
@@ -3488,10 +3621,15 @@ workflow-all:
                         <span class="stat-label">AI:</span>
                         <span class="stat-value">Claude</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-planning-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-planning-gca')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">Gemini CLI Action版 AI企画</h3>
                     <div class="package-path">高速処理、コスト効率重視</div>
@@ -3501,13 +3639,18 @@ workflow-all:
                         <span class="stat-label">AI:</span>
                         <span class="stat-value">Gemini Pro</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/blob/main/module-workflow/orchestrator-video-generation-dual-with-analysis.yml" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">🎨 画像生成モジュール</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-image-generation-imagen4-ultra')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">Imagen4 Ultra 高品質画像生成</h3>
                     <div class="package-path">最高品質（2048x2048対応）</div>
@@ -3517,10 +3660,33 @@ workflow-all:
                         <span class="stat-label">用途:</span>
                         <span class="stat-value">商用利用</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-image-generation-kc-t2i-fal-imagen4-ultra-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-image-generation-multi-model')">
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">Imagen4 Fast 高速画像生成</h3>
+                    <div class="package-path">バランス型（1024x1024）</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">処理時間:</span>
+                        <span class="stat-value">1-2分</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-image-generation-kc-t2i-fal-imagen4-fast-gca" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">マルチモデル対応画像生成</h3>
                     <div class="package-path">動的モデル選択</div>
@@ -3530,13 +3696,18 @@ workflow-all:
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">5モデル対応</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-image-generation-kc-multi-model-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <h3 class="subsection-title">🎬 動画生成モジュール</h3>
         <div class="workflow-packages-grid">
-            <div class="package-card workflow-module" onclick="navigateTo('module-video-generation-vidu-q1')">
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">Vidu Q1 参照動画生成</h3>
                     <div class="package-path">自然な動き、高い一貫性</div>
@@ -3546,10 +3717,33 @@ workflow-all:
                         <span class="stat-label">品質:</span>
                         <span class="stat-value">720p, 4-6秒</span>
                     </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-generation-kc-r2v-fal-vidu-q1-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="package-card workflow-module" onclick="navigateTo('module-video-generation-multi-model')">
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">Hailuo-02 Pro 高品質動画生成</h3>
+                    <div class="package-path">商用品質、細かい動作表現</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">品質:</span>
+                        <span class="stat-value">1080p, 4-6秒</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-generation-kc-i2v-fal-hailuo-02-pro-gca" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
                 <div class="package-header">
                     <h3 class="package-title">マルチモデル対応動画生成</h3>
                     <div class="package-path">t2v/i2v/r2v全対応</div>
@@ -3558,6 +3752,128 @@ workflow-all:
                     <div class="stat-item">
                         <span class="stat-label">🆕</span>
                         <span class="stat-value">3タイプ対応</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-generation-kc-multi-model-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="subsection-title">🔧 最適化・分析モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">動画プロンプト最適化</h3>
+                    <div class="package-path">画像解析による動画生成精度向上</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">AI:</span>
+                        <span class="stat-value">Claude</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-prompt-optimization-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">動画解析モジュール</h3>
+                    <div class="package-path">Claude Code SDK版品質分析</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕 v0.5.0</span>
+                        <span class="stat-value">CCSDK移行</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-analysis-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="subsection-title">📄 バナー生成モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">バナー制作企画</h3>
+                    <div class="package-path">コンセプトとテキストから複数バナー企画</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">対応:</span>
+                        <span class="stat-value">最大8バナー</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-banner-planning-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">テキストオーバーレイ</h3>
+                    <div class="package-path">ベース画像に高品質テキスト合成</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">AI:</span>
+                        <span class="stat-value">Flux Kontext Max</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-banner-text-overlay-kc-i2i-fal-flux-kontext-max-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="subsection-title">🔧 高度なワークフロー統合モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">FALアップロード</h3>
+                    <div class="package-path">ローカルファイルの自動FAL URL変換</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕 v0.5.0</span>
+                        <span class="stat-value">246行</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-upload-fal-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module">
+                <div class="package-header">
+                    <h3 class="package-title">FFmpeg動画結合</h3>
+                    <div class="package-path">複数動画の高品質結合</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕 v0.5.0</span>
+                        <span class="stat-value">295行</span>
+                    </div>
+                    <div class="stat-item">
+                        <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow#module-video-concatenation-ffmpeg-ccsdk" target="_blank" style="color: #6366f1;">
+                            📄 YAMLを見る
+                        </a>
                     </div>
                 </div>
             </div>
