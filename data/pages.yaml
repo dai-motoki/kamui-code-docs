@@ -2282,7 +2282,7 @@ playlist-storyboard:
         <div class="detail-section">
             <h2 class="section-title">GitHub</h2>
             <div class="github-link">
-                <a href="https://github.com/kamuicode/mcp-storyboard" target="_blank" class="github-button">
+                <a href="https://github.com/dai-motoki/storyboard-viewer" target="_blank" class="github-button">
                     <span>💙 GitHubリポジトリを見る</span>
                 </a>
             </div>
@@ -2392,7 +2392,7 @@ playlist-requirement:
         <div class="detail-section">
             <h2 class="section-title">GitHub</h2>
             <div class="github-link">
-                <a href="https://github.com/kamuicode/mcp-requirement" target="_blank" class="github-button">
+                <a href="https://github.com/dai-motoki/requirement-docs" target="_blank" class="github-button">
                     <span>💙 GitHubリポジトリを見る</span>
                 </a>
             </div>
@@ -3646,7 +3646,7 @@ mcp-saas-content-gallery:
         <div class="detail-section">
             <h2 class="section-title">GitHub</h2>
             <div class="github-link">
-                <a href="https://github.com/kamuicode/mcp-content-gallery" target="_blank" class="github-button">
+                <a href="https://github.com/dai-motoki/media-gallery-viewer" target="_blank" class="github-button">
                     <span>💙 GitHubリポジトリを見る</span>
                 </a>
             </div>
