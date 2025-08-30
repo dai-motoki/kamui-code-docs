@@ -3358,7 +3358,7 @@ mcp-saas-sales-proposal:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_sales_proposal.png" alt="営業資料" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_sales_proposal.png" alt="営業資料" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-business-proposal:
@@ -3370,7 +3370,7 @@ mcp-saas-business-proposal:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_business_proposal.png" alt="提案書" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_business_proposal.png" alt="提案書" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-api-dashboard:
@@ -3382,7 +3382,7 @@ mcp-saas-api-dashboard:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_api_dashboard.png" alt="API ダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_api_dashboard.png" alt="API ダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-presentation-slides:
@@ -3394,7 +3394,7 @@ mcp-saas-presentation-slides:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_presentation_slides.png" alt="スライド" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_presentation_slides.png" alt="スライド" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-ux-design:
@@ -3406,7 +3406,7 @@ mcp-saas-ux-design:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_ux_design.png" alt="UI・UX設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_ux_design.png" alt="UI・UX設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-cloud-architecture:
@@ -3418,7 +3418,7 @@ mcp-saas-cloud-architecture:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_cloud_architecture.png" alt="クラウド設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_cloud_architecture.png" alt="クラウド設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-app-mockup:
@@ -3430,7 +3430,7 @@ mcp-saas-app-mockup:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_app_mockup.png" alt="アプリ画面" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_app_mockup.png" alt="アプリ画面" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-infographic:
@@ -3442,7 +3442,7 @@ mcp-saas-infographic:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_infographic.png" alt="図解・ビジュアル" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_infographic.png" alt="図解・ビジュアル" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-logo-vi:
@@ -3454,7 +3454,7 @@ mcp-saas-logo-vi:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_logo_vi.png" alt="ロゴ・VI" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_logo_vi.png" alt="ロゴ・VI" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-training-video:
@@ -3466,7 +3466,7 @@ mcp-saas-training-video:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_training_video.png" alt="研修用動画" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_training_video.png" alt="研修用動画" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
 
 mcp-saas-content-gallery:
@@ -3478,5 +3478,5 @@ mcp-saas-content-gallery:
     </div>
     
     <div class="content-section">
-        <img src="/images/saas_ui_content_gallery.png" alt="コンテンツギャラリー" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <img src="./images/saas_ui_content_gallery.png" alt="コンテンツギャラリー" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
