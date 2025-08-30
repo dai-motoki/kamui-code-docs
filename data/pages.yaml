@@ -1547,7 +1547,7 @@ playlist-all:
             </div>
             
             <!-- 営業資料 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-sales-materials')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-sales-proposal')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1572,7 +1572,7 @@ playlist-all:
             </div>
             
             <!-- 提案書 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-proposal')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-business-proposal')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1597,7 +1597,7 @@ playlist-all:
             </div>
             
             <!-- API ダッシュボード MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-api-dashboard')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-api-dashboard')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1622,7 +1622,7 @@ playlist-all:
             </div>
             
             <!-- スライド MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-slides')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-presentation-slides')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1647,7 +1647,7 @@ playlist-all:
             </div>
             
             <!-- UI・UX設計 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-uiux-design')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-ux-design')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1672,7 +1672,7 @@ playlist-all:
             </div>
             
             <!-- クラウド設計 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-cloud-design')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-cloud-architecture')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1697,7 +1697,7 @@ playlist-all:
             </div>
             
             <!-- アプリ画面 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-app-screens')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-app-mockup')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1722,7 +1722,7 @@ playlist-all:
             </div>
             
             <!-- 図解・ビジュアル MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-diagrams-visual')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-infographic')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1747,7 +1747,7 @@ playlist-all:
             </div>
             
             <!-- ロゴ・VI MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-logo-vi')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-logo-vi')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1772,7 +1772,7 @@ playlist-all:
             </div>
             
             <!-- 研修用動画 MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-training-video')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-training-video')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -1797,7 +1797,7 @@ playlist-all:
             </div>
             
             <!-- コンテンツギャラリー MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('playlist-content-gallery')" 
+            <div class="list-item" onclick="navigateTo('mcp-saas-content-gallery')" 
                  style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
@@ -3347,4 +3347,136 @@ workflow-business:
                 <span>🏆 修了証</span>
             </div>
         </div>
+    </div>
+
+mcp-saas-sales-proposal:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">営業資料</h1>
+        <p class="page-subtitle">MCP SaaS 営業提案資料</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_sales_proposal.png" alt="営業資料" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-business-proposal:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">提案書</h1>
+        <p class="page-subtitle">MCP SaaS ビジネス提案書</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_business_proposal.png" alt="提案書" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-api-dashboard:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">API ダッシュボード</h1>
+        <p class="page-subtitle">MCP SaaS APIダッシュボード</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_api_dashboard.png" alt="API ダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-presentation-slides:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">スライド</h1>
+        <p class="page-subtitle">MCP SaaS プレゼンテーションスライド</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_presentation_slides.png" alt="スライド" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-ux-design:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">UI・UX設計</h1>
+        <p class="page-subtitle">MCP SaaS UI/UXデザイン</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_ux_design.png" alt="UI・UX設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-cloud-architecture:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">クラウド設計</h1>
+        <p class="page-subtitle">MCP SaaS クラウドアーキテクチャ</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_cloud_architecture.png" alt="クラウド設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-app-mockup:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">アプリ画面</h1>
+        <p class="page-subtitle">MCP SaaS アプリケーションモックアップ</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_app_mockup.png" alt="アプリ画面" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-infographic:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">図解・ビジュアル</h1>
+        <p class="page-subtitle">MCP SaaS インフォグラフィック</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_infographic.png" alt="図解・ビジュアル" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-logo-vi:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">ロゴ・VI</h1>
+        <p class="page-subtitle">MCP SaaS ロゴ・ビジュアルアイデンティティ</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_logo_vi.png" alt="ロゴ・VI" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-training-video:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">研修用動画</h1>
+        <p class="page-subtitle">MCP SaaS トレーニングビデオ</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_training_video.png" alt="研修用動画" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-content-gallery:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">コンテンツギャラリー</h1>
+        <p class="page-subtitle">MCP SaaS コンテンツライブラリ</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="/images/saas_ui_content_gallery.png" alt="コンテンツギャラリー" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
