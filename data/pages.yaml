@@ -333,6 +333,103 @@ mcp-diff:
         <div class="diff-hero-body">
           <h2>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L8 6H5C3.9 6 3 6.9 3 8V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V8C21 6.9 20.1 6 19 6H16L12 2Z" fill="rgba(251,191,36,0.2)" stroke="#fbbf24" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="3" stroke="#fbbf24" stroke-width="1.5"/>
+              <path d="M8 17L10 15L12 17L14 15L16 17" stroke="#fbbf24" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            LLMは知の石炭
+          </h2>
+          <div class="diff-grid" style="margin: 24px 0;">
+            <div class="diff-box diff-yellow" style="padding: 24px;">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L14 7L19 8L15.5 12L17 17L12 14L7 17L8.5 12L5 8L10 7L12 2Z" fill="rgba(251,191,36,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+                </svg>
+                LLM（大規模言語モデル）
+              </h3>
+              <p style="margin: 10px 0;">産業革命の石炭のように</p>
+              <p style="margin: 10px 0;">AI時代の<strong>基礎エネルギー源</strong></p>
+              <p style="margin: 10px 0;">知識と理解力を供給する</p>
+              <p style="margin: 10px 0;">すべてのAIアプリケーションの動力源</p>
+            </div>
+            <div class="diff-box diff-orange" style="padding: 24px;">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8C13.66 8 15 6.66 15 5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5C9 6.66 10.34 8 12 8Z" fill="#fb923c"/>
+                  <path d="M12 8V16" stroke="#fb923c" stroke-width="2"/>
+                  <path d="M8 16L12 22L16 16" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                特徴
+              </h3>
+              <p style="margin: 10px 0;">• 膨大な知識の貯蔵庫</p>
+              <p style="margin: 10px 0;">• 自然言語の理解と生成</p>
+              <p style="margin: 10px 0;">• 推論と問題解決能力</p>
+              <p style="margin: 10px 0;">• 創造性と柔軟性</p>
+            </div>
+          </div>
+          <div class="diff-tip" style="margin-top: 24px;">💡 LLMは現代のAIシステムにおける「石炭」として、あらゆる知的作業に必要なエネルギーを供給します</div>
+        </div>
+      </div>
+
+      <div class="diff-hero-grid" style="margin-top: 32px; display: flex;">
+        <div class="diff-hero-body">
+          <h2>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="3" stroke="#ef4444" stroke-width="2"/>
+              <path d="M12 3V9M12 15V21" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+              <path d="M3 12H9M15 12H21" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5.64 5.64L9.17 9.17M14.83 14.83L18.36 18.36" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5.64 18.36L9.17 14.83M14.83 9.17L18.36 5.64" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            AI-CLIはエンジン
+          </h2>
+          <div class="diff-grid" style="margin: 24px 0;">
+            <div class="diff-box diff-red" style="padding: 24px;">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="8" width="16" height="8" rx="2" stroke="#ef4444" stroke-width="1.5" fill="rgba(239,68,68,0.1)"/>
+                  <circle cx="8" cy="12" r="2" fill="#ef4444"/>
+                  <circle cx="16" cy="12" r="2" fill="#ef4444"/>
+                  <path d="M10 4L8 8M14 4L16 8" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                AI-CLI（コマンドラインインターフェース）
+              </h3>
+              <p style="margin: 10px 0;">産業革命のエンジンのように</p>
+              <p style="margin: 10px 0;">LLMの力を<strong>実用的な動力</strong>に変換</p>
+              <p style="margin: 10px 0;">開発者の意図を機械の動作に翻訳</p>
+              <p style="margin: 10px 0;">効率的な作業の自動化を実現</p>
+            </div>
+            <div class="diff-box diff-pink" style="padding: 24px;">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="rgba(236,72,153,0.2)" stroke="#ec4899" stroke-width="1.5"/>
+                </svg>
+                機能
+              </h3>
+              <p style="margin: 10px 0;">• 自然言語をコマンドに変換</p>
+              <p style="margin: 10px 0;">• 複雑なタスクの簡略化</p>
+              <p style="margin: 10px 0;">• 高速な実行と自動化</p>
+              <p style="margin: 10px 0;">• 開発効率の大幅向上</p>
+            </div>
+          </div>
+          <div class="diff-tip" style="margin-top: 24px;">💡 AI-CLIは、LLMという「石炭」を実際の作業に活用するための「エンジン」として機能します</div>
+        </div>
+        <div class="diff-hero-media">
+          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="/kamui-code-docs/images/industrial_engine_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="diff-hero-grid" style="margin-top: 32px;">
+        <div class="diff-hero-media">
+          <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="/kamui-code-docs/images/industrial_blacksmith_forge_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="diff-hero-body">
+          <h2>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="3" y="3" width="8" height="8" rx="1" stroke="#93c5fd" stroke-width="1.5" fill="rgba(147,197,253,0.2)"/>
               <rect x="13" y="3" width="8" height="8" rx="1" stroke="#93c5fd" stroke-width="1.5" fill="rgba(147,197,253,0.2)"/>
               <rect x="3" y="13" width="8" height="8" rx="1" stroke="#93c5fd" stroke-width="1.5" fill="rgba(147,197,253,0.2)"/>
@@ -387,6 +484,21 @@ mcp-diff:
             </svg>
             MCP SaaSは自動車に例えることができる
           </h2>
+          
+          <div style="background: rgba(99, 102, 241, 0.2); border-radius: 12px; padding: 16px; margin-bottom: 20px;">
+            <h4 style="font-size: 15px; margin-bottom: 10px; color: #93c5fd; display: flex; align-items: center; gap: 8px;">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="16" height="12" rx="2" stroke="#93c5fd" stroke-width="1.5"/>
+                <rect x="5" y="7" width="10" height="6" fill="#93c5fd" opacity="0.3"/>
+                <circle cx="10" cy="10" r="1" fill="#93c5fd"/>
+              </svg>
+              SaaS = モニター（監視・管理システム）
+            </h4>
+            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+              車のダッシュボードのように、MCPサーバーの状態を監視し、運転（操作）を支援します。
+              複数のMCPサーバーを統合的に管理し、使いやすいインターフェースで提供するクラウドサービスです。
+            </p>
+          </div>
           
           <div style="text-align: center; margin-bottom: 20px; padding: 16px; background: rgba(59, 130, 246, 0.15); border-radius: 12px;">
             <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 12px;">
