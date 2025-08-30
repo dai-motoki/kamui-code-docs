@@ -1820,6 +1820,81 @@ playlist-all:
                 </div>
                 <div style="color: var(--text-weak); font-size: 14px;">マルチメディアコンテンツの統合管理・展示システム</div>
             </div>
+            
+            <!-- データサイエンス系 MCP SaaS -->
+            <div class="list-item" onclick="navigateTo('mcp-saas-data-science')" 
+                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                        padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
+                        border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
+                 onmouseover="this.style.background='var(--hover)'" 
+                 onmouseout="this.style.background='var(--card)'">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="./images/saas_ui_data_science.png" alt="データサイエンス系 MCP SaaS" 
+                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+                </div>
+                <div>
+                    <strong style="color: var(--text); font-size: 16px;">データサイエンス系 MCP SaaS</strong>
+                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-data-science.json</div>
+                </div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">データ分析</span>
+                </div>
+                <div style="color: var(--text);">8</div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">準備中</span>
+                </div>
+                <div style="color: var(--text-weak); font-size: 14px;">データ分析・機械学習・統計処理のMCPサーバー群</div>
+            </div>
+            
+            <!-- 外注支払いダッシュボード MCP SaaS -->
+            <div class="list-item" onclick="navigateTo('mcp-saas-outsource-payment')" 
+                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                        padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
+                        border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
+                 onmouseover="this.style.background='var(--hover)'" 
+                 onmouseout="this.style.background='var(--card)'">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="./images/saas_ui_outsourcing_payment.png" alt="外注支払いダッシュボード MCP SaaS" 
+                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+                </div>
+                <div>
+                    <strong style="color: var(--text); font-size: 16px;">外注支払いダッシュボード MCP SaaS</strong>
+                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-outsource-payment.json</div>
+                </div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
+                </div>
+                <div style="color: var(--text);">5</div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">準備中</span>
+                </div>
+                <div style="color: var(--text-weak); font-size: 14px;">外注先への支払い管理・レポート生成システム</div>
+            </div>
+            
+            <!-- AI支払いダッシュボード MCP SaaS -->
+            <div class="list-item" onclick="navigateTo('mcp-saas-ai-payment')" 
+                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                        padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
+                        border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
+                 onmouseover="this.style.background='var(--hover)'" 
+                 onmouseout="this.style.background='var(--card)'">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="./images/saas_ui_ai_payment.png" alt="AI支払いダッシュボード MCP SaaS" 
+                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+                </div>
+                <div>
+                    <strong style="color: var(--text); font-size: 16px;">AI支払いダッシュボード MCP SaaS</strong>
+                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-ai-payment.json</div>
+                </div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
+                </div>
+                <div style="color: var(--text);">6</div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">準備中</span>
+                </div>
+                <div style="color: var(--text-weak); font-size: 14px;">AIサービス利用料金の管理・分析ダッシュボード</div>
+            </div>
         </div>
     </div>
     
@@ -3479,4 +3554,40 @@ mcp-saas-content-gallery:
     
     <div class="content-section">
         <img src="./images/saas_ui_content_gallery.png" alt="コンテンツギャラリー" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-data-science:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">データサイエンス系</h1>
+        <p class="page-subtitle">MCP SaaS データ分析・機械学習プラットフォーム</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="./images/saas_ui_data_science.png" alt="データサイエンス系" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-outsource-payment:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">外注支払いダッシュボード</h1>
+        <p class="page-subtitle">MCP SaaS 外注管理・支払いシステム</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="./images/saas_ui_outsourcing_payment.png" alt="外注支払いダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+
+mcp-saas-ai-payment:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">AI支払いダッシュボード</h1>
+        <p class="page-subtitle">MCP SaaS AI利用料金管理システム</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="content-section">
+        <img src="./images/saas_ui_ai_payment.png" alt="AI支払いダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
