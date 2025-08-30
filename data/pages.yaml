@@ -3160,547 +3160,111 @@ workflow-all:
     </div>
     
     <div class="workflow-packages-grid">
-        <!-- Blog to SNS Workflow -->
-        <div class="package-card workflow-blog-sns" onclick="navigateTo('workflow-blog-sns')">
+        <!-- Gemini I2V Workflow -->
+        <div class="package-card workflow-gemini-i2v">
             <div class="package-header">
-                <h3 class="package-title">ブログ → SNS投稿ワークフロー</h3>
-                <div class="package-path">/workflow/blog-to-sns.json</div>
+                <h3 class="package-title">Gemini I2V ワークフロー</h3>
+                <div class="package-path">画像から動画を生成するAIワークフロー</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">5</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">4</span>
+                    <span class="stat-label">GitHub:</span>
+                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/gemini-i2v-workflow" target="_blank" style="color: #6366f1;">
+                        リポジトリを見る
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- Video Production Workflow -->
-        <div class="package-card workflow-video-prod" onclick="navigateTo('workflow-video-production')">
+        <!-- Module Workflow -->
+        <div class="package-card workflow-module">
             <div class="package-header">
-                <h3 class="package-title">動画制作ワークフロー</h3>
-                <div class="package-path">/workflow/video-production.json</div>
+                <h3 class="package-title">モジュールワークフロー</h3>
+                <div class="package-path">AI駆動の動画生成ワークフロー</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">7</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">6</span>
+                    <span class="stat-label">GitHub:</span>
+                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow" target="_blank" style="color: #6366f1;">
+                        リポジトリを見る
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- Requirements to Code Workflow -->
-        <div class="package-card workflow-req-code" onclick="navigateTo('workflow-requirements-code')">
+        <!-- Music Video Workflow -->
+        <div class="package-card workflow-music-video">
             <div class="package-header">
-                <h3 class="package-title">要件定義 → コード生成ワークフロー</h3>
-                <div class="package-path">/workflow/requirements-to-code.json</div>
+                <h3 class="package-title">ミュージックビデオワークフロー</h3>
+                <div class="package-path">音楽に合わせた動画生成ワークフロー</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">6</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">5</span>
+                    <span class="stat-label">GitHub:</span>
+                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/music-video-workflow" target="_blank" style="color: #6366f1;">
+                        リポジトリを見る
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- Product Launch Workflow -->
-        <div class="package-card workflow-product-launch" onclick="navigateTo('workflow-product-launch')">
+        <!-- Video Background Removal Workflow -->
+        <div class="package-card workflow-bg-removal">
             <div class="package-header">
-                <h3 class="package-title">プロダクトローンチワークフロー</h3>
-                <div class="package-path">/workflow/product-launch.json</div>
+                <h3 class="package-title">動画背景除去ワークフロー</h3>
+                <div class="package-path">動画から背景を自動除去するワークフロー</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">8</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">10</span>
+                    <span class="stat-label">GitHub:</span>
+                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/video-background-removal-workflow" target="_blank" style="color: #6366f1;">
+                        リポジトリを見る
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- Content Localization Workflow -->
-        <div class="package-card workflow-localization" onclick="navigateTo('workflow-content-localization')">
+        <!-- Video Workflow Template -->
+        <div class="package-card workflow-template">
             <div class="package-header">
-                <h3 class="package-title">コンテンツローカライズワークフロー</h3>
-                <div class="package-path">/workflow/content-localization.json</div>
+                <h3 class="package-title">ビデオワークフローテンプレート</h3>
+                <div class="package-path">カスタマイズ可能な動画生成テンプレート</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">6</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">7</span>
+                    <span class="stat-label">GitHub:</span>
+                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/video-workflow-template" target="_blank" style="color: #6366f1;">
+                        リポジトリを見る
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- E-Learning Course Workflow -->
-        <div class="package-card workflow-elearning" onclick="navigateTo('workflow-elearning-course')">
+        <!-- LoRA Workflow (準備中) -->
+        <div class="package-card workflow-lora" style="opacity: 0.7;">
             <div class="package-header">
-                <h3 class="package-title">Eラーニングコース作成ワークフロー</h3>
-                <div class="package-path">/workflow/elearning-course.json</div>
+                <h3 class="package-title">LoRAワークフロー</h3>
+                <div class="package-path">LoRAを活用した画像生成ワークフロー</div>
             </div>
             <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">ステップ数:</span>
-                    <span class="stat-value">9</span>
+                    <span class="stat-label">ステータス:</span>
+                    <span class="stat-value" style="color: #ef4444;">準備中</span>
                 </div>
+            </div>
+        </div>
+        
+        <!-- Whiteboard Explanation Video Workflow (準備中) -->
+        <div class="package-card workflow-whiteboard" style="opacity: 0.7;">
+            <div class="package-header">
+                <h3 class="package-title">ホワイトボード解説動画ワークフロー</h3>
+                <div class="package-path">自動解説動画生成ワークフロー</div>
+            </div>
+            <div class="package-stats">
                 <div class="stat-item">
-                    <span class="stat-label">使用サーバー:</span>
-                    <span class="stat-value">8</span>
+                    <span class="stat-label">ステータス:</span>
+                    <span class="stat-value" style="color: #ef4444;">準備中</span>
                 </div>
             </div>
         </div>
-    </div>
-
-workflow-creative:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">クリエイティブワークフロー</h1>
-        <p class="page-subtitle">コンテンツ制作・配信の自動化フロー</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="workflow-category-grid">
-        <div class="workflow-card" onclick="navigateTo('workflow-blog-sns')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">ブログ → SNS投稿ワークフロー</h3>
-                <div class="workflow-card-badge">コンテンツ配信</div>
-            </div>
-            <p class="workflow-card-description">ブログ記事から自動的に画像を生成し、各SNSプラットフォームに最適化して投稿</p>
-            <div class="workflow-card-flow">
-                <span>📝 記事作成</span>
-                <span>→</span>
-                <span>🎨 画像生成</span>
-                <span>→</span>
-                <span>📱 SNS投稿</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-video-production')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">動画制作ワークフロー</h3>
-                <div class="workflow-card-badge">動画制作</div>
-            </div>
-            <p class="workflow-card-description">スクリプトから動画生成、字幕追加、音楽・ナレーション合成まで完全自動化</p>
-            <div class="workflow-card-flow">
-                <span>📜 台本</span>
-                <span>→</span>
-                <span>🎬 動画生成</span>
-                <span>→</span>
-                <span>🎵 音声追加</span>
-                <span>→</span>
-                <span>📤 配信</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-content-localization')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">コンテンツローカライズワークフロー</h3>
-                <div class="workflow-card-badge">多言語展開</div>
-            </div>
-            <p class="workflow-card-description">コンテンツを複数言語に翻訳し、各言語に最適化した画像・動画を生成</p>
-            <div class="workflow-card-flow">
-                <span>🌐 翻訳</span>
-                <span>→</span>
-                <span>🖼️ 画像調整</span>
-                <span>→</span>
-                <span>🗣️ 音声生成</span>
-            </div>
-        </div>
-    </div>
-
-workflow-development:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">開発ワークフロー</h1>
-        <p class="page-subtitle">開発プロセスの自動化フロー</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="workflow-category-grid">
-        <div class="workflow-card" onclick="navigateTo('workflow-requirements-code')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">要件定義 → コード生成ワークフロー</h3>
-                <div class="workflow-card-badge">自動開発</div>
-            </div>
-            <p class="workflow-card-description">要件定義書から自動的にコードを生成し、テストまで実行する開発自動化</p>
-            <div class="workflow-card-flow">
-                <span>📋 要件定義</span>
-                <span>→</span>
-                <span>💻 コード生成</span>
-                <span>→</span>
-                <span>🧪 テスト</span>
-                <span>→</span>
-                <span>📦 デプロイ</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-documentation')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">ドキュメント自動生成ワークフロー</h3>
-                <div class="workflow-card-badge">ドキュメント</div>
-            </div>
-            <p class="workflow-card-description">コードから自動的にドキュメントを生成し、図表やサンプルコードを追加</p>
-            <div class="workflow-card-flow">
-                <span>🔍 解析</span>
-                <span>→</span>
-                <span>📝 文書生成</span>
-                <span>→</span>
-                <span>📊 図表作成</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-testing')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">自動テスト・品質保証ワークフロー</h3>
-                <div class="workflow-card-badge">品質保証</div>
-            </div>
-            <p class="workflow-card-description">コード変更を検知して自動テストを実行し、品質レポートを生成</p>
-            <div class="workflow-card-flow">
-                <span>🔧 変更検知</span>
-                <span>→</span>
-                <span>🧪 テスト実行</span>
-                <span>→</span>
-                <span>📊 レポート</span>
-            </div>
-        </div>
-    </div>
-
-workflow-business:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">ビジネスワークフロー</h1>
-        <p class="page-subtitle">ビジネスプロセスの自動化フロー</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="workflow-category-grid">
-        <div class="workflow-card" onclick="navigateTo('workflow-product-launch')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">プロダクトローンチワークフロー</h3>
-                <div class="workflow-card-badge">製品リリース</div>
-            </div>
-            <p class="workflow-card-description">新製品のローンチに必要な全資料を自動生成（プレスリリース、LP、動画など）</p>
-            <div class="workflow-card-flow">
-                <span>📋 企画</span>
-                <span>→</span>
-                <span>📄 資料作成</span>
-                <span>→</span>
-                <span>🎥 動画制作</span>
-                <span>→</span>
-                <span>🚀 公開</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-proposal')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">提案書自動生成ワークフロー</h3>
-                <div class="workflow-card-badge">営業支援</div>
-            </div>
-            <p class="workflow-card-description">顧客情報から最適な提案書を生成し、プレゼン資料まで自動作成</p>
-            <div class="workflow-card-flow">
-                <span>👤 顧客分析</span>
-                <span>→</span>
-                <span>📋 提案書</span>
-                <span>→</span>
-                <span>📊 スライド</span>
-            </div>
-        </div>
-        
-        <div class="workflow-card" onclick="navigateTo('workflow-elearning-course')">
-            <div class="workflow-card-header">
-                <h3 class="workflow-card-title">Eラーニングコース作成ワークフロー</h3>
-                <div class="workflow-card-badge">教育コンテンツ</div>
-            </div>
-            <p class="workflow-card-description">教材から動画講座、クイズ、修了証まで完全な学習コースを自動生成</p>
-            <div class="workflow-card-flow">
-                <span>📚 教材</span>
-                <span>→</span>
-                <span>🎬 講座動画</span>
-                <span>→</span>
-                <span>📝 テスト</span>
-                <span>→</span>
-                <span>🏆 修了証</span>
-            </div>
-        </div>
-    </div>
-
-mcp-saas-sales-proposal:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">営業資料</h1>
-        <p class="page-subtitle">MCP SaaS 営業提案資料</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_sales_proposal.png" alt="営業資料" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-business-proposal:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">提案書</h1>
-        <p class="page-subtitle">MCP SaaS ビジネス提案書</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_business_proposal.png" alt="提案書" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-api-dashboard:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">API ダッシュボード</h1>
-        <p class="page-subtitle">MCP SaaS APIダッシュボード</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_api_dashboard.png" alt="API ダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-presentation-slides:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">スライド</h1>
-        <p class="page-subtitle">MCP SaaS プレゼンテーションスライド</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_presentation_slides.png" alt="スライド" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-ux-design:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">UI・UX設計</h1>
-        <p class="page-subtitle">MCP SaaS UI/UXデザイン</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_ux_design.png" alt="UI・UX設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-cloud-architecture:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">クラウド設計</h1>
-        <p class="page-subtitle">MCP SaaS クラウドアーキテクチャ</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_cloud_architecture.png" alt="クラウド設計" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-app-mockup:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">アプリ画面</h1>
-        <p class="page-subtitle">MCP SaaS アプリケーションモックアップ</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_app_mockup.png" alt="アプリ画面" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-infographic:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">図解・ビジュアル</h1>
-        <p class="page-subtitle">MCP SaaS インフォグラフィック</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_infographic.png" alt="図解・ビジュアル" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-logo-vi:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">ロゴ・VI</h1>
-        <p class="page-subtitle">MCP SaaS ロゴ・ビジュアルアイデンティティ</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_logo_vi.png" alt="ロゴ・VI" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-training-video:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">研修用動画</h1>
-        <p class="page-subtitle">MCP SaaS トレーニングビデオ</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_training_video.png" alt="研修用動画" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-content-gallery:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">コンテンツギャラリー MCP SaaS</h1>
-        <p class="page-subtitle">マルチメディアコンテンツ統合管理・展示システム</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="playlist-detail-container">
-        <div class="detail-section">
-            <h2 class="section-title">デモ動画</h2>
-            <div style="margin: 24px 0;">
-                <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                    <source src="/kamui-code-docs/videos/gallery-demo.mp4" type="video/mp4">
-                    お使いのブラウザは動画再生に対応していません。
-                </video>
-                <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">コンテンツギャラリーの実際の動作とUI/UXをご覧ください</p>
-            </div>
-        </div>
-        
-        <div class="detail-section">
-            <h2 class="section-title">JSON設定</h2>
-            <pre class="code"><code>{
-            "mcpServers": {
-            "content-gallery": {
-            "type": "http",
-            "url": "https://{baseurl}/content-gallery"
-            },
-            "media-manager": {
-            "type": "http",
-            "url": "https://{baseurl}/media-manager"
-            },
-            "gallery-display": {
-            "type": "http",
-            "url": "https://{baseurl}/gallery-display"
-            },
-            "asset-organizer": {
-            "type": "http",
-            "url": "https://{baseurl}/asset-organizer"
-            }
-            }
-            }</code></pre>
-        </div>
-        
-        <div class="detail-section">
-            <h2 class="section-title">TOML設定</h2>
-            <p style="margin-bottom: 16px; color: var(--text-weak);">以下の設定を <code>~/.codex/config.toml</code> に追加してください：</p>
-            <pre class="code"><code>[mcp_servers.content_gallery]
-            command = &quot;npx&quot;
-            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://{baseurl}/content-gallery&quot;, MCP_NAME = &quot;content-gallery&quot; }
-
-            [mcp_servers.media_manager]
-            command = &quot;npx&quot;
-            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://{baseurl}/media-manager&quot;, MCP_NAME = &quot;media-manager&quot; }
-
-            [mcp_servers.gallery_display]
-            command = &quot;npx&quot;
-            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://{baseurl}/gallery-display&quot;, MCP_NAME = &quot;gallery-display&quot; }
-
-            [mcp_servers.asset_organizer]
-            command = &quot;npx&quot;
-            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://{baseurl}/asset-organizer&quot;, MCP_NAME = &quot;asset-organizer&quot; }</code></pre>
-        </div>
-        
-        <div class="detail-section">
-            <h2 class="section-title">利用方法</h2>
-            <div class="usage-content">
-                <h3>1. Claude Codeへの設定</h3>
-                <p>Claude Codeの設定ファイルに上記のJSONまたはTOMLを追加</p>
-                
-                <h3>2. コンテンツ管理</h3>
-                <p>画像、動画、ドキュメントなどのマルチメディアコンテンツを統合管理</p>
-                
-                <h3>3. サーバー一覧</h3>
-                <ul>
-                    <li><strong>content-gallery</strong> - メインギャラリーサーバー</li>
-                    <li><strong>media-manager</strong> - メディアファイル管理</li>
-                    <li><strong>gallery-display</strong> - ギャラリー表示・レイアウト管理</li>
-                    <li><strong>asset-organizer</strong> - アセット整理・タグ付け</li>
-                </ul>
-                
-                <h3>4. 主な機能</h3>
-                <ul>
-                    <li>マルチメディアファイルの一元管理</li>
-                    <li>カテゴリー・タグによる整理</li>
-                    <li>レスポンシブギャラリー表示</li>
-                    <li>検索・フィルター機能</li>
-                    <li>サムネイル自動生成</li>
-                    <li>メタデータ管理</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="detail-section">
-            <h2 class="section-title">GitHub</h2>
-            <div class="github-link">
-                <a href="https://github.com/dai-motoki/media-gallery-viewer" target="_blank" class="github-button">
-                    <span>💙 GitHubリポジトリを見る</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-mcp-saas-data-science:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">データサイエンス系</h1>
-        <p class="page-subtitle">MCP SaaS データ分析・機械学習プラットフォーム</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_data_science.png" alt="データサイエンス系" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-outsource-payment:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">外注支払いダッシュボード</h1>
-        <p class="page-subtitle">MCP SaaS 外注管理・支払いシステム</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_outsourcing_payment.png" alt="外注支払いダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-    </div>
-
-mcp-saas-ai-payment:
-  html: |
-    <div class="page-header">
-        <h1 class="page-title">AI支払いダッシュボード</h1>
-        <p class="page-subtitle">MCP SaaS AI利用料金管理システム</p>
-        <div class="page-divider"></div>
-    </div>
-    
-    <div class="content-section">
-        <img src="./images/saas_ui_ai_payment.png" alt="AI支払いダッシュボード" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
     </div>
