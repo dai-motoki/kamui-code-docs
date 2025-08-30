@@ -1377,11 +1377,10 @@ playlist-all:
         </div>
         
         <!-- リストヘッダー -->
-        <div class="list-header" style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+        <div class="list-header" style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                                         padding: 16px 24px; background: var(--hover); border-radius: 8px; 
                                         margin-bottom: 16px; font-weight: 600;">
             <div>UI</div>
-            <div>名前</div>
             <div>カテゴリ</div>
             <div>サーバー数</div>
             <div>ステータス</div>
@@ -1392,19 +1391,16 @@ playlist-all:
         <div class="playlist-list">
             <!-- 画像生成AI特化MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-image-ai')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">画像生成AI特化MCP SaaS</strong>
+                    <div style="width: 269px; height: 151px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                         <span style="color: white; font-size: 48px;">🎨</span>
                     </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">画像生成AI特化MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-image-ai.json</div>
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
@@ -1418,19 +1414,16 @@ playlist-all:
             
             <!-- 動画生成AI特化MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-video-ai')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">動画生成AI特化MCP SaaS</strong>
+                    <div style="width: 269px; height: 151px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                         <span style="color: white; font-size: 48px;">🎥</span>
                     </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">動画生成AI特化MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-video-ai.json</div>
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
@@ -1444,19 +1437,15 @@ playlist-all:
             
             <!-- 絵コンテ・ビデオコンテ MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-storyboard')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <span style="color: white; font-size: 48px;">🎬</span>
-                    </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">絵コンテ・ビデオコンテ MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-storyboard.json</div>
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">絵コンテ・ビデオコンテ MCP SaaS</strong>
+                    <img src="./images/storyboard_thumbnail.png" alt="絵コンテ・ビデオコンテ MCP SaaS" 
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
@@ -1470,19 +1459,15 @@ playlist-all:
             
             <!-- 要件定義 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-requirement')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <span style="color: white; font-size: 48px;">📄</span>
-                    </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">要件定義 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-requirement.json</div>
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">要件定義 MCP SaaS</strong>
+                    <img src="./images/requirement_thumbnail.png" alt="要件定義 MCP SaaS" 
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">開発</span>
@@ -1496,19 +1481,16 @@ playlist-all:
             
             <!-- KAMUI CODE MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-kamui-code')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #f59e0b 0%, #dc2626 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">KAMUI CODE MCP SaaS</strong>
+                    <div style="width: 269px; height: 151px; background: linear-gradient(135deg, #f59e0b 0%, #dc2626 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                         <span style="color: white; font-size: 48px;">⚡</span>
                     </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">KAMUI CODE MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-kamui-code.json</div>
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">フルセット</span>
@@ -1522,19 +1504,16 @@ playlist-all:
             
             <!-- Remotion動画生成MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-remotion-video')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="width: 128px; height: 128px; background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">Remotion Video MCP SaaS</strong>
+                    <div style="width: 269px; height: 151px; background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                         <span style="color: white; font-size: 48px;">🎶</span>
                     </div>
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">Remotion動画生成MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-remotion-video.json</div>
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
@@ -1548,18 +1527,15 @@ playlist-all:
             
             <!-- 営業資料 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-sales-proposal')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">営業資料 MCP SaaS</strong>
                     <img src="./images/saas_ui_sales_proposal.png" alt="営業資料 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">営業資料 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-sales-materials.json</div>
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
@@ -1573,19 +1549,21 @@ playlist-all:
             
             <!-- 提案書 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-business-proposal')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">提案書 MCP SaaS</strong>
+
                     <img src="./images/saas_ui_business_proposal.png" alt="提案書 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">提案書 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-proposal.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
                 </div>
@@ -1598,19 +1576,21 @@ playlist-all:
             
             <!-- API ダッシュボード MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-api-dashboard')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">API ダッシュボード MCP SaaS</strong>
+
                     <img src="./images/saas_ui_api_dashboard.png" alt="API ダッシュボード MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">API ダッシュボード MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-api-dashboard.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">開発</span>
                 </div>
@@ -1623,19 +1603,21 @@ playlist-all:
             
             <!-- スライド MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-presentation-slides')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">スライド MCP SaaS</strong>
+
                     <img src="./images/saas_ui_presentation_slides.png" alt="スライド MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">スライド MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-slides.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
                 </div>
@@ -1648,18 +1630,15 @@ playlist-all:
             
             <!-- UI・UX設計 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-ux-design')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">UI・UX設計 MCP SaaS</strong>
                     <img src="./images/saas_ui_ux_design.png" alt="UI・UX設計 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
-                </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">UI・UX設計 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-uiux-design.json</div>
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
                 </div>
                 <div style="color: var(--text-weak);">
                     <span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">開発</span>
@@ -1673,19 +1652,21 @@ playlist-all:
             
             <!-- クラウド設計 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-cloud-architecture')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">クラウド設計 MCP SaaS</strong>
+
                     <img src="./images/saas_ui_cloud_architecture.png" alt="クラウド設計 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">クラウド設計 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-cloud-design.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">開発</span>
                 </div>
@@ -1698,19 +1679,21 @@ playlist-all:
             
             <!-- アプリ画面 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-app-mockup')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">アプリ画面 MCP SaaS</strong>
+
                     <img src="./images/saas_ui_app_mockup.png" alt="アプリ画面 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">アプリ画面 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-app-screens.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">開発</span>
                 </div>
@@ -1723,19 +1706,21 @@ playlist-all:
             
             <!-- 図解・ビジュアル MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-infographic')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">図解・ビジュアル MCP SaaS</strong>
+
                     <img src="./images/saas_ui_infographic.png" alt="図解・ビジュアル MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">図解・ビジュアル MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-diagrams-visual.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
                 </div>
@@ -1748,19 +1733,21 @@ playlist-all:
             
             <!-- ロゴ・VI MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-logo-vi')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">ロゴ・VI MCP SaaS</strong>
+
                     <img src="./images/saas_ui_logo_vi.png" alt="ロゴ・VI MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">ロゴ・VI MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-logo-vi.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
                 </div>
@@ -1773,19 +1760,21 @@ playlist-all:
             
             <!-- 研修用動画 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-training-video')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">研修用動画 MCP SaaS</strong>
+
                     <img src="./images/saas_ui_training_video.png" alt="研修用動画 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">研修用動画 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-training-video.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
                 </div>
@@ -1798,44 +1787,48 @@ playlist-all:
             
             <!-- コンテンツギャラリー MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-content-gallery')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="./images/saas_ui_content_gallery.png" alt="コンテンツギャラリー MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">コンテンツギャラリー MCP SaaS</strong>
+
+                    <img src="./images/gallery_thumbnail.png" alt="コンテンツギャラリー MCP SaaS" 
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">コンテンツギャラリー MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-content-gallery.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
                 </div>
                 <div style="color: var(--text);">12</div>
                 <div style="color: var(--text-weak);">
-                    <span style="background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">準備中</span>
+                    <span style="background: #10b981; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">v1.0.0</span>
                 </div>
                 <div style="color: var(--text-weak); font-size: 14px;">マルチメディアコンテンツの統合管理・展示システム</div>
             </div>
             
             <!-- データサイエンス系 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-data-science')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">データサイエンス系 MCP SaaS</strong>
+
                     <img src="./images/saas_ui_data_science.png" alt="データサイエンス系 MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">データサイエンス系 MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-data-science.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">データ分析</span>
                 </div>
@@ -1848,19 +1841,21 @@ playlist-all:
             
             <!-- 外注支払いダッシュボード MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-outsource-payment')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">外注支払いダッシュボード MCP SaaS</strong>
+
                     <img src="./images/saas_ui_outsourcing_payment.png" alt="外注支払いダッシュボード MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">外注支払いダッシュボード MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-outsource-payment.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
                 </div>
@@ -1873,19 +1868,21 @@ playlist-all:
             
             <!-- AI支払いダッシュボード MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-ai-payment')" 
-                 style="display: grid; grid-template-columns: 140px 3fr 1fr 1fr 1fr 2fr; gap: 16px; 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
                         padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
                         border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
                  onmouseover="this.style.background='var(--hover)'" 
                  onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">AI支払いダッシュボード MCP SaaS</strong>
+
                     <img src="./images/saas_ui_ai_payment.png" alt="AI支払いダッシュボード MCP SaaS" 
-                         style="width: 128px; height: 128px; border-radius: 8px; object-fit: contain;">
+
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+
                 </div>
-                <div>
-                    <strong style="color: var(--text); font-size: 16px;">AI支払いダッシュボード MCP SaaS</strong>
-                    <div style="font-size: 12px; color: var(--text-weak); margin-top: 4px;">/mcp/mcp-ai-payment.json</div>
-                </div>
+
                 <div style="color: var(--text-weak);">
                     <span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">ビジネス</span>
                 </div>
@@ -2302,6 +2299,17 @@ playlist-requirement:
     </div>
     
     <div class="playlist-detail-container">
+        <div class="detail-section">
+            <h2 class="section-title">デモ動画</h2>
+            <div style="margin: 24px 0;">
+                <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <source src="/kamui-code-docs/videos/requirement-demo.mp4" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+                <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">要件定義書作成の実際のワークフローをご覧ください</p>
+            </div>
+        </div>
+        
         <div class="detail-section">
             <h2 class="section-title">JSON設定</h2>
             <pre class="code"><code>{
@@ -3553,7 +3561,13 @@ mcp-saas-content-gallery:
     </div>
     
     <div class="content-section">
-        <img src="./images/saas_ui_content_gallery.png" alt="コンテンツギャラリー" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+        <div style="margin: 24px 0;">
+            <video controls autoplay loop muted style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                <source src="/kamui-code-docs/videos/gallery-demo.mp4" type="video/mp4">
+                お使いのブラウザは動画再生に対応していません。
+            </video>
+            <p style="margin-top: 16px; color: var(--text-weak); font-size: 14px; text-align: center;">コンテンツギャラリーの実際の動作をご覧ください</p>
+        </div>
     </div>
 
 mcp-saas-data-science:
