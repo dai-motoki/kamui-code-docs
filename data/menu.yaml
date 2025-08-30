@@ -21,7 +21,7 @@
   path: "/mcp/diff"
 - id: mcp-playlist
   type: group
-  label: MCPプレイリスト
+  label: MCP SaaS
   icon: "📚"
   path: "/playlist"
   children:
@@ -43,7 +43,7 @@
       path: "/playlist/business"
 - id: mcp-catalog
   type: group
-  label: MCPカタログ
+  label: MCP リスト
   icon: "📦"
   path: "/catalog"
   children:
@@ -86,3 +86,25 @@
           type: catalog-id
           label: Requirements Docs
           path: "/catalog/id/requirement"
+- id: mcp-workflow
+  type: group
+  label: MCPワークフロー
+  icon: "🔄"
+  path: "/workflow"
+  children:
+    - id: workflow-all
+      type: menu
+      label: ワークフロー一覧
+      path: "/workflow/all"
+    - id: workflow-creative
+      type: menu
+      label: クリエイティブ
+      path: "/workflow/creative"
+    - id: workflow-development
+      type: menu
+      label: 開発
+      path: "/workflow/development"
+    - id: workflow-business
+      type: menu
+      label: ビジネス
+      path: "/workflow/business"

@@ -16,7 +16,7 @@ const menuData = (typeof window !== 'undefined' && window.MENU_DATA)
     {
         id: 'mcp-playlist',
         type: 'group',
-        label: 'MCPプレイリスト',
+        label: 'MCP SaaS',
         icon: '📚',
         path: '/playlist',
         children: [
@@ -29,7 +29,7 @@ const menuData = (typeof window !== 'undefined' && window.MENU_DATA)
     {
         id: 'mcp-catalog',
         type: 'group',
-        label: 'MCPカタログ',
+        label: 'MCP リスト',
         icon: '📦',
         path: '/catalog',
         children: [
@@ -366,7 +366,7 @@ const pageContents = (function() {
 
 
     'catalog-all': `
-        <h1 class="page-title">MCPカタログ一覧</h1>
+        <h1 class="page-title">MCP リスト一覧</h1>
         <p class="page-subtitle">利用可能な全MCPサービス</p>
         
         <div class="catalog-grid">
