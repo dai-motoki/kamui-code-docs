@@ -783,7 +783,7 @@ mcp-diff:
             - requirement: 要件定義書生成
             - t2i-kamui-imagen4-ultra: 高品質画像生成
             - i2i-kamui-flux-kontext-max: 画像編集・スタイル変換
-            # 利用: https://kamui-code.ai
+            # 利用: https://{baseurl}
             </code></pre>
           </div>
         </div>
@@ -2243,21 +2243,26 @@ playlist-storyboard:
         
         <div class="detail-section">
             <h2 class="section-title">TOML設定</h2>
-            <pre class="code"><code>[mcpServers.storyboard]
-            type = "http"
-            url = "https://{baseurl}/storyboard"
+            <p style="margin-bottom: 16px; color: var(--text-weak);">以下の設定を <code>~/.codex/config.toml</code> に追加してください：</p>
+            <pre class="code"><code>[mcp_servers.storyboard]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8083/storyboard&quot;, MCP_NAME = &quot;storyboard&quot; }
 
-            [mcpServers.t2i-kamui-imagen4-ultra]
-            type = "http"
-            url = "https://{baseurl}/t2i/fal/imagen4/ultra"
+            [mcp_servers.t2i_kamui_imagen4_ultra]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/t2i/fal/imagen4/ultra&quot;, MCP_NAME = &quot;t2i-kamui-imagen4-ultra&quot; }
 
-            [mcpServers.i2i-kamui-flux-kontext-max]
-            type = "http"
-            url = "https://{baseurl}/i2i/fal/flux/kontext/max"
+            [mcp_servers.i2i_kamui_flux_kontext_max]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/i2i/fal/flux/kontext/max&quot;, MCP_NAME = &quot;i2i-kamui-flux-kontext-max&quot; }
 
-            [mcpServers.i2v-kamui-seedance-v1-lite]
-            type = "http"
-            url = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"</code></pre>
+            [mcp_servers.i2v_kamui_seedance_v1_lite]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite&quot;, MCP_NAME = &quot;i2v-kamui-seedance-v1-lite&quot; }</code></pre>
         </div>
         
         <div class="detail-section">
@@ -2339,25 +2344,31 @@ playlist-requirement:
         
         <div class="detail-section">
             <h2 class="section-title">TOML設定</h2>
-            <pre class="code"><code>[mcpServers.requirement]
-            type = "http"
-            url = "https://{baseurl}/requirement"
+            <p style="margin-bottom: 16px; color: var(--text-weak);">以下の設定を <code>~/.codex/config.toml</code> に追加してください：</p>
+            <pre class="code"><code>[mcp_servers.requirement]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8082/requirement&quot;, MCP_NAME = &quot;requirement&quot; }
 
-            [mcpServers.t2i-kamui-imagen4-ultra]
-            type = "http"
-            url = "https://{baseurl}/t2i/fal/imagen4/ultra"
+            [mcp_servers.t2i_kamui_imagen4_ultra]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/t2i/fal/imagen4/ultra&quot;, MCP_NAME = &quot;t2i-kamui-imagen4-ultra&quot; }
 
-            [mcpServers.i2i-kamui-flux-kontext-max]
-            type = "http"
-            url = "https://{baseurl}/i2i/fal/flux/kontext/max"
+            [mcp_servers.i2i_kamui_flux_kontext_max]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/i2i/fal/flux/kontext/max&quot;, MCP_NAME = &quot;i2i-kamui-flux-kontext-max&quot; }
 
-            [mcpServers.i2i-kamui-flux-krea-lora]
-            type = "http"
-            url = "https://{baseurl}/i2i/fal/flux-krea-lora/image-to-image"
+            [mcp_servers.i2i_kamui_flux_krea_lora]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/i2i/fal/flux-krea-lora/image-to-image&quot;, MCP_NAME = &quot;i2i-kamui-flux-krea-lora&quot; }
 
-            [mcpServers.i2v-kamui-seedance-v1-lite]
-            type = "http"
-            url = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"</code></pre>
+            [mcp_servers.i2v_kamui_seedance_v1_lite]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite&quot;, MCP_NAME = &quot;i2v-kamui-seedance-v1-lite&quot; }</code></pre>
         </div>
         
         <div class="detail-section">
@@ -3597,21 +3608,26 @@ mcp-saas-content-gallery:
         
         <div class="detail-section">
             <h2 class="section-title">TOML設定</h2>
-            <pre class="code"><code>[mcpServers.content-gallery]
-            type = "http"
-            url = "https://{baseurl}/content-gallery"
+            <p style="margin-bottom: 16px; color: var(--text-weak);">以下の設定を <code>~/.codex/config.toml</code> に追加してください：</p>
+            <pre class="code"><code>[mcp_servers.content_gallery]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8086/content-gallery&quot;, MCP_NAME = &quot;content-gallery&quot; }
 
-            [mcpServers.media-manager]
-            type = "http"
-            url = "https://{baseurl}/media-manager"
+            [mcp_servers.media_manager]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8087/media-manager&quot;, MCP_NAME = &quot;media-manager&quot; }
 
-            [mcpServers.gallery-display]
-            type = "http"
-            url = "https://{baseurl}/gallery-display"
+            [mcp_servers.gallery_display]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8088/gallery-display&quot;, MCP_NAME = &quot;gallery-display&quot; }
 
-            [mcpServers.asset-organizer]
-            type = "http"
-            url = "https://{baseurl}/asset-organizer"</code></pre>
+            [mcp_servers.asset_organizer]
+            command = &quot;npx&quot;
+            args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
+            env     = { URI = &quot;http://localhost:8089/asset-organizer&quot;, MCP_NAME = &quot;asset-organizer&quot; }</code></pre>
         </div>
         
         <div class="detail-section">
