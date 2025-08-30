@@ -2247,7 +2247,7 @@ playlist-storyboard:
             <pre class="code"><code>[mcp_servers.storyboard]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8083/storyboard&quot;, MCP_NAME = &quot;storyboard&quot; }
+            env     = { URI = &quot;http://{baseurl}/storyboard&quot;, MCP_NAME = &quot;storyboard&quot; }
 
             [mcp_servers.t2i_kamui_imagen4_ultra]
             command = &quot;npx&quot;
@@ -2348,7 +2348,7 @@ playlist-requirement:
             <pre class="code"><code>[mcp_servers.requirement]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8082/requirement&quot;, MCP_NAME = &quot;requirement&quot; }
+            env     = { URI = &quot;http://{baseurl}/requirement&quot;, MCP_NAME = &quot;requirement&quot; }
 
             [mcp_servers.t2i_kamui_imagen4_ultra]
             command = &quot;npx&quot;
@@ -3612,22 +3612,22 @@ mcp-saas-content-gallery:
             <pre class="code"><code>[mcp_servers.content_gallery]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8086/content-gallery&quot;, MCP_NAME = &quot;content-gallery&quot; }
+            env     = { URI = &quot;http://{baseurl}/content-gallery&quot;, MCP_NAME = &quot;content-gallery&quot; }
 
             [mcp_servers.media_manager]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8087/media-manager&quot;, MCP_NAME = &quot;media-manager&quot; }
+            env     = { URI = &quot;http://{baseurl}/media-manager&quot;, MCP_NAME = &quot;media-manager&quot; }
 
             [mcp_servers.gallery_display]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8088/gallery-display&quot;, MCP_NAME = &quot;gallery-display&quot; }
+            env     = { URI = &quot;http://{baseurl}/gallery-display&quot;, MCP_NAME = &quot;gallery-display&quot; }
 
             [mcp_servers.asset_organizer]
             command = &quot;npx&quot;
             args    = [&quot;-y&quot;, &quot;@pyroprompts/mcp-stdio-to-streamable-http-adapter&quot;]
-            env     = { URI = &quot;http://localhost:8089/asset-organizer&quot;, MCP_NAME = &quot;asset-organizer&quot; }</code></pre>
+            env     = { URI = &quot;http://{baseurl}/asset-organizer&quot;, MCP_NAME = &quot;asset-organizer&quot; }</code></pre>
         </div>
         
         <div class="detail-section">
