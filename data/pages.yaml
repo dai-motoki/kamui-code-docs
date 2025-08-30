@@ -1435,6 +1435,28 @@ playlist-all:
                 <div style="color: var(--text-weak); font-size: 14px;">最新の動画生成・編集AIを集約したプロ向け環境</div>
             </div>
             
+            <!-- コンテンツギャラリー MCP SaaS -->
+            <div class="list-item" onclick="navigateTo('mcp-saas-content-gallery')" 
+                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
+                        padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
+                        border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
+                 onmouseover="this.style.background='var(--hover)'" 
+                 onmouseout="this.style.background='var(--card)'">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                    <strong style="color: var(--text); font-size: 14px; text-align: center;">コンテンツギャラリー MCP SaaS</strong>
+                    <img src="./images/gallery_thumbnail.png" alt="コンテンツギャラリー MCP SaaS" 
+                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
+                </div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
+                </div>
+                <div style="color: var(--text);">12</div>
+                <div style="color: var(--text-weak);">
+                    <span style="background: #10b981; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">v1.0.0</span>
+                </div>
+                <div style="color: var(--text-weak); font-size: 14px;">マルチメディアコンテンツの統合管理・展示システム</div>
+            </div>
+            
             <!-- 絵コンテ・ビデオコンテ MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-storyboard')" 
                  style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
@@ -1478,6 +1500,8 @@ playlist-all:
                 </div>
                 <div style="color: var(--text-weak); font-size: 14px;">要件定義書の自動生成と画像生成機能</div>
             </div>
+            
+
             
             <!-- KAMUI CODE MCP SaaS -->
             <div class="list-item" onclick="navigateTo('playlist-kamui-code')" 
@@ -1785,32 +1809,7 @@ playlist-all:
                 <div style="color: var(--text-weak); font-size: 14px;">教育・研修用動画コンテンツの自動生成</div>
             </div>
             
-            <!-- コンテンツギャラリー MCP SaaS -->
-            <div class="list-item" onclick="navigateTo('mcp-saas-content-gallery')" 
-                 style="display: grid; grid-template-columns: 280px 1fr 1fr 1fr 2fr; gap: 16px; 
-                        padding: 20px 24px; background: var(--card); border: 1px solid var(--border); 
-                        border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;"
-                 onmouseover="this.style.background='var(--hover)'" 
-                 onmouseout="this.style.background='var(--card)'">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
 
-                    <strong style="color: var(--text); font-size: 14px; text-align: center;">コンテンツギャラリー MCP SaaS</strong>
-
-                    <img src="./images/gallery_thumbnail.png" alt="コンテンツギャラリー MCP SaaS" 
-
-                         style="width: 269px; height: 151px; border-radius: 8px; object-fit: cover;">
-
-                </div>
-
-                <div style="color: var(--text-weak);">
-                    <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">クリエイティブ</span>
-                </div>
-                <div style="color: var(--text);">12</div>
-                <div style="color: var(--text-weak);">
-                    <span style="background: #10b981; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">v1.0.0</span>
-                </div>
-                <div style="color: var(--text-weak); font-size: 14px;">マルチメディアコンテンツの統合管理・展示システム</div>
-            </div>
             
             <!-- データサイエンス系 MCP SaaS -->
             <div class="list-item" onclick="navigateTo('mcp-saas-data-science')" 
@@ -3555,18 +3554,102 @@ mcp-saas-training-video:
 mcp-saas-content-gallery:
   html: |
     <div class="page-header">
-        <h1 class="page-title">コンテンツギャラリー</h1>
-        <p class="page-subtitle">MCP SaaS コンテンツライブラリ</p>
+        <h1 class="page-title">コンテンツギャラリー MCP SaaS</h1>
+        <p class="page-subtitle">マルチメディアコンテンツ統合管理・展示システム</p>
         <div class="page-divider"></div>
     </div>
     
-    <div class="content-section">
-        <div style="margin: 24px 0;">
-            <video controls autoplay loop muted style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-                <source src="/kamui-code-docs/videos/gallery-demo.mp4" type="video/mp4">
-                お使いのブラウザは動画再生に対応していません。
-            </video>
-            <p style="margin-top: 16px; color: var(--text-weak); font-size: 14px; text-align: center;">コンテンツギャラリーの実際の動作をご覧ください</p>
+    <div class="playlist-detail-container">
+        <div class="detail-section">
+            <h2 class="section-title">デモ動画</h2>
+            <div style="margin: 24px 0;">
+                <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <source src="/kamui-code-docs/videos/gallery-demo.mp4" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+                <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">コンテンツギャラリーの実際の動作とUI/UXをご覧ください</p>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">JSON設定</h2>
+            <pre class="code"><code>{
+            "mcpServers": {
+            "content-gallery": {
+            "type": "http",
+            "url": "https://{baseurl}/content-gallery"
+            },
+            "media-manager": {
+            "type": "http",
+            "url": "https://{baseurl}/media-manager"
+            },
+            "gallery-display": {
+            "type": "http",
+            "url": "https://{baseurl}/gallery-display"
+            },
+            "asset-organizer": {
+            "type": "http",
+            "url": "https://{baseurl}/asset-organizer"
+            }
+            }
+            }</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">TOML設定</h2>
+            <pre class="code"><code>[mcpServers.content-gallery]
+            type = "http"
+            url = "https://{baseurl}/content-gallery"
+
+            [mcpServers.media-manager]
+            type = "http"
+            url = "https://{baseurl}/media-manager"
+
+            [mcpServers.gallery-display]
+            type = "http"
+            url = "https://{baseurl}/gallery-display"
+
+            [mcpServers.asset-organizer]
+            type = "http"
+            url = "https://{baseurl}/asset-organizer"</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">利用方法</h2>
+            <div class="usage-content">
+                <h3>1. Claude Codeへの設定</h3>
+                <p>Claude Codeの設定ファイルに上記のJSONまたはTOMLを追加</p>
+                
+                <h3>2. コンテンツ管理</h3>
+                <p>画像、動画、ドキュメントなどのマルチメディアコンテンツを統合管理</p>
+                
+                <h3>3. サーバー一覧</h3>
+                <ul>
+                    <li><strong>content-gallery</strong> - メインギャラリーサーバー</li>
+                    <li><strong>media-manager</strong> - メディアファイル管理</li>
+                    <li><strong>gallery-display</strong> - ギャラリー表示・レイアウト管理</li>
+                    <li><strong>asset-organizer</strong> - アセット整理・タグ付け</li>
+                </ul>
+                
+                <h3>4. 主な機能</h3>
+                <ul>
+                    <li>マルチメディアファイルの一元管理</li>
+                    <li>カテゴリー・タグによる整理</li>
+                    <li>レスポンシブギャラリー表示</li>
+                    <li>検索・フィルター機能</li>
+                    <li>サムネイル自動生成</li>
+                    <li>メタデータ管理</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">GitHub</h2>
+            <div class="github-link">
+                <a href="https://github.com/kamuicode/mcp-content-gallery" target="_blank" class="github-button">
+                    <span>💙 GitHubリポジトリを見る</span>
+                </a>
+            </div>
         </div>
     </div>
 
