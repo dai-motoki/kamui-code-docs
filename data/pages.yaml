@@ -3154,117 +3154,420 @@ mcp-workflow:
 workflow-all:
   html: |
     <div class="page-header">
-        <h1 class="page-title">ワークフロー一覧</h1>
-        <p class="page-subtitle">複数のMCPサーバーを連携させた自動化フロー</p>
+        <h1 class="page-title">kamuicode-workflow</h1>
+        <p class="page-subtitle">🎬 モジュール化されたAI動画生成システム - GitHub Actionsで完全自動化された動画制作パイプライン</p>
         <div class="page-divider"></div>
     </div>
     
-    <div class="workflow-packages-grid">
-        <!-- Gemini I2V Workflow -->
-        <div class="package-card workflow-gemini-i2v">
-            <div class="package-header">
-                <h3 class="package-title">Gemini I2V ワークフロー</h3>
-                <div class="package-path">画像から動画を生成するAIワークフロー</div>
+    <div class="workflow-section">
+        <h2 class="section-title">🎭 オーケストレータ（15種類）</h2>
+        <p class="section-subtitle">複数のモジュールを組み合わせて、特定の目的に最適化されたワークフロー</p>
+        
+        <div class="workflow-packages-grid">
+            <!-- 0. AIニュース記事生成 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-ai-news-article')">
+                <div class="package-header">
+                    <h3 class="package-title">AIニュース記事生成</h3>
+                    <div class="package-path">ウェブ検索から記事・音声まで完全自動化</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">バージョン:</span>
+                        <span class="stat-value">v0.4.0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">処理時間:</span>
+                        <span class="stat-value">15-20分</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">GitHub:</span>
-                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/gemini-i2v-workflow" target="_blank" style="color: #6366f1;">
-                        リポジトリを見る
-                    </a>
+            
+            <!-- 1. プロフェッショナルニュース番組生成 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-news-video')">
+                <div class="package-header">
+                    <h3 class="package-title">プロフェッショナルニュース番組生成</h3>
+                    <div class="package-path">完全統合ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">バージョン:</span>
+                        <span class="stat-value">v0.3.0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">処理時間:</span>
+                        <span class="stat-value">20-30分</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2. 基本1動画版 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-single')">
+                <div class="package-header">
+                    <h3 class="package-title">基本1動画版</h3>
+                    <div class="package-path">線形ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">特徴:</span>
+                        <span class="stat-value">シンプル構成</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3. 2動画版 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-dual')">
+                <div class="package-header">
+                    <h3 class="package-title">2動画版</h3>
+                    <div class="package-path">並列処理ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">特徴:</span>
+                        <span class="stat-value">効率化</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 4. 2動画＋分析版 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-dual-analysis')">
+                <div class="package-header">
+                    <h3 class="package-title">2動画＋分析版</h3>
+                    <div class="package-path">品質評価付きワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">特徴:</span>
+                        <span class="stat-value">Gemini Vision API</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 5. 4動画版 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-video-quad')">
+                <div class="package-header">
+                    <h3 class="package-title">4動画版</h3>
+                    <div class="package-path">大規模並列ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">特徴:</span>
+                        <span class="stat-value">最大4動画</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 6. バナー広告作成版 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-banner-advertisement')">
+                <div class="package-header">
+                    <h3 class="package-title">バナー広告作成版</h3>
+                    <div class="package-path">AI自動バナー生成ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">特徴:</span>
+                        <span class="stat-value">最大4バナー</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 7. マルチモデル動画テスト -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-multi-model-video')">
+                <div class="package-header">
+                    <h3 class="package-title">マルチモデル動画テスト</h3>
+                    <div class="package-path">任意のAIモデル選択動画ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">t2v/i2v/r2v対応</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 8. マルチモデル画像テスト -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-multi-model-image')">
+                <div class="package-header">
+                    <h3 class="package-title">マルチモデル画像テスト</h3>
+                    <div class="package-path">任意のAIモデル選択画像ワークフロー</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">5モデル対応</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 9. I2V FALアップロードテスト -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-i2v-fal-upload')">
+                <div class="package-header">
+                    <h3 class="package-title">I2V FALアップロードテスト</h3>
+                    <div class="package-path">画像→動画生成とFALアップロード統合</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">バージョン:</span>
+                        <span class="stat-value">v0.5.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 10. I2V生成・解析統合 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-i2v-generation-analysis')">
+                <div class="package-header">
+                    <h3 class="package-title">I2V生成・解析統合</h3>
+                    <div class="package-path">Claude Code SDK版動画生成・解析</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">バージョン:</span>
+                        <span class="stat-value">v0.5.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 11. Pixverseリップシンク単体 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-pixverse-lipsync')">
+                <div class="package-header">
+                    <h3 class="package-title">Pixverseリップシンク単体</h3>
+                    <div class="package-path">制限対応高品質リップシンク</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">バージョン:</span>
+                        <span class="stat-value">v0.5.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 12. 自律的バナー生成 -->
+            <div class="package-card workflow-orchestrator" onclick="navigateTo('orchestrator-banner-autonomous')">
+                <div class="package-header">
+                    <h3 class="package-title">自律的バナー生成</h3>
+                    <div class="package-path">AI評価による品質保証機能付きバナー生成</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕 v0.6.0</span>
+                        <span class="stat-value">70点合格基準</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="workflow-section">
+        <h2 class="section-title">🧩 モジュール（36種類）</h2>
+        <p class="section-subtitle">各オーケストレータを構成する基本的な処理単位</p>
+        
+        <h3 class="subsection-title">🆕 自律的バナー生成専門モジュール（v0.6.0）</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-banner-autonomous-generation')">
+                <div class="package-header">
+                    <h3 class="package-title">自律的バナー生成</h3>
+                    <div class="package-path">AI評価基準を満たすまで自動改善</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">518行</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-banner-concept-to-prompt')">
+                <div class="package-header">
+                    <h3 class="package-title">バナーコンセプト企画</h3>
+                    <div class="package-path">コンセプト→最適化プロンプト変換</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">247行</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Module Workflow -->
-        <div class="package-card workflow-module">
-            <div class="package-header">
-                <h3 class="package-title">モジュールワークフロー</h3>
-                <div class="package-path">AI駆動の動画生成ワークフロー</div>
+        <h3 class="subsection-title">🆕 AIニュース記事生成専門モジュール（v0.4.0）</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-web-search')">
+                <div class="package-header">
+                    <h3 class="package-title">ウェブ検索</h3>
+                    <div class="package-path">包括的検索実行</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">207行</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">GitHub:</span>
-                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/module-workflow" target="_blank" style="color: #6366f1;">
-                        リポジトリを見る
-                    </a>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-article-creation')">
+                <div class="package-header">
+                    <h3 class="package-title">AI記事作成</h3>
+                    <div class="package-path">検索結果ベースの高品質記事作成</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">282行</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Music Video Workflow -->
-        <div class="package-card workflow-music-video">
-            <div class="package-header">
-                <h3 class="package-title">ミュージックビデオワークフロー</h3>
-                <div class="package-path">音楽に合わせた動画生成ワークフロー</div>
+        <h3 class="subsection-title">🆕 ニュース動画生成専門モジュール（v0.3.0）</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-news-planning')">
+                <div class="package-header">
+                    <h3 class="package-title">ニュース企画立案</h3>
+                    <div class="package-path">プロフェッショナルニュース番組の制作企画</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">AI:</span>
+                        <span class="stat-value">Claude Code SDK</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">GitHub:</span>
-                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/music-video-workflow" target="_blank" style="color: #6366f1;">
-                        リポジトリを見る
-                    </a>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-audio-generation-multi-model')">
+                <div class="package-header">
+                    <h3 class="package-title">マルチモデル音声生成</h3>
+                    <div class="package-path">複数の音声生成エンジン対応</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">技術:</span>
+                        <span class="stat-value">kamuicode MCP</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Video Background Removal Workflow -->
-        <div class="package-card workflow-bg-removal">
-            <div class="package-header">
-                <h3 class="package-title">動画背景除去ワークフロー</h3>
-                <div class="package-path">動画から背景を自動除去するワークフロー</div>
+        <h3 class="subsection-title">📋 セットアップ・管理モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-setup-branch')">
+                <div class="package-header">
+                    <h3 class="package-title">ブランチ・フォルダ作成</h3>
+                    <div class="package-path">タイムスタンプベースの作業環境構築</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">機能:</span>
+                        <span class="stat-value">自動環境構築</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">GitHub:</span>
-                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/video-background-removal-workflow" target="_blank" style="color: #6366f1;">
-                        リポジトリを見る
-                    </a>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-create-pr')">
+                <div class="package-header">
+                    <h3 class="package-title">プルリクエスト作成</h3>
+                    <div class="package-path">生成コンテンツの整理・公開</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">機能:</span>
+                        <span class="stat-value">美しいPR生成</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Video Workflow Template -->
-        <div class="package-card workflow-template">
-            <div class="package-header">
-                <h3 class="package-title">ビデオワークフローテンプレート</h3>
-                <div class="package-path">カスタマイズ可能な動画生成テンプレート</div>
+        <h3 class="subsection-title">🎯 AI企画モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-planning-ccsdk')">
+                <div class="package-header">
+                    <h3 class="package-title">Claude Code SDK版 AI企画</h3>
+                    <div class="package-path">モデル適応型企画立案</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">AI:</span>
+                        <span class="stat-value">Claude</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">GitHub:</span>
-                    <a href="https://github.com/KentaHomma/kamuicode-workflow/tree/main/video-workflow-template" target="_blank" style="color: #6366f1;">
-                        リポジトリを見る
-                    </a>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-planning-gca')">
+                <div class="package-header">
+                    <h3 class="package-title">Gemini CLI Action版 AI企画</h3>
+                    <div class="package-path">高速処理、コスト効率重視</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">AI:</span>
+                        <span class="stat-value">Gemini Pro</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- LoRA Workflow (準備中) -->
-        <div class="package-card workflow-lora" style="opacity: 0.7;">
-            <div class="package-header">
-                <h3 class="package-title">LoRAワークフロー</h3>
-                <div class="package-path">LoRAを活用した画像生成ワークフロー</div>
+        <h3 class="subsection-title">🎨 画像生成モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-image-generation-imagen4-ultra')">
+                <div class="package-header">
+                    <h3 class="package-title">Imagen4 Ultra 高品質画像生成</h3>
+                    <div class="package-path">最高品質（2048x2048対応）</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">用途:</span>
+                        <span class="stat-value">商用利用</span>
+                    </div>
+                </div>
             </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">ステータス:</span>
-                    <span class="stat-value" style="color: #ef4444;">準備中</span>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-image-generation-multi-model')">
+                <div class="package-header">
+                    <h3 class="package-title">マルチモデル対応画像生成</h3>
+                    <div class="package-path">動的モデル選択</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">5モデル対応</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Whiteboard Explanation Video Workflow (準備中) -->
-        <div class="package-card workflow-whiteboard" style="opacity: 0.7;">
-            <div class="package-header">
-                <h3 class="package-title">ホワイトボード解説動画ワークフロー</h3>
-                <div class="package-path">自動解説動画生成ワークフロー</div>
-            </div>
-            <div class="package-stats">
-                <div class="stat-item">
-                    <span class="stat-label">ステータス:</span>
-                    <span class="stat-value" style="color: #ef4444;">準備中</span>
+        <h3 class="subsection-title">🎬 動画生成モジュール</h3>
+        <div class="workflow-packages-grid">
+            <div class="package-card workflow-module" onclick="navigateTo('module-video-generation-vidu-q1')">
+                <div class="package-header">
+                    <h3 class="package-title">Vidu Q1 参照動画生成</h3>
+                    <div class="package-path">自然な動き、高い一貫性</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">品質:</span>
+                        <span class="stat-value">720p, 4-6秒</span>
+                    </div>
                 </div>
             </div>
+            
+            <div class="package-card workflow-module" onclick="navigateTo('module-video-generation-multi-model')">
+                <div class="package-header">
+                    <h3 class="package-title">マルチモデル対応動画生成</h3>
+                    <div class="package-path">t2v/i2v/r2v全対応</div>
+                </div>
+                <div class="package-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">🆕</span>
+                        <span class="stat-value">3タイプ対応</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="workflow-section">
+        <div class="github-link" style="text-align: center; margin: 40px 0;">
+            <a href="https://github.com/KentaHomma/kamuicode-workflow" target="_blank" class="github-button">
+                <span>📁 GitHubリポジトリを見る</span>
+            </a>
         </div>
     </div>
