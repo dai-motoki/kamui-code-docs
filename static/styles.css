@@ -413,7 +413,7 @@ body {
     color: #2563eb;
 }
 
-/* プレイリストパッケージカード */
+/* MCP SaaSパッケージカード */
 .playlist-packages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -557,7 +557,7 @@ body {
     }
 }
 
-/* プレイリスト詳細ページ */
+/* MCP SaaS詳細ページ */
 .playlist-detail-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -673,7 +673,7 @@ body {
     gap: 8px;
 }
 
-/* プレイリストカテゴリページ */
+/* MCP SaaSカテゴリページ */
 .playlist-category-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -879,7 +879,7 @@ body {
 .mcp-diff-page .diff-video { width: 100%; border-radius: 8px; display: block; }
 .mcp-diff-page .diff-video-wrap { margin-bottom: 16px; }
 
-/* プレイリスト */
+/* MCP SaaS */
 .playlist-item {
     position: relative;
     background: var(--card);
@@ -941,7 +941,7 @@ body {
     font-size: 12px;
 }
 
-/* カタログ */
+/* MCP リスト */
 .catalog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1242,7 +1242,7 @@ code.inline { background: #111318; border: 1px solid #2a2f3a; border-radius: 4px
     line-height: 1.5;
 }
 
-/* プレイリストとカタログの違いページスタイル */
+/* MCP SaaSとMCP リストの違いページスタイル */
 .diff-overview {
     background: var(--card-bg);
     border: 1px solid var(--card-border);

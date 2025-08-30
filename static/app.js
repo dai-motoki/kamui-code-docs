@@ -20,7 +20,7 @@ const menuData = (typeof window !== 'undefined' && window.MENU_DATA)
         icon: '📚',
         path: '/playlist',
         children: [
-            { id: 'playlist-all', type: 'menu', label: 'プレイリスト一覧', path: '/playlist/all' },
+            { id: 'playlist-all', type: 'menu', label: 'MCP SaaS一覧', path: '/playlist/all' },
             { id: 'playlist-creative', type: 'menu', label: 'クリエイティブ', path: '/playlist/creative' },
             { id: 'playlist-development', type: 'menu', label: '開発', path: '/playlist/development' },
             { id: 'playlist-business', type: 'menu', label: 'ビジネス', path: '/playlist/business' }
@@ -33,7 +33,7 @@ const menuData = (typeof window !== 'undefined' && window.MENU_DATA)
         icon: '📦',
         path: '/catalog',
         children: [
-            { id: 'catalog-all', type: 'menu', label: 'カタログ一覧', path: '/catalog/all' },
+            { id: 'catalog-all', type: 'menu', label: 'MCP リスト一覧', path: '/catalog/all' },
             {
                 id: 'catalog-creative',
                 type: 'menu',
@@ -226,7 +226,7 @@ const pageContents = (function() {
             
             <h3>はじめ方</h3>
             <ol>
-                <li>プレイリストから必要なサービスを選択</li>
+                <li>MCP SaaSから必要なサービスを選択</li>
                 <li>MCPサーバーURLをコピー</li>
                 <li>Claude Codeの設定に追加</li>
                 <li>AIパワーで開発を加速！</li>
@@ -236,7 +236,7 @@ const pageContents = (function() {
     
     'playlist-creative': `
         <div class="page-header">
-            <h1 class="page-title">クリエイティブプレイリスト</h1>
+            <h1 class="page-title">クリエイティブMCP SaaS</h1>
             <p class="page-subtitle">画像・動画・音声生成のMCPサーバー</p>
             <div class="page-divider"></div>
         </div>
@@ -244,7 +244,7 @@ const pageContents = (function() {
         <div class="playlist-category-grid">
             <div class="playlist-card" onclick="navigateTo('playlist-image-ai')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">画像生成AI特化プレイリスト</h3>
+                    <h3 class="playlist-card-title">画像生成AI特化MCP SaaS</h3>
                     <div class="playlist-card-badge">画像生成特化</div>
                 </div>
                 <p class="playlist-card-description">最新の画像生成AI（Imagen4、Flux、Qwen）と画像編集AI（Kontext、Krea LoRA）を集約。プロ向け画像制作環境</p>
@@ -256,7 +256,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
+                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ MCP SaaS</h3>
                     <div class="playlist-card-badge">ストーリーボード</div>
                 </div>
                 <p class="playlist-card-description">ストーリーボード作成用。画像生成（Imagen4）、画像編集（Flux Kontext）、動画生成（Seedance）を統合</p>
@@ -268,7 +268,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                    <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                     <div class="playlist-card-badge">フルセット</div>
                 </div>
                 <p class="playlist-card-description">全55サーバー搭載。T2I、I2I、T2V、I2V、V2V、音声、音楽生成まで全機能カバー</p>
@@ -282,7 +282,7 @@ const pageContents = (function() {
 
     'playlist-development': `
         <div class="page-header">
-            <h1 class="page-title">開発プレイリスト</h1>
+            <h1 class="page-title">開発MCP SaaS</h1>
             <p class="page-subtitle">開発ツール・CI/CD・解析のMCPサーバー</p>
             <div class="page-divider"></div>
         </div>
@@ -290,7 +290,7 @@ const pageContents = (function() {
         <div class="playlist-category-grid">
             <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                    <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                     <div class="playlist-card-badge">統合開発環境</div>
                 </div>
                 <p class="playlist-card-description">開発者向け完全セット。ファイルアップロード、画像/動画処理、AI解析、自動化ツールを網羅</p>
@@ -302,7 +302,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-requirement')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">Requirement プレイリスト</h3>
+                    <h3 class="playlist-card-title">Requirement MCP SaaS</h3>
                     <div class="playlist-card-badge">要件定義</div>
                 </div>
                 <p class="playlist-card-description">要件定義書の自動生成。画像生成・編集ツールを含む開発文書作成支援</p>
@@ -316,7 +316,7 @@ const pageContents = (function() {
 
     'playlist-business': `
         <div class="page-header">
-            <h1 class="page-title">ビジネスプレイリスト</h1>
+            <h1 class="page-title">ビジネスMCP SaaS</h1>
             <p class="page-subtitle">要件定義・文書作成・プレゼンテーションのMCPサーバー</p>
             <div class="page-divider"></div>
         </div>
@@ -324,7 +324,7 @@ const pageContents = (function() {
         <div class="playlist-category-grid">
             <div class="playlist-card" onclick="navigateTo('playlist-requirement')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">Requirement プレイリスト</h3>
+                    <h3 class="playlist-card-title">Requirement MCP SaaS</h3>
                     <div class="playlist-card-badge">要件定義</div>
                 </div>
                 <p class="playlist-card-description">要件定義書の自動生成。HTML形式でナビゲーション付きドキュメント作成、画像生成機能付き</p>
@@ -336,7 +336,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
+                    <h3 class="playlist-card-title">絵コンテ・ビデオコンテ MCP SaaS</h3>
                     <div class="playlist-card-badge">企画制作</div>
                 </div>
                 <p class="playlist-card-description">ストーリーボード作成支援。画像生成、動画作成、ナレーション追加まで完全サポート</p>
@@ -348,7 +348,7 @@ const pageContents = (function() {
             
             <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
                 <div class="playlist-card-header">
-                    <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                    <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                     <div class="playlist-card-badge">全機能</div>
                 </div>
                 <p class="playlist-card-description">ビジネス用途に必要な全機能。文書作成、プレゼン、動画、音声まですべて網羅</p>
@@ -471,7 +471,7 @@ const pageContents = (function() {
     `,
 
     'catalog-creative': `
-        <h1 class="page-title">カタログ: クリエイティブ</h1>
+        <h1 class="page-title">MCP リスト: クリエイティブ</h1>
         <p class="page-subtitle">生成・編集系のMCPサーバー</p>
         <div class="catalog-grid">
             <div class="catalog-item" onclick="navigateTo('t2i-imagen4')">
@@ -488,7 +488,7 @@ const pageContents = (function() {
     `,
 
     'catalog-development': `
-        <h1 class="page-title">カタログ: 開発</h1>
+        <h1 class="page-title">MCP リスト: 開発</h1>
         <p class="page-subtitle">開発支援系のMCPサーバー</p>
         <div class="catalog-grid">
             <div class="catalog-item" onclick="navigateTo('t2v-wan')">
@@ -505,7 +505,7 @@ const pageContents = (function() {
     `,
 
     'catalog-business': `
-        <h1 class="page-title">カタログ: ビジネス</h1>
+        <h1 class="page-title">MCP リスト: ビジネス</h1>
         <p class="page-subtitle">ドキュメント/要件定義支援</p>
         <div class="catalog-grid">
             <div class="catalog-item" onclick="navigateTo('req-docs')">
@@ -630,10 +630,10 @@ const pageContents = (function() {
     `,
 
     
-    // プレイリスト詳細ページ
+    // MCP SaaS詳細ページ
     'playlist-storyboard': `
         <div class="page-header">
-            <h1 class="page-title">絵コンテ・ビデオコンテ プレイリスト</h1>
+            <h1 class="page-title">絵コンテ・ビデオコンテ MCP SaaS</h1>
             <p class="page-subtitle">ストーリーボード作成用MCPサーバー</p>
             <div class="page-divider"></div>
         </div>
@@ -723,7 +723,7 @@ url = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"</code></pre>
     
     'playlist-requirement': `
         <div class="page-header">
-            <h1 class="page-title">Requirement プレイリスト</h1>
+            <h1 class="page-title">Requirement MCP SaaS</h1>
             <p class="page-subtitle">要件定義ドキュメント作成用MCPサーバー</p>
             <div class="page-divider"></div>
         </div>
@@ -822,7 +822,7 @@ url = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"</code></pre>
     
     'playlist-kamui-code': `
         <div class="page-header">
-            <h1 class="page-title">KAMUI CODE プレイリスト</h1>
+            <h1 class="page-title">KAMUI CODE MCP SaaS</h1>
             <p class="page-subtitle">フル機能搭載のMCPサーバーセット</p>
             <div class="page-divider"></div>
         </div>
@@ -931,7 +931,7 @@ url = "https://{baseurl}/i2i/fal/flux/kontext/max"
     
     'playlist-image-ai': `
         <div class="page-header">
-            <h1 class="page-title">画像生成AI特化プレイリスト</h1>
+            <h1 class="page-title">画像生成AI特化MCP SaaS</h1>
             <p class="page-subtitle">最新の画像生成・編集AIを集約したプロフェッショナル向けMCPサーバー</p>
             <div class="page-divider"></div>
         </div>

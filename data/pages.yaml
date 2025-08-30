@@ -241,12 +241,12 @@ welcome:
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">1</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">プレイリストを選択</h3>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCP SaaSを選択</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          KAMUI CODEでは、開発用途に応じて最適化されたプレイリストを複数用意しています。Web開発、モバイルアプリ、データサイエンス、AI/ML開発など、あなたのプロジェクトに最適なサービスセットを選択してください。
+          KAMUI CODEでは、開発用途に応じて最適化されたMCP SaaSを複数用意しています。Web開発、モバイルアプリ、データサイエンス、AI/ML開発など、あなたのプロジェクトに最適なサービスセットを選択してください。
         </p>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          各プレイリストには、画像生成、動画生成、音声合成、データベース操作など、必要なMCPサーバーが事前に組み込まれています。カスタムプレイリストの作成も可能で、必要なサービスのみを選択して独自の開発環境を構築できます。
+          各MCP SaaSには、画像生成、動画生成、音声合成、データベース操作など、必要なMCPサーバーが事前に組み込まれています。カスタムMCP SaaSの作成も可能で、必要なサービスのみを選択して独自の開発環境を構築できます。
         </p>
       </div>
       
@@ -254,7 +254,7 @@ welcome:
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">2</div>
         <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCP設定をコピー</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          選択したプレイリストの設定コードが自動的に生成されます。JSON形式またはTOML形式から、Claude Codeの設定ファイル形式に合わせて選択できます。ワンクリックで全設定をクリップボードにコピーできます。
+          選択したMCP SaaSの設定コードが自動的に生成されます。JSON形式またはTOML形式から、Claude Codeの設定ファイル形式に合わせて選択できます。ワンクリックで全設定をクリップボードにコピーできます。
         </p>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
           各MCPサーバーの認証情報（APIキーなど）は環境変数として安全に管理されます。設定には必要最小限の情報のみが含まれ、セキュリティを保ちながら簡単にセットアップできるよう設計されています。
@@ -461,7 +461,7 @@ mcp-diff:
                 </svg>
                 MCP リスト
               </h3>
-              <p style="margin: 10px 0;">部品カタログのように</p>
+              <p style="margin: 10px 0;">部品MCP リストのように</p>
               <p style="margin: 10px 0;">利用可能なMCPサーバーを単体で羅列</p>
               <p style="margin: 10px 0;"><strong>エンジン、タイヤ、ハンドル</strong>など</p>
               <p style="margin: 10px 0;">必要な部品を選んで組み立てる</p>
@@ -520,7 +520,7 @@ mcp-diff:
               <circle cx="33" cy="27" r="3" fill="white"/>
               <path d="M18 21H30" stroke="white" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">ストーリーボードプレイリスト = 完成した車</h4>
+            <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">ストーリーボードMCP SaaS = 完成した車</h4>
             <div style="display: flex; justify-content: center; align-items: center; gap: 32px; margin-top: 16px;">
               <div style="text-align: center;">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -553,7 +553,7 @@ mcp-diff:
           
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
             <div style="background: rgba(99, 102, 241, 0.25); border-radius: 12px; padding: 20px;">
-              <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">プレイリストの例</h4>
+              <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">MCP SaaSの例</h4>
               <ul style="list-style: none; padding: 0;">
                 <li style="padding: 6px 0; font-size: 14px; color: var(--text-weak); display: flex; align-items: center; gap: 8px;">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,7 +588,7 @@ mcp-diff:
             </div>
             
             <div style="background: rgba(139, 92, 246, 0.25); border-radius: 12px; padding: 20px;">
-              <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">カタログ = パーツショップ</h4>
+              <h4 style="font-size: 16px; margin-bottom: 12px; color: var(--text);">MCP リスト = パーツショップ</h4>
               <ul style="list-style: none; padding: 0;">
                 <li style="padding: 6px 0; font-size: 14px; color: var(--text-weak); display: flex; align-items: center; gap: 8px;">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -620,7 +620,7 @@ mcp-diff:
                     <path d="M8 6V12" stroke="white" stroke-width="1" stroke-linecap="round"/>
                     <path d="M5 10L8 12L11 10" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  自作プレイリストに追加
+                  自作MCP SaaSに追加
                 </li>
               </ul>
             </div>
@@ -801,7 +801,7 @@ mcp-diff:
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="background: rgba(99, 102, 241, 0.15); border-radius: 12px; padding: 20px;">
-            <h4 style="color: #93c5fd; margin-bottom: 12px;">このプレイリストでできること</h4>
+            <h4 style="color: #93c5fd; margin-bottom: 12px;">このMCP SaaSでできること</h4>
             <ul style="list-style: none; padding: 0; color: rgba(255, 255, 255, 0.9); font-size: 14px;">
               <li style="padding: 8px 0;">✨ 要件定義書の自動生成</li>
               <li style="padding: 8px 0;"> サイト用画像の生成・編集</li>
@@ -832,7 +832,7 @@ mcp-diff:
                 <path d="M5 7H15M5 9H15M5 11H12" stroke="#6366f1" stroke-width="1" stroke-linecap="round"/>
                 <circle cx="14" cy="11" r="2" fill="#6366f1"/>
               </svg>
-              プレイリスト
+              MCP SaaS
             </th>
             <th style="padding: 16px; text-align: left; border: 1px solid var(--border); color: #8b5cf6;">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
@@ -841,7 +841,7 @@ mcp-diff:
                 <rect x="2" y="12" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
                 <rect x="12" y="12" width="6" height="6" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
               </svg>
-              カタログ
+              MCP リスト
             </th>
           </tr>
         </thead>
@@ -864,7 +864,7 @@ mcp-diff:
           <tr style="background: var(--hover);">
             <td style="padding: 16px; border: 1px solid var(--border); font-weight: 600;">利用方法</td>
             <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">まとめて設定に追加</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">個別に選んで自分専用のプレイリスト（MCP Json/toml ファイル）を作成</td>
+            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">個別に選んで自分専用のMCP SaaS（MCP Json/toml ファイル）を作成</td>
           </tr>
         </tbody>
       </table>
@@ -879,7 +879,7 @@ mcp-diff:
               <circle cx="19" cy="17" r="3" fill="#6366f1"/>
               <path d="M19 17V14" stroke="white" stroke-width="1" stroke-linecap="round"/>
             </svg>
-            プレイリストはこんな時
+            MCP SaaSはこんな時
           </h3>
           <ul style="list-style: none; padding: 0;">
             <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>すぐ使いたい</strong>（設定をコピペするだけ）</li>
@@ -889,7 +889,7 @@ mcp-diff:
           </ul>
           <div style="margin-top: 24px;">
             <a href="#playlist-all" onclick="navigateTo('playlist-all')" style="display: inline-block; background: #6366f1; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
-              プレイリスト一覧へ →
+              MCP SaaS一覧へ →
             </a>
           </div>
         </div>
@@ -902,17 +902,17 @@ mcp-diff:
               <rect x="4" y="16" width="8" height="8" rx="1" stroke="#8b5cf6" stroke-width="2" fill="rgba(139, 92, 246, 0.1)"/>
               <rect x="16" y="16" width="8" height="8" rx="1" stroke="#8b5cf6" stroke-width="2" fill="rgba(139, 92, 246, 0.1)"/>
             </svg>
-            カタログはこんな時
+            MCP リストはこんな時
           </h3>
           <ul style="list-style: none; padding: 0;">
             <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>個別に選びたい</strong>（特定の機能だけ）</li>
             <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>性能を比較したい</strong></li>
-            <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>自分でプレイリストを作りたい</strong></li>
+            <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>自分でMCP SaaSを作りたい</strong></li>
             <li style="padding: 8px 0; color: var(--text-weak);">✓ <strong>詳細仕様を確認したい</strong></li>
           </ul>
           <div style="margin-top: 24px;">
             <a href="#catalog-all" onclick="navigateTo('catalog-all')" style="display: inline-block; background: #8b5cf6; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
-              カタログ一覧へ →
+              MCP リスト一覧へ →
             </a>
           </div>
         </div>
@@ -922,9 +922,9 @@ mcp-diff:
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px;">
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
           <div>
-            <h4 style="font-size: 18px; margin-bottom: 16px; color: var(--text);">🎯 パターン1: 既製プレイリスト利用</h4>
+            <h4 style="font-size: 18px; margin-bottom: 16px; color: var(--text);">🎯 パターン1: 既製MCP SaaS利用</h4>
             <ol style="padding-left: 24px; color: var(--text-weak); line-height: 1.8;">
-              <li>プレイリスト一覧から選ぶ</li>
+              <li>MCP SaaS一覧から選ぶ</li>
               <li>JSON/TOMLをコピー</li>
               <li>Claude Codeに追加</li>
               <li>すぐ利用開始！</li>
@@ -932,11 +932,11 @@ mcp-diff:
           </div>
           
           <div>
-            <h4 style="font-size: 18px; margin-bottom: 16px; color: var(--text);">🛠️ パターン2: カスタムプレイリスト作成</h4>
+            <h4 style="font-size: 18px; margin-bottom: 16px; color: var(--text);">🛠️ パターン2: カスタムMCP SaaS作成</h4>
             <ol style="padding-left: 24px; color: var(--text-weak); line-height: 1.8;">
-              <li>カタログで各MCPサーバーを確認</li>
+              <li>MCP リストで各MCPサーバーを確認</li>
               <li>必要なものを選ぶ</li>
-              <li>自分だけのプレイリストを構成</li>
+              <li>自分だけのMCP SaaSを構成</li>
               <li>JSONに追加して利用！</li>
             </ol>
           </div>
@@ -962,7 +962,7 @@ mcp-diff:
           <h3 style="font-size: 18px; margin-bottom: 16px; color: white;">複数のMCPサーバーを連携させた自動化フロー</h3>
           <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 20px;">
             ワークフローは、複数のMCPサーバーを組み合わせて、複雑なタスクを自動化する仕組みです。
-            プレイリストがセットアップに特化しているのに対し、ワークフローは実行フローに特化しています。
+            MCP SaaSがセットアップに特化しているのに対し、ワークフローは実行フローに特化しています。
           </p>
         </div>
 
@@ -1120,41 +1120,46 @@ mcp-diff:
             <th style="padding: 12px; text-align: left; border: 1px solid var(--border); font-weight: 600;">項目</th>
             <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #fbbf24;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
-                <path d="M8 1L6 3H3C2.4 3 2 3.4 2 4V12C2 12.6 2.4 13 3 13H13C13.6 13 14 12.6 14 12V4C14 3.4 13.6 3 13 3H10L8 1Z" fill="rgba(251,191,36,0.2)" stroke="#fbbf24" stroke-width="1"/>
-                <circle cx="8" cy="8" r="2" fill="#fbbf24"/>
+                <path d="M8 14C8 14 11 11 11 8C11 6 9.5 4 8 2C6.5 4 5 6 5 8C5 11 8 14 8 14Z" fill="rgba(251,191,36,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+                <path d="M8 9C8 9 9.5 7.5 9.5 6C9.5 5 8.75 4 8 3C7.25 4 6.5 5 6.5 6C6.5 7.5 8 9 8 9Z" fill="#fbbf24"/>
               </svg>
               LLM
             </th>
             <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #ef4444;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
-                <circle cx="8" cy="8" r="2" stroke="#ef4444" stroke-width="1.5"/>
-                <path d="M8 2V6M8 10V14" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M2 8H6M10 8H14" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="8" cy="8" r="6" stroke="#ef4444" stroke-width="1.5" fill="rgba(239,68,68,0.1)"/>
+                <circle cx="8" cy="8" r="3" stroke="#ef4444" stroke-width="1.5" fill="#ef4444"/>
+                <path d="M2 8H6M10 8H14" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 2V6M8 10V14" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
               </svg>
               AI-CLI
             </th>
-            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #6366f1;">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
-                <rect x="2" y="3" width="12" height="9" rx="1" stroke="#6366f1" stroke-width="1" fill="rgba(99, 102, 241, 0.1)"/>
-                <path d="M4 5H12M4 7H12M4 9H10" stroke="#6366f1" stroke-width="0.8" stroke-linecap="round"/>
-              </svg>
-              MCP SaaS
-            </th>
             <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #8b5cf6;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
-                <rect x="2" y="2" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="9" y="2" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="2" y="9" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
-                <rect x="9" y="9" width="5" height="5" rx="1" stroke="#8b5cf6" stroke-width="1" fill="rgba(139, 92, 246, 0.1)"/>
+                <rect x="2" y="6" width="12" height="8" rx="1" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139, 92, 246, 0.1)"/>
+                <path d="M4 6V4C4 3.5 4.5 3 5 3H11C11.5 3 12 3.5 12 4V6" stroke="#8b5cf6" stroke-width="1.5"/>
+                <rect x="5" y="9" width="2" height="2" fill="#8b5cf6"/>
+                <rect x="9" y="9" width="2" height="2" fill="#8b5cf6"/>
               </svg>
               MCP リスト
             </th>
+            <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #6366f1;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
+                <path d="M3 10L3 12C3 13 4 14 5 14H5.5C6.5 14 7.5 13 7.5 12V10M11.5 10V12C11.5 13 12.5 14 13.5 14H14C15 14 16 13 16 12V10" stroke="#6366f1" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M3 10H16L15 6C15 5 14 4 13 4H6C5 4 4 5 4 6L3 10Z" fill="rgba(99, 102, 241, 0.2)" stroke="#6366f1" stroke-width="1.2"/>
+                <circle cx="6" cy="10" r="1.5" fill="#6366f1"/>
+                <circle cx="13" cy="10" r="1.5" fill="#6366f1"/>
+              </svg>
+              MCP SaaS
+            </th>
             <th style="padding: 12px; text-align: left; border: 1px solid var(--border); color: #10b981;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;">
-                <path d="M3 5L6 8L9 5" stroke="#10b981" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 8V11" stroke="#10b981" stroke-width="1.2" stroke-linecap="round"/>
-                <path d="M9 8L13 5" stroke="#10b981" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13 5V8" stroke="#10b981" stroke-width="1.2" stroke-linecap="round"/>
+                <rect x="2" y="8" width="12" height="5" rx="1" stroke="#10b981" stroke-width="1.5" fill="rgba(16, 185, 129, 0.2)"/>
+                <circle cx="4" cy="10.5" r="1" fill="#10b981"/>
+                <circle cx="8" cy="10.5" r="1" fill="#10b981"/>
+                <circle cx="12" cy="10.5" r="1" fill="#10b981"/>
+                <path d="M7 8V6L9 4" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M2 13H14" stroke="#10b981" stroke-width="1" opacity="0.5"/>
               </svg>
               MCP ワークフロー
             </th>
@@ -1165,21 +1170,33 @@ mcp-diff:
             <td style="padding: 12px; border: 1px solid var(--border); font-weight: 600;">何？</td>
             <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">大規模言語モデル</td>
             <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">コマンドライン統合ツール</td>
-            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">MCPサーバーのセット</td>
             <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">個別MCPサーバーのリスト</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">MCPサーバーのセット</td>
             <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">連携処理の自動化フロー</td>
           </tr>
           <tr style="background: var(--hover);">
-            <td style="padding: 16px; border: 1px solid var(--border); font-weight: 600;">目的</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">環境セットアップ</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">サーバー選択・比較</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">タスク自動化</td>
+            <td style="padding: 12px; border: 1px solid var(--border); font-weight: 600;">役割</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">知識・理解の源泉</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">LLMを実用化する</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">部品カタログ</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">統合管理・監視</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">自動実行の仕組み</td>
           </tr>
           <tr>
-            <td style="padding: 16px; border: 1px solid var(--border); font-weight: 600;">例え</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">音楽プレイリスト</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">全楽曲リスト</td>
-            <td style="padding: 16px; border: 1px solid var(--border); color: var(--text-weak);">料理レシピ</td>
+            <td style="padding: 12px; border: 1px solid var(--border); font-weight: 600;">例え</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">石炭（エネルギー源）</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">エンジン（動力変換）</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">部品リスト</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">完成した車</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">線路（実行経路）</td>
+          </tr>
+          <tr style="background: var(--hover);">
+            <td style="padding: 12px; border: 1px solid var(--border); font-weight: 600;">代表例</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">GPT, Gemini, Claude</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">Claude Code, Gemini CLI</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">単体MCPサーバー</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">用途別セット</td>
+            <td style="padding: 12px; border: 1px solid var(--border); color: var(--text-weak);">GitHub Actions等</td>
           </tr>
         </tbody>
       </table>
@@ -1188,7 +1205,7 @@ mcp-diff:
 playlist-creative:
   html: |
     <div class="page-header">
-        <h1 class="page-title">クリエイティブプレイリスト</h1>
+        <h1 class="page-title">クリエイティブMCP SaaS</h1>
         <p class="page-subtitle">画像・動画・音声生成のMCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -1196,7 +1213,7 @@ playlist-creative:
     <div class="playlist-category-grid">
         <div class="playlist-card" onclick="navigateTo('playlist-image-ai')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">画像生成AI特化プレイリスト</h3>
+                <h3 class="playlist-card-title">画像生成AI特化MCP SaaS</h3>
                 <div class="playlist-card-badge">画像生成特化</div>
             </div>
             <p class="playlist-card-description">最新の画像生成AI（Imagen4、Flux、Qwen）と画像編集AI（Kontext、Krea LoRA）を集約。プロ向け画像制作環境</p>
@@ -1208,7 +1225,7 @@ playlist-creative:
         
         <div class="playlist-card" onclick="navigateTo('playlist-video-ai')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">動画生成AI特化プレイリスト</h3>
+                <h3 class="playlist-card-title">動画生成AI特化MCP SaaS</h3>
                 <div class="playlist-card-badge">動画生成特化</div>
             </div>
             <p class="playlist-card-description">最新の動画生成AI（Veo3、Luma、WAN）と動画編集AI（Ray2、Pixverse、Runway）を集約。プロ向け動画制作環境</p>
@@ -1220,7 +1237,7 @@ playlist-creative:
         
         <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
+                <h3 class="playlist-card-title">絵コンテ・ビデオコンテ MCP SaaS</h3>
                 <div class="playlist-card-badge">ストーリーボード</div>
             </div>
             <p class="playlist-card-description">ストーリーボード作成用。画像生成（Imagen4）、画像編集（Flux Kontext）、動画生成（Seedance）を統合</p>
@@ -1232,7 +1249,7 @@ playlist-creative:
         
         <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                 <div class="playlist-card-badge">フルセット</div>
             </div>
             <p class="playlist-card-description">全55サーバー搭載。T2I、I2I、T2V、I2V、V2V、音声、音楽生成まで全機能カバー</p>
@@ -1244,7 +1261,7 @@ playlist-creative:
         
         <div class="playlist-card" onclick="navigateTo('playlist-remotion-video')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">Remotion動画生成プレイリスト</h3>
+                <h3 class="playlist-card-title">Remotion動画生成MCP SaaS</h3>
                 <div class="playlist-card-badge">React動画</div>
             </div>
             <p class="playlist-card-description">Reactコンポーネントで動画制作。画像生成（Imagen4）、音声合成（MiniMax）、BGM生成（Lyria）を統合</p>
@@ -1258,7 +1275,7 @@ playlist-creative:
 playlist-development:
   html: |
     <div class="page-header">
-        <h1 class="page-title">開発プレイリスト</h1>
+        <h1 class="page-title">開発MCP SaaS</h1>
         <p class="page-subtitle">開発ツール・CI/CD・解析のMCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -1266,7 +1283,7 @@ playlist-development:
     <div class="playlist-category-grid">
         <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                 <div class="playlist-card-badge">統合開発環境</div>
             </div>
             <p class="playlist-card-description">開発者向け完全セット。ファイルアップロード、画像/動画処理、AI解析、自動化ツールを網羅</p>
@@ -1278,7 +1295,7 @@ playlist-development:
         
         <div class="playlist-card" onclick="navigateTo('playlist-requirement')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">Requirement プレイリスト</h3>
+                <h3 class="playlist-card-title">Requirement MCP SaaS</h3>
                 <div class="playlist-card-badge">要件定義</div>
             </div>
             <p class="playlist-card-description">要件定義書の自動生成。画像生成・編集ツールを含む開発文書作成支援</p>
@@ -1292,7 +1309,7 @@ playlist-development:
 playlist-business:
   html: |
     <div class="page-header">
-        <h1 class="page-title">ビジネスプレイリスト</h1>
+        <h1 class="page-title">ビジネスMCP SaaS</h1>
         <p class="page-subtitle">要件定義・文書作成・プレゼンテーションのMCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -1300,7 +1317,7 @@ playlist-business:
     <div class="playlist-category-grid">
         <div class="playlist-card" onclick="navigateTo('playlist-requirement')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">Requirement プレイリスト</h3>
+                <h3 class="playlist-card-title">Requirement MCP SaaS</h3>
                 <div class="playlist-card-badge">要件定義</div>
             </div>
             <p class="playlist-card-description">要件定義書の自動生成。HTML形式でナビゲーション付きドキュメント作成、画像生成機能付き</p>
@@ -1312,7 +1329,7 @@ playlist-business:
         
         <div class="playlist-card" onclick="navigateTo('playlist-storyboard')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">絵コンテ・ビデオコンテ プレイリスト</h3>
+                <h3 class="playlist-card-title">絵コンテ・ビデオコンテ MCP SaaS</h3>
                 <div class="playlist-card-badge">企画制作</div>
             </div>
             <p class="playlist-card-description">ストーリーボード作成支援。画像生成、動画作成、ナレーション追加まで完全サポート</p>
@@ -1324,7 +1341,7 @@ playlist-business:
         
         <div class="playlist-card" onclick="navigateTo('playlist-kamui-code')">
             <div class="playlist-card-header">
-                <h3 class="playlist-card-title">KAMUI CODE プレイリスト</h3>
+                <h3 class="playlist-card-title">KAMUI CODE MCP SaaS</h3>
                 <div class="playlist-card-badge">全機能</div>
             </div>
             <p class="playlist-card-description">ビジネス用途に必要な全機能。文書作成、プレゼン、動画、音声まですべて網羅</p>
@@ -1338,7 +1355,7 @@ playlist-business:
 playlist-all:
   html: |
     <div class="page-header">
-        <h1 class="page-title">プレイリスト一覧</h1>
+        <h1 class="page-title">MCP SaaS一覧</h1>
         <p class="page-subtitle">用途別に選べるMCP SaaS</p>
         <div class="page-divider"></div>
     </div>
@@ -1347,7 +1364,7 @@ playlist-all:
         <!-- Image AI Playlist -->
         <div class="package-card image-ai-package" onclick="navigateTo('playlist-image-ai')">
             <div class="package-header">
-                <h3 class="package-title">画像生成AI特化プレイリスト</h3>
+                <h3 class="package-title">画像生成AI特化MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-image-ai.json</div>
             </div>
             <div class="package-stats">
@@ -1365,7 +1382,7 @@ playlist-all:
         <!-- Video AI Playlist -->
         <div class="package-card video-ai-package" onclick="navigateTo('playlist-video-ai')">
             <div class="package-header">
-                <h3 class="package-title">動画生成AI特化プレイリスト</h3>
+                <h3 class="package-title">動画生成AI特化MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-video-ai.json</div>
             </div>
             <div class="package-stats">
@@ -1383,7 +1400,7 @@ playlist-all:
         <!-- 絵コンテ・ビデオコンテ Playlist -->
         <div class="package-card storyboard-package" onclick="navigateTo('playlist-storyboard')">
             <div class="package-header">
-                <h3 class="package-title">絵コンテ・ビデオコンテ プレイリスト</h3>
+                <h3 class="package-title">絵コンテ・ビデオコンテ MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-storyboard.json</div>
             </div>
             <div class="package-stats">
@@ -1401,7 +1418,7 @@ playlist-all:
         <!-- Requirement Playlist -->
         <div class="package-card requirement-package" onclick="navigateTo('playlist-requirement')">
             <div class="package-header">
-                <h3 class="package-title">Requirement プレイリスト</h3>
+                <h3 class="package-title">Requirement MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-requirement.json</div>
             </div>
             <div class="package-stats">
@@ -1419,7 +1436,7 @@ playlist-all:
         <!-- KAMUI CODE Playlist -->
         <div class="package-card kamui-code-package" onclick="navigateTo('playlist-kamui-code')">
             <div class="package-header">
-                <h3 class="package-title">KAMUI CODE プレイリスト</h3>
+                <h3 class="package-title">KAMUI CODE MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-kamui-code.json</div>
             </div>
             <div class="package-stats">
@@ -1437,7 +1454,7 @@ playlist-all:
         <!-- Remotion Video Playlist -->
         <div class="package-card remotion-video-package" onclick="navigateTo('playlist-remotion-video')">
             <div class="package-header">
-                <h3 class="package-title">Remotion動画生成プレイリスト</h3>
+                <h3 class="package-title">Remotion動画生成MCP SaaS</h3>
                 <div class="package-path">/mcp/mcp-remotion-video.json</div>
             </div>
             <div class="package-stats">
@@ -1487,7 +1504,7 @@ catalog-all:
 mcp-catalog:
   html: |
     <div class="page-header">
-        <h1 class="page-title">MCP カタログ</h1>
+        <h1 class="page-title">MCP MCP リスト</h1>
         <div class="page-divider"></div>
     </div>
     
@@ -1560,7 +1577,7 @@ mcp-catalog:
 
 catalog-creative:
   html: |
-    <h1 class="page-title">カタログ: クリエイティブ</h1>
+    <h1 class="page-title">MCP リスト: クリエイティブ</h1>
     <p class="page-subtitle">生成・編集系のMCPサーバー</p>
     <div class="catalog-grid">
         <div class="catalog-item" onclick="navigateTo('t2i-imagen4')">
@@ -1577,7 +1594,7 @@ catalog-creative:
 
 catalog-development:
   html: |
-    <h1 class="page-title">カタログ: 開発</h1>
+    <h1 class="page-title">MCP リスト: 開発</h1>
     <p class="page-subtitle">開発支援系のMCPサーバー</p>
     <div class="catalog-grid">
         <div class="catalog-item" onclick="navigateTo('t2v-wan')">
@@ -1594,7 +1611,7 @@ catalog-development:
 
 catalog-business:
   html: |
-    <h1 class="page-title">カタログ: ビジネス</h1>
+    <h1 class="page-title">MCP リスト: ビジネス</h1>
     <p class="page-subtitle">ドキュメント/要件定義支援</p>
     <div class="catalog-grid">
         <div class="catalog-item" onclick="navigateTo('req-docs')">
@@ -1725,7 +1742,7 @@ req-docs:
 playlist-storyboard:
   html: |
     <div class="page-header">
-        <h1 class="page-title">絵コンテ・ビデオコンテ プレイリスト</h1>
+        <h1 class="page-title">絵コンテ・ビデオコンテ MCP SaaS</h1>
         <p class="page-subtitle">ストーリーボード作成用MCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -1817,7 +1834,7 @@ playlist-storyboard:
 playlist-requirement:
   html: |
     <div class="page-header">
-        <h1 class="page-title">Requirement プレイリスト</h1>
+        <h1 class="page-title">Requirement MCP SaaS</h1>
         <p class="page-subtitle">要件定義ドキュメント作成用MCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -1916,7 +1933,7 @@ playlist-requirement:
 playlist-kamui-code:
   html: |
     <div class="page-header">
-        <h1 class="page-title">KAMUI CODE プレイリスト</h1>
+        <h1 class="page-title">KAMUI CODE MCP SaaS</h1>
         <p class="page-subtitle">フル機能搭載のMCPサーバーセット</p>
         <div class="page-divider"></div>
     </div>
@@ -2025,7 +2042,7 @@ playlist-kamui-code:
 playlist-video-ai:
   html: |
     <div class="page-header">
-        <h1 class="page-title">動画生成AI特化プレイリスト</h1>
+        <h1 class="page-title">動画生成AI特化MCP SaaS</h1>
         <p class="page-subtitle">最新の動画生成・編集AIを集約したプロフェッショナル向けMCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -2219,7 +2236,7 @@ playlist-video-ai:
 playlist-image-ai:
   html: |
     <div class="page-header">
-        <h1 class="page-title">画像生成AI特化プレイリスト</h1>
+        <h1 class="page-title">画像生成AI特化MCP SaaS</h1>
         <p class="page-subtitle">最新の画像生成・編集AIを集約したプロフェッショナル向けMCPサーバー</p>
         <div class="page-divider"></div>
     </div>
@@ -2390,7 +2407,7 @@ playlist-image-ai:
 playlist-remotion-video:
   html: |
     <div class="page-header">
-        <h1 class="page-title">Remotion動画生成プレイリスト</h1>
+        <h1 class="page-title">Remotion動画生成MCP SaaS</h1>
         <p class="page-subtitle">React開発者向けプログラマブル動画生成MCPサーバー</p>
         <div class="page-divider"></div>
     </div>

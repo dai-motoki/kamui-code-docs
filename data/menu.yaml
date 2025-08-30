@@ -16,7 +16,7 @@
   path: "/welcome"
 - id: mcp-diff
   type: menu
-  label: プレイリストとカタログの違い
+  label: MCP SaaSとMCP リストの違い
   icon: "🧭"
   path: "/mcp/diff"
 - id: mcp-playlist
@@ -27,7 +27,7 @@
   children:
     - id: playlist-all
       type: menu
-      label: プレイリスト一覧
+      label: MCP SaaS一覧
       path: "/playlist/all"
     - id: playlist-creative
       type: menu
@@ -49,7 +49,7 @@
   children:
     - id: catalog-all
       type: menu
-      label: カタログ一覧
+      label: MCP リスト一覧
       path: "/catalog/all"
     - id: catalog-creative
       type: menu
