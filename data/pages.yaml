@@ -232,7 +232,7 @@ welcome:
       
       
       <div style="display:flex; justify-content:center; margin: 0 auto 48px;">
-        <img src="/marketing-wheel_rev2@2x.png" alt="KAMUI CODE マップ" style="width:100%; max-width:1400px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
+        <img src="/welcome-image.jpeg" alt="KAMUI CODE マップ" style="width:100%; max-width:1400px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
       </div>
       
 
