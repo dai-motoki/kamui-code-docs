@@ -3887,3 +3887,120 @@ workflow-all:
             </a>
         </div>
     </div>
+
+mcp-saas-content-gallery:
+  html: |
+    <div class="page-header">
+        <h1 class="page-title">コンテンツギャラリー MCP SaaS</h1>
+        <p class="page-subtitle">メディアギャラリービューア用MCPサーバー</p>
+        <div class="page-divider"></div>
+    </div>
+    
+    <div class="playlist-detail-container">
+        <div class="detail-section">
+            <h2 class="section-title">デモ動画</h2>
+            <div style="margin: 24px 0;">
+                <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <source src="/videos/gallery-demo.mp4" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+                <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">メディアギャラリー管理の実際のワークフローをご覧ください</p>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">JSON設定</h2>
+            <pre class="code"><code>{
+            "mcpServers": {
+            "media-gallery": {
+            "type": "http",
+            "url": "https://{baseurl}/media-gallery"
+            },
+            "t2i-kamui-imagen4-ultra": {
+            "type": "http",
+            "url": "https://{baseurl}/t2i/fal/imagen4/ultra"
+            },
+            "i2i-kamui-flux-kontext-max": {
+            "type": "http",
+            "url": "https://{baseurl}/i2i/fal/flux/kontext/max"
+            },
+            "i2v-kamui-seedance-v1-lite": {
+            "type": "http",
+            "url": "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite"
+            },
+            "file-upload-kamui-fal": {
+            "type": "http",
+            "url": "https://{baseurl}/file-upload/fal"
+            }
+            }
+            }</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">TOML設定</h2>
+            <p style="margin-bottom: 16px; color: var(--text-weak);">以下の設定を <code>~/.codex/config.toml</code> に追加してください：</p>
+            <pre class="code"><code>[mcp_servers.media_gallery]
+            command = "npx"
+            args    = ["-y", "@pyroprompts/mcp-stdio-to-streamable-http-adapter"]
+            env     = { URI = "http://{baseurl}/media-gallery", MCP_NAME = "media-gallery" }
+
+            [mcp_servers.t2i_kamui_imagen4_ultra]
+            command = "npx"
+            args    = ["-y", "@pyroprompts/mcp-stdio-to-streamable-http-adapter"]
+            env     = { URI = "https://{baseurl}/t2i/fal/imagen4/ultra", MCP_NAME = "t2i-kamui-imagen4-ultra" }
+
+            [mcp_servers.i2i_kamui_flux_kontext_max]
+            command = "npx"
+            args    = ["-y", "@pyroprompts/mcp-stdio-to-streamable-http-adapter"]
+            env     = { URI = "https://{baseurl}/i2i/fal/flux/kontext/max", MCP_NAME = "i2i-kamui-flux-kontext-max" }
+
+            [mcp_servers.i2v_kamui_seedance_v1_lite]
+            command = "npx"
+            args    = ["-y", "@pyroprompts/mcp-stdio-to-streamable-http-adapter"]
+            env     = { URI = "https://{baseurl}/i2v/fal/bytedance/seedance-v1-lite", MCP_NAME = "i2v-kamui-seedance-v1-lite" }
+
+            [mcp_servers.file_upload_kamui_fal]
+            command = "npx"
+            args    = ["-y", "@pyroprompts/mcp-stdio-to-streamable-http-adapter"]
+            env     = { URI = "https://{baseurl}/file-upload/fal", MCP_NAME = "file-upload-kamui-fal" }</code></pre>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">利用方法</h2>
+            <div class="usage-content">
+                <h3>1. Claude Codeへの設定</h3>
+                <p>Claude Codeの設定ファイルに上記のJSONまたはTOMLを追加</p>
+                
+                <h3>2. ギャラリー作成</h3>
+                <p>画像、動画、3Dモデルなどのメディアファイルを管理・表示するギャラリーページを生成</p>
+                
+                <h3>3. サーバー一覧</h3>
+                <ul>
+                    <li><strong>media-gallery</strong> - メディアギャラリービューア</li>
+                    <li><strong>t2i-kamui-imagen4-ultra</strong> - 高品質画像生成</li>
+                    <li><strong>i2i-kamui-flux-kontext-max</strong> - 画像編集/変換</li>
+                    <li><strong>i2v-kamui-seedance-v1-lite</strong> - 画像から動画生成</li>
+                    <li><strong>file-upload-kamui-fal</strong> - ファイルアップロード処理</li>
+                </ul>
+                
+                <h3>4. 主な機能</h3>
+                <ul>
+                    <li>マルチメディア対応（画像、動画、3Dモデル）</li>
+                    <li>レスポンシブグリッドレイアウト</li>
+                    <li>フィルタリング・検索機能</li>
+                    <li>メタデータ管理</li>
+                    <li>ライトボックス表示</li>
+                    <li>バッチ処理対応</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="detail-section">
+            <h2 class="section-title">GitHub</h2>
+            <div class="github-link">
+                <a href="https://github.com/dai-motoki/media-gallery-viewer" target="_blank" class="github-button">
+                    <span>💙 GitHubリポジトリを見る</span>
+                </a>
+            </div>
+        </div>
+    </div>
