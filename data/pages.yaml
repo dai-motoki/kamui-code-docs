@@ -1,7 +1,7 @@
 home:
   html: |
     <div class="hero" style="display:flex; justify-content:center;">
-      <video src="/kamui-code-docs/videos/pixverse_subtitles.mp4" controls autoplay muted playsinline loop style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);"></video>
+      <video src="/videos/pixverse_upscaled.mp4" controls autoplay muted playsinline loop style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);"></video>
     </div>
 
     <div class="cards-grid">
@@ -69,7 +69,7 @@ lp:
     <p class="page-subtitle">AIを活用した次世代開発プラットフォーム</p>
 
     <div style="display:flex; justify-content:center; margin: 12px auto 28px;">
-      <img src="/kamui-code-docs/images/kamui-gradient-soft-2.png" alt="KAMUI CODE" style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
+      <img src="/images/kamui-gradient-soft-2.png" alt="KAMUI CODE" style="width:100%; max-width:1080px; border-radius:16px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border:1px solid var(--border);" />
     </div>
 
 mcp-playlist:
@@ -327,7 +327,7 @@ mcp-diff:
       <div class="diff-hero-grid">
         <div class="diff-hero-media">
           <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/llm_mystical_coal_video.mp4" type="video/mp4">
+            <source src="/images/llm_mystical_coal_video.mp4" type="video/mp4">
           </video>
         </div>
         <div class="diff-hero-body">
@@ -428,7 +428,7 @@ mcp-diff:
         </div>
         <div class="diff-hero-media" style="min-height: 400px;">
           <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/ai_cli_car_engine_video.mp4" type="video/mp4">
+            <source src="/images/ai_cli_car_engine_video.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -436,7 +436,7 @@ mcp-diff:
       <div class="diff-hero-grid" style="margin-top: 32px;">
         <div class="diff-hero-media">
           <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/industrial_blacksmith_forge_video.mp4" type="video/mp4">
+            <source src="/images/industrial_blacksmith_forge_video.mp4" type="video/mp4">
           </video>
         </div>
         <div class="diff-hero-body">
@@ -628,7 +628,7 @@ mcp-diff:
         </div>
         <div style="position: relative; min-height: 450px; overflow: hidden;">
           <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/industrial_automobile_video.mp4" type="video/mp4">
+            <source src="/images/industrial_automobile_video.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -636,7 +636,7 @@ mcp-diff:
       <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 0; margin-bottom: 48px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border);">
         <div style="position: relative; min-height: 550px; overflow: hidden;">
           <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-            <source src="/kamui-code-docs/images/industrial_train_video.mp4" type="video/mp4">
+            <source src="/images/industrial_train_video.mp4" type="video/mp4">
           </video>
         </div>
         <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(16, 185, 129, 0.3)); padding: 24px;">
@@ -791,7 +791,7 @@ mcp-diff:
         <div style="background: rgba(0, 0, 0, 0.3); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
           <h3 style="font-size: 18px; margin-bottom: 16px; color: white;">実際の使用例</h3>
           <video controls autoplay loop muted playsinline style="width: 100%; border-radius: 8px; margin-bottom: 16px;">
-            <source src="/kamui-code-docs/videos/mcp-web-playlist-demo.mp4" type="video/mp4">
+            <source src="/videos/mcp-web-playlist-demo.mp4" type="video/mp4">
             お使いのブラウザは動画再生に対応していません。
           </video>
           <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px;">
@@ -1100,7 +1100,7 @@ mcp-diff:
         
         <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);">
           <video controls style="width: 100%; height: auto; display: block;">
-            <source src="/kamui-code-docs/videos/github-actions-cicd-demo.mp4" type="video/mp4">
+            <source src="/videos/github-actions-cicd-demo.mp4" type="video/mp4">
             お使いのブラウザは動画再生をサポートしていません。
           </video>
           <div style="position: absolute; bottom: 16px; right: 16px; background: rgba(0, 0, 0, 0.8); color: white; padding: 8px 16px; border-radius: 8px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
@@ -2210,7 +2210,7 @@ playlist-storyboard:
             <h2 class="section-title">デモ動画</h2>
             <div style="margin: 24px 0;">
                 <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                    <source src="/kamui-code-docs/videos/storyboard-demo.mp4" type="video/mp4">
+                    <source src="/videos/storyboard-demo.mp4" type="video/mp4">
                     お使いのブラウザは動画再生に対応していません。
                 </video>
                 <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">ストーリーボード作成の実際のワークフローをご覧ください</p>
@@ -2307,7 +2307,7 @@ playlist-requirement:
             <h2 class="section-title">デモ動画</h2>
             <div style="margin: 24px 0;">
                 <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                    <source src="/kamui-code-docs/videos/requirement-demo.mp4" type="video/mp4">
+                    <source src="/videos/requirement-demo.mp4" type="video/mp4">
                     お使いのブラウザは動画再生に対応していません。
                 </video>
                 <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">要件定義書作成の実際のワークフローをご覧ください</p>
@@ -2897,7 +2897,7 @@ playlist-remotion-video:
             <h2 class="section-title">デモ動画</h2>
             <div style="margin: 24px 0;">
                 <video controls autoplay loop muted style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                    <source src="/kamui-code-docs/videos/remotion-demo.mp4" type="video/mp4">
+                    <source src="/videos/remotion-demo.mp4" type="video/mp4">
                     お使いのブラウザは動画再生に対応していません。
                 </video>
                 <p style="margin-top: 16px; color: var(--muted); font-size: 14px;">Reactコンポーネントで動画を生成する革新的なワークフロー</p>
