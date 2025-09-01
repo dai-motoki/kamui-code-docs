@@ -944,8 +944,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     const savedTheme = localStorage.getItem('theme');
-    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-    applyTheme(savedTheme || (prefersLight ? 'light' : 'dark'));
+    // デフォルトは常にダークテーマ
+    applyTheme(savedTheme || 'dark');
     themeDarkBtn && themeDarkBtn.addEventListener('click', () => applyTheme('dark'));
     themeLightBtn && themeLightBtn.addEventListener('click', () => applyTheme('light'));
 
