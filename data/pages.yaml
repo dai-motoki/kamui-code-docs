@@ -241,45 +241,215 @@ welcome:
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">1</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCP SaaSを選択</h3>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">Claude Code推奨、セットアップ方法</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          KAMUI CODEでは、開発用途に応じて最適化されたMCP SaaSを複数用意しています。Web開発、モバイルアプリ、データサイエンス、AI/ML開発など、あなたのプロジェクトに最適なサービスセットを選択してください。
+          KAMUI CODEは、Anthropic社のClaude Codeエディタとの組み合わせで最高のパフォーマンスを発揮します。Claude CodeはAIペアプログラミングに特化したIDEで、MCPプロトコルをネイティブサポートしています。
         </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>インストール手順：</strong></p>
+          <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;">Claude Code公式サイト（claude.ai/code）からアプリをダウンロード</li>
+            <li style="margin-bottom: 8px;">お使いのOS（Windows/macOS/Linux）に合わせてインストール</li>
+            <li style="margin-bottom: 8px;">初回起動時にClaudeアカウントでログイン</li>
+            <li style="margin-bottom: 8px;">MCPサポートを有効化（設定→拡張機能→MCP）</li>
+          </ol>
+        </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          各MCP SaaSには、画像生成、動画生成、音声合成、データベース操作など、必要なMCPサーバーが事前に組み込まれています。カスタムMCP SaaSの作成も可能で、必要なサービスのみを選択して独自の開発環境を構築できます。
+          Claude Codeは無料プランでも十分な機能を提供しており、Pro版ではより高度なAI機能やチーム連携機能が利用できます。
         </p>
       </div>
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">2</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCP設定をコピー</h3>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">Terminalとは</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          選択したMCP SaaSの設定コードが自動的に生成されます。JSON形式またはTOML形式から、Claude Codeの設定ファイル形式に合わせて選択できます。ワンクリックで全設定をクリップボードにコピーできます。
+          Terminal（ターミナル）は、コマンドラインインターフェース（CLI）とも呼ばれ、テキストベースでコンピュータに命令を送るツールです。MCPサーバーの設定や管理に必要不可欠なツールです。
         </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>基本的な使い方：</strong></p>
+          <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>macOS：</strong> Spotlight検索（Cmd+Space）で「Terminal」と入力、またはアプリケーション→ユーティリティ→ターミナル</li>
+            <li style="margin-bottom: 8px;"><strong>Windows：</strong> Windows Terminal、PowerShell、またはコマンドプロンプト（cmd）を使用</li>
+            <li style="margin-bottom: 8px;"><strong>Linux：</strong> Ctrl+Alt+Tまたはアプリケーションメニューから起動</li>
+          </ul>
+        </div>
+        <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin: 16px 0; font-family: 'Monaco', 'Consolas', monospace;">
+          <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+            <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">pwd</span><br/>
+            <span style="color: #ce9178;">/Users/username</span><br/>
+            <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">cd</span> <span style="color: #ce9178;">Documents</span><br/>
+            <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">ls</span><br/>
+            <span style="color: #ce9178;">project1  project2  readme.txt</span>
+          </p>
+        </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          各MCPサーバーの認証情報（APIキーなど）は環境変数として安全に管理されます。設定には必要最小限の情報のみが含まれ、セキュリティを保ちながら簡単にセットアップできるよう設計されています。
+          Terminalでは、ファイルの移動（cd）、一覧表示（ls）、環境変数の設定（export）など、MCPのセットアップに必要な操作を行います。
         </p>
       </div>
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">3</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">Claude Codeに追加</h3>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">MCPに繋いでみよう</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          Claude Codeの設定ファイル（claude_code_config.json または mcp_config.toml）を開き、コピーした設定を貼り付けます。macOSの場合は ~/Library/Application Support/Claude/、Windowsの場合は %APPDATA%\Claude\ にあります。
+          MCP（Model Context Protocol）は、AIモデルと外部ツールを接続するための標準プロトコルです。KAMUI CODEの各サービスをClaude Codeから利用するための橋渡しとなります。
         </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>接続手順：</strong></p>
+          <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 12px;">
+              <strong>設定ファイルの場所を確認：</strong><br/>
+              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">~/Library/Application Support/Claude/</code> (macOS)<br/>
+              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">%APPDATA%\Claude\</code> (Windows)
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>MCP設定ファイルを作成：</strong><br/>
+              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">claude_code_config.json</code>を新規作成
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>KAMUI CODEから設定をコピー：</strong><br/>
+              MCP SaaS一覧から必要なサービスを選択し、設定JSONをコピー
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Claude Codeを再起動：</strong><br/>
+              設定を反映させるためアプリを再起動
+            </li>
+          </ol>
+        </div>
+        <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin: 16px 0; font-family: 'Monaco', 'Consolas', monospace;">
+          <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+            <span style="color: #569cd6;">{</span><br/>
+            &nbsp;&nbsp;<span style="color: #9cdcfe;">"mcpServers"</span>: <span style="color: #569cd6;">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"kamui-image"</span>: <span style="color: #569cd6;">{</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"command"</span>: <span style="color: #ce9178;">"npx"</span>,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"args"</span>: [<span style="color: #ce9178;">"@kamui/mcp-image"</span>]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
+            &nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
+            <span style="color: #569cd6;">}</span>
+          </p>
+        </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          既存の設定がある場合は、新しい設定が追加される形になります。設定ファイルのバックアップを取ることをお勧めします。設定の反映にはClaude Codeの再起動が必要な場合があります。
+          接続が成功すると、Claude Code内でMCPツールが利用可能になります。接続状態は設定画面のMCPタブで確認できます。
+        </p>
+      </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">4</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">画像を生成してみよう</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          MCPが正しく接続されたら、早速画像生成を試してみましょう。KAMUI CODEでは最新のAIモデル（Imagen4、Flux、Qwenなど）を使った高品質な画像生成が可能です。
+        </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>Claude Codeでの画像生成例：</strong></p>
+          <div style="background: #f8f8f8; border-left: 4px solid #6366f1; padding: 12px 16px; margin: 12px 0;">
+            <p style="font-size: 14px; color: #333; margin: 0; font-style: italic;">
+              「富士山の日の出の風景を水彩画風で描いて」<br/><br/>
+              「モダンなロゴデザインを作成して。テーマは『Innovation』」<br/><br/>
+              「サイバーパンク風の東京の街並みを生成して」
+            </p>
+          </div>
+        </div>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>生成パラメータの例：</strong></p>
+          <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>アスペクト比：</strong> 1:1（正方形）、16:9（横長）、9:16（縦長）など</li>
+            <li style="margin-bottom: 8px;"><strong>スタイル：</strong> リアル、アニメ、水彩画、油絵、3Dレンダリングなど</li>
+            <li style="margin-bottom: 8px;"><strong>解像度：</strong> 1024x1024、2048x2048（高解像度）など</li>
+          </ul>
+        </div>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          生成された画像は自動的にプロジェクトフォルダに保存されます。画像の著作権はユーザーに帰属し、商用利用も可能です。
+        </p>
+      </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">5</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">fal アップローダー と falキーのセットアップ</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          fal.aiは高速な画像・動画処理を提供するサービスで、KAMUI CODEの多くの機能がfal.aiのインフラを利用しています。ローカルファイルをアップロードして処理するにはfalキーの設定が必要です。
+        </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>falキーの取得と設定：</strong></p>
+          <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 12px;">
+              <strong>fal.aiアカウントを作成：</strong><br/>
+              <a href="https://fal.ai" style="color: #6366f1;">https://fal.ai</a> にアクセスしてサインアップ
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>APIキーを生成：</strong><br/>
+              ダッシュボード → API Keys → Create New Key
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>環境変数に設定：</strong><br/>
+              <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 8px; font-family: 'Monaco', 'Consolas', monospace;">
+                <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+                  <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">export</span> <span style="color: #9cdcfe;">FAL_KEY</span>=<span style="color: #ce9178;">"your-api-key-here"</span>
+                </p>
+              </div>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>永続化の設定（推奨）：</strong><br/>
+              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">~/.zshrc</code> または <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">~/.bashrc</code> に追加
+            </li>
+          </ol>
+        </div>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>falアップローダーの使い方：</strong></p>
+          <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;">ローカルの画像や動画をfal.aiのストレージにアップロード</li>
+            <li style="margin-bottom: 8px;">アップロードされたファイルは一時的なURLが生成される</li>
+            <li style="margin-bottom: 8px;">このURLを使って画像編集や動画変換などの処理が可能</li>
+          </ul>
+        </div>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          fal.aiは無料枠でも十分な処理が可能で、高速な処理が必要な場合は有料プランにアップグレードできます。
         </p>
       </div>
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 48px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">4</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">AIパワーで開発加速</h3>
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">6</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">ローカル画像からi2vしてみよう</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          設定が完了すると、Claude Code内からすべてのMCPサーバー機能にアクセスできるようになります。自然言語でAIに指示を出すだけで、画像生成、動画作成、データベース操作などが実行されます。
+          Image-to-Video（i2v）は、静止画から動画を生成する技術です。お手持ちの画像をアップロードして、AIが自動的にアニメーションを生成します。
         </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>i2v生成の手順：</strong></p>
+          <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 12px;">
+              <strong>画像を準備：</strong><br/>
+              JPG、PNG形式の画像（推奨：1024x1024以上の解像度）
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Claude Codeで指示：</strong><br/>
+              <div style="background: #f8f8f8; border-left: 4px solid #6366f1; padding: 12px 16px; margin: 8px 0;">
+                <p style="font-size: 14px; color: #333; margin: 0; font-style: italic;">
+                  「image.jpgをアップロードして、カメラが徐々にズームインする5秒の動画を作成して」<br/><br/>
+                  「portrait.pngから、髪がなびいているような自然な動きの動画を生成」
+                </p>
+              </div>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>動画パラメータを指定（オプション）：</strong><br/>
+              • 動画の長さ（3〜10秒）<br/>
+              • カメラの動き（ズーム、パン、回転など）<br/>
+              • アニメーションスタイル（自然、ダイナミック、スロー）
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>生成と保存：</strong><br/>
+              生成された動画はMP4形式でダウンロード可能
+            </li>
+          </ol>
+        </div>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>i2vに適した画像の例：</strong></p>
+          <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>風景写真：</strong> 雲の動き、水の流れ、木々の揺れなど</li>
+            <li style="margin-bottom: 8px;"><strong>ポートレート：</strong> 表情の変化、髪のなびき、まばたきなど</li>
+            <li style="margin-bottom: 8px;"><strong>プロダクト画像：</strong> 360度回転、ズームイン/アウトなど</li>
+            <li style="margin-bottom: 8px;"><strong>イラスト・アート：</strong> 色の変化、パーティクル効果など</li>
+          </ul>
+        </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          例えば「プロダクトのロゴを生成して」「デモ動画を作成」「データベースから売上データを取得」など、複雑なタスクも簡単な指示で実行できます。MCPサーバーはバックグラウンドで連携し、シームレスな開発体験を提供します。
+          i2vは商品プレゼンテーション、SNS投稿、Webサイトのヒーローセクションなど、様々な用途で活用できます。生成された動画は商用利用も可能です。
         </p>
       </div>
 
