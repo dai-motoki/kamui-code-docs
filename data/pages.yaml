@@ -306,7 +306,7 @@ welcome:
             </li>
             <li style="margin-bottom: 12px;">
               <strong>設定ファイルをダウンロード：</strong><br/>
-              <a href="data:application/json;charset=utf-8,%7B%0A%20%20%22mcpServers%22%3A%20%7B%0A%20%20%20%20%220_kamui-oauth-hub%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Fmcp%2Foauth-hub%22%2C%0A%20%20%20%20%20%20%22description%22%3A%20%22%F0%9F%94%90%20%E8%AA%8D%E8%A8%BC%E3%83%8F%E3%83%96%EF%BC%88%E3%81%93%E3%81%93%E3%81%A71%E5%9B%9E%E3%81%A0%E3%81%91Authenticate%EF%BC%89%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%221_t2i-kamui-flux-krea%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Ft2i%2Ffal%2Fflux-krea-lora%22%2C%0A%20%20%20%20%20%20%22description%22%3A%20%22%F0%9F%8E%A8%20T2I%3A%20FLUX%20Krea%20LoRA%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%222_i2i-kamui-aura-sr%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Fi2i%2Ffal%2Faura-sr%22%2C%0A%20%20%20%20%20%20%22description%22%3A%20%22%F0%9F%96%BC%EF%B8%8F%20I2I%3A%20Aura%20SR%EF%BC%88%E8%B6%85%E8%A7%A3%E5%83%8F%EF%BC%89%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D" download="kamui-code.json" style="background: #6366f1; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 8px;">kamui-code.jsonをダウンロード</a><br/>
+              <a href="data:application/json;charset=utf-8,%7B%0A%20%20%22mcpServers%22%3A%20%7B%0A%20%20%20%20%220_kamui-oauth-hub%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Fmcp%2Foauth-hub%22%2C%0A%20%20%20%20%20%20%22description%22%3A%20%22%F0%9F%94%90%20%E8%AA%8D%E8%A8%BC%E3%83%8F%E3%83%96%EF%BC%88%E3%81%93%E3%81%93%E3%81%A71%E5%9B%9E%E3%81%A0%E3%81%91Authenticate%EF%BC%89%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%221_t2i-kamui-qwen-image%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Ft2i%2Ffal%2Fqwen-image%22%2C%0A%20%20%20%20%20%20%22description%22%3A%20%22%F0%9F%8E%A8%20T2I%3A%20Qwen%20Image%20Generation%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22nano-banana-edit-kamui%22%3A%20%7B%0A%20%20%20%20%20%20%22type%22%3A%20%22http%22%2C%0A%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fstaging.kamui-code.ai%2Fi2i%2Ffal%2Fnano-banana%2Fedit%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D" download="kamui-code.json" style="background: #6366f1; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 8px;">kamui-code.jsonをダウンロード</a><br/>
               <span style="font-size: 13px; color: var(--text-weak);">またはコピーして手動で保存</span>
               <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin-top: 12px; font-family: 'Monaco', 'Consolas', monospace;">
                 <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
@@ -317,15 +317,14 @@ welcome:
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/mcp/oauth-hub"</span>,<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🔐 認証ハブ（ここで1回だけAuthenticate）"</span><br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"1_t2i-kamui-flux-krea"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"1_t2i-kamui-qwen-image"</span>: <span style="color: #569cd6;">{</span><br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/t2i/fal/flux-krea-lora"</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🎨 T2I: FLUX Krea LoRA"</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/t2i/fal/qwen-image"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🎨 T2I: Qwen Image Generation"</span><br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"2_i2i-kamui-aura-sr"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"nano-banana-edit-kamui"</span>: <span style="color: #569cd6;">{</span><br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/i2i/fal/aura-sr"</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🖼️ I2I: Aura SR（超解像）"</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/i2i/fal/nano-banana/edit"</span><br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
                   &nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
                   <span style="color: #569cd6;">}</span>
@@ -357,22 +356,66 @@ welcome:
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
         <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">4</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">画像を生成してみよう</h3>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">初回認証を行う</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          MCPが正しく接続されたら、まず認証を行い、その後画像生成を試してみましょう。KAMUI CODEでは最新のAIモデル（Imagen4、Flux、Qwenなど）を使った高品質な画像生成が可能です。
+          KAMUI MCPを使用するには、最初に一度だけ認証が必要です。マジックリンク認証により、メールアドレスだけで簡単にログインできます。
         </p>
         <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
-          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>初回認証（マジックリンク）：</strong></p>
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>認証手順：</strong></p>
           <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
-            <li style="margin-bottom: 8px;">Claude Code内で「authenticate」と入力</li>
-            <li style="margin-bottom: 8px;">メールアドレスを入力</li>
-            <li style="margin-bottom: 8px;">受信したマジックリンクをクリック</li>
-            <li style="margin-bottom: 8px;">ブラウザで認証完了</li>
+            <li style="margin-bottom: 12px;">
+              <strong>Claude Desktop内で認証開始：</strong><br/>
+              <div style="background: var(--background); border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin: 8px 0;">
+                <p style="font-size: 14px; color: var(--text-weak); margin: 0;">
+                  1. <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">/mcp</code> と入力<br/>
+                  2. <strong>0_kamui-oauth-hub</strong> を選択<br/>
+                  3. <strong>authenticate</strong> を選択
+                </p>
+              </div>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>メールアドレスを入力：</strong><br/>
+              登録に使用するメールアドレスを入力
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>マジックリンクを確認：</strong><br/>
+              数分以内にメールが届きます（迷惑メールフォルダも確認）
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>ブラウザで認証完了：</strong><br/>
+              メール内のリンクをクリックして認証を完了
+            </li>
           </ol>
-          <p style="font-size: 13px; color: var(--text-weak); margin-top: 12px;">※ 認証トークンは24時間有効です</p>
+        </div>
+        <div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 16px; margin: 16px 0;">
+          <p style="font-size: 14px; color: #92400e; margin: 0;">
+            <strong>⚠️ 重要な注意事項</strong><br/>
+            • 認証トークンは24時間有効です<br/>
+            • プラン情報は認証時に更新されます<br/>
+            • 課金後は再認証が必要な場合があります
+          </p>
         </div>
         <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
-          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>Claude Codeでの画像生成例：</strong></p>
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>便利なコマンド：</strong></p>
+          <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
+            <li style="margin-bottom: 8px;"><code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">view profile</code> - 現在のプランと情報を確認</li>
+            <li style="margin-bottom: 8px;"><code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">view usage</code> - 今月の使用状況を確認</li>
+            <li style="margin-bottom: 8px;"><code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">logout</code> - ログアウト（プラン更新時に使用）</li>
+          </ul>
+        </div>
+        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
+          認証が完了すると、画像生成、動画生成、その他のAI機能がすべて利用可能になります。
+        </p>
+      </div>
+      
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">5</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">画像を生成してみよう</h3>
+        <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
+          認証が完了したら、早速画像生成を試してみましょう。KAMUI CODEでは最新のAIモデル（Imagen4、Flux、Qwenなど）を使った高品質な画像生成が可能です。
+        </p>
+        <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>Claude Desktopでの画像生成例：</strong></p>
           <div style="background: #f8f8f8; border-left: 4px solid #6366f1; padding: 12px 16px; margin: 12px 0;">
             <p style="font-size: 14px; color: #333; margin: 0; font-style: italic;">
               「富士山の日の出の風景を水彩画風で描いて」<br/><br/>
@@ -390,12 +433,13 @@ welcome:
           </ul>
         </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          生成された画像は自動的にプロジェクトフォルダに保存されます。画像の著作権はユーザーに帰属し、商用利用も可能です。
+          生成された画像は自動的にプロジェクトフォルダに保存されます。画像の著作権はユーザーに帰属し、商用利用も可能です。<br/>
+          <span style="color: var(--text-weak); font-size: 13px;">※ ダウンロードがされない場合は、Claude Desktopに「PC上にダウンロードして」と指示をお願いします。</span>
         </p>
       </div>
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 24px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">5</div>
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">6</div>
         <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">fal アップローダー と falキーのセットアップ</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
           fal.aiは高速な画像・動画処理を提供するサービスで、ローカルファイルをアップロードして処理するにはfalキーの設定が必要です。
@@ -433,56 +477,55 @@ welcome:
             <li style="margin-bottom: 8px;">このURLを使って画像編集や動画変換などの処理が可能</li>
           </ul>
         </div>
-        <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          fal.aiは無料枠でも十分な処理が可能で、高速な処理が必要な場合は有料プランにアップグレードできます。
-        </p>
+
       </div>
       
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 48px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">6</div>
-        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">ローカル画像からi2vしてみよう</h3>
+        <div style="position: absolute; top: -14px; left: 28px; width: 36px; height: 36px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">7</div>
+        <h3 style="font-size: 20px; margin-top: 16px; margin-bottom: 12px; color: var(--text);">ローカル画像からi2iしてみよう</h3>
         <p style="font-size: 15px; color: var(--text-weak); line-height: 1.6; margin-bottom: 16px;">
-          Image-to-Video（i2v）は、静止画から動画を生成する技術です。お手持ちの画像をアップロードして、AIが自動的にアニメーションを生成します。
+          Image-to-Image（i2i）は、既存の画像を別の画像に変換する技術です。nano-bananaは画像修正、変更に強いAIで、お手持ちの画像をアップロードして、AIが自動的に編集・変換を行います。
         </p>
         <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
-          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>i2v生成の手順：</strong></p>
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>i2i編集の手順：</strong></p>
           <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
             <li style="margin-bottom: 12px;">
               <strong>画像を準備：</strong><br/>
               JPG、PNG形式の画像（推奨：1024x1024以上の解像度）
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>Claude Codeで指示：</strong><br/>
+              <strong>Claude Desktopで指示：</strong><br/>
               <div style="background: #f8f8f8; border-left: 4px solid #6366f1; padding: 12px 16px; margin: 8px 0;">
                 <p style="font-size: 14px; color: #333; margin: 0; font-style: italic;">
-                  「image.jpgをアップロードして、カメラが徐々にズームインする5秒の動画を作成して」<br/><br/>
-                  「portrait.pngから、髪がなびいているような自然な動きの動画を生成」
+                  「image.jpgをアップロードして、背景を夜景に変更して」<br/><br/>
+                  「portrait.pngから、人物の服装を赤いドレスに変更」<br/><br/>
+                  「product.jpgの色を青から緑に変更して」
                 </p>
               </div>
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>動画パラメータを指定（オプション）：</strong><br/>
-              • 動画の長さ（3〜10秒）<br/>
-              • カメラの動き（ズーム、パン、回転など）<br/>
-              • アニメーションスタイル（自然、ダイナミック、スロー）
+              <strong>編集パラメータを指定（オプション）：</strong><br/>
+              • 編集の強度（軽微な修正から大幅な変更まで）<br/>
+              • 特定の部分のみの編集（マスキング）<br/>
+              • スタイルの保持（オリジナルの雰囲気を維持）
             </li>
             <li style="margin-bottom: 12px;">
               <strong>生成と保存：</strong><br/>
-              生成された動画はMP4形式でダウンロード可能
+              編集された画像は高解像度でダウンロード可能
             </li>
           </ol>
         </div>
         <div style="background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0;">
-          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>i2vに適した画像の例：</strong></p>
+          <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>nano-bananaが得意な編集例：</strong></p>
           <ul style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
-            <li style="margin-bottom: 8px;"><strong>風景写真：</strong> 雲の動き、水の流れ、木々の揺れなど</li>
-            <li style="margin-bottom: 8px;"><strong>ポートレート：</strong> 表情の変化、髪のなびき、まばたきなど</li>
-            <li style="margin-bottom: 8px;"><strong>プロダクト画像：</strong> 360度回転、ズームイン/アウトなど</li>
-            <li style="margin-bottom: 8px;"><strong>イラスト・アート：</strong> 色の変化、パーティクル効果など</li>
+            <li style="margin-bottom: 8px;"><strong>背景の置換：</strong> 屋内を屋外に、昼を夜に変更など</li>
+            <li style="margin-bottom: 8px;"><strong>オブジェクトの編集：</strong> 服装、色、形状の変更</li>
+            <li style="margin-bottom: 8px;"><strong>スタイル変換：</strong> 写真をイラスト風に、リアルをアニメ風に</li>
+            <li style="margin-bottom: 8px;"><strong>詳細な修正：</strong> 不要な要素の除去、細部の改善</li>
           </ul>
         </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          i2vは商品プレゼンテーション、SNS投稿、Webサイトのヒーローセクションなど、様々な用途で活用できます。生成された動画は商用利用も可能です。
+          i2iは商品画像の編集、SNS投稿の加工、クリエイティブな画像制作など、様々な用途で活用できます。編集された画像は商用利用も可能です。
         </p>
       </div>
 
@@ -562,8 +605,7 @@ welcome:
       <div style="text-align: center; padding: 32px 0; border-top: 1px solid var(--border);">
         <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--text);">サポート</h3>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.8;">
-          技術的な問題: <a href="https://discord.gg/kamui" style="color: #6366f1;">Discordサポートチャンネル</a><br/>
-          課金関連: <a href="mailto:support@kamui.ai" style="color: #6366f1;">support@kamui.ai</a><br/>
+          お問い合わせ: <a href="mailto:kanri@kandaquantum.co.jp" style="color: #6366f1;">kanri@kandaquantum.co.jp</a><br/>
           ドキュメント: <a href="https://docs.kamui.ai" style="color: #6366f1;">https://docs.kamui.ai</a>
         </p>
       </div>
