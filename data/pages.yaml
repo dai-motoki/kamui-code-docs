@@ -297,49 +297,61 @@ welcome:
           <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;"><strong>接続手順：</strong></p>
           <ol style="font-size: 14px; color: var(--text-weak); line-height: 1.6; margin-left: 20px;">
             <li style="margin-bottom: 12px;">
-              <strong>設定ファイルの場所を確認：</strong><br/>
-              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">~/Library/Application Support/Claude/</code> (macOS)<br/>
-              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">%APPDATA%\Claude\</code> (Windows)
+              <strong>設定ディレクトリを作成：</strong><br/>
+              <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 8px; font-family: 'Monaco', 'Consolas', monospace;">
+                <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+                  <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">mkdir</span> <span style="color: #ce9178;">-p ~/.claude</span>
+                </p>
+              </div>
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>MCP設定ファイルを作成：</strong><br/>
-              <code style="background: #1e1e1e; padding: 2px 6px; border-radius: 3px; color: #ce9178;">claude_code_config.json</code>を新規作成
+              <strong>設定ファイルをダウンロード：</strong><br/>
+              <a href="#" onclick="downloadKamuiConfig(event)" style="background: #6366f1; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 8px;">kamui-code.jsonをダウンロード</a><br/>
+              <span style="font-size: 13px; color: var(--text-weak);">またはコピーして手動で保存</span>
+              <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin-top: 12px; font-family: 'Monaco', 'Consolas', monospace;">
+                <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+                  <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;<span style="color: #9cdcfe;">"mcpServers"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"0_kamui-oauth-hub"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/mcp/oauth-hub"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🔐 認証ハブ（ここで1回だけAuthenticate）"</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"1_t2i-kamui-flux-krea"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/t2i/fal/flux-krea-lora"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🎨 T2I: FLUX Krea LoRA"</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"2_i2i-kamui-aura-sr"</span>: <span style="color: #569cd6;">{</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/i2i/fal/aura-sr"</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🖼️ I2I: Aura SR（超解像）"</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
+                  &nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
+                  <span style="color: #569cd6;">}</span>
+                </p>
+              </div>
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>KAMUI CODEから設定をコピー：</strong><br/>
-              MCP SaaS一覧から必要なサービスを選択し、設定JSONをコピー
+              <strong>ダウンロードしたファイルを移動：</strong><br/>
+              <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 8px; font-family: 'Monaco', 'Consolas', monospace;">
+                <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+                  <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">mv</span> <span style="color: #ce9178;">~/Downloads/kamui-code.json ~/.claude/</span>
+                </p>
+              </div>
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>Claude Codeを再起動：</strong><br/>
-              設定を反映させるためアプリを再起動
+              <strong>Claude Desktopを起動：</strong><br/>
+              <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 8px; font-family: 'Monaco', 'Consolas', monospace;">
+                <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
+                  <span style="color: #569cd6;">$</span> <span style="color: #9cdcfe;">claude</span> <span style="color: #ce9178;">--mcp-config=~/.claude/kamui-code.json</span>
+                </p>
+              </div>
             </li>
           </ol>
         </div>
-        <div style="background: #1e1e1e; border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin: 16px 0; font-family: 'Monaco', 'Consolas', monospace;">
-          <p style="color: #d4d4d4; font-size: 13px; margin: 0;">
-            <span style="color: #569cd6;">{</span><br/>
-            &nbsp;&nbsp;<span style="color: #9cdcfe;">"mcpServers"</span>: <span style="color: #569cd6;">{</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"0_kamui-oauth-hub"</span>: <span style="color: #569cd6;">{</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/mcp/oauth-hub"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🔐 認証ハブ（ここで1回だけAuthenticate）"</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"1_t2i-kamui-flux-krea"</span>: <span style="color: #569cd6;">{</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/t2i/fal/flux-krea-lora"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🎨 T2I: FLUX Krea LoRA"</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"2_i2i-kamui-aura-sr"</span>: <span style="color: #569cd6;">{</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"type"</span>: <span style="color: #ce9178;">"http"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"url"</span>: <span style="color: #ce9178;">"https://staging.kamui-code.ai/i2i/fal/aura-sr"</span>,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">"description"</span>: <span style="color: #ce9178;">"🖼️ I2I: Aura SR（超解像）"</span><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
-            &nbsp;&nbsp;<span style="color: #569cd6;">}</span><br/>
-            <span style="color: #569cd6;">}</span>
-          </p>
-        </div>
         <p style="font-size: 14px; color: var(--text-weak); line-height: 1.5;">
-          接続が成功すると、Claude Code内でMCPツールが利用可能になります。接続状態は設定画面のMCPタブで確認できます。
+          接続が成功すると、Claude Desktop内でMCPツールが利用可能になります。接続状態は設定画面のMCPタブで確認できます。
         </p>
       </div>
       
